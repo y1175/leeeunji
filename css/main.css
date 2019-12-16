@@ -2,9 +2,13 @@
     padding: 0px; margin: 0px;
 }
 
-dl{
-    margin: 0px;
+dl, nav{
+    margin: 0px !important;
 }
 .footer{
     margin-top: 20px;
+}
+
+.slider-wrapper, .theme-default{
+    margin: 0px !important;
 }
