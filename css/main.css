@@ -14,7 +14,7 @@ dl, nav{
     font-size: 17px !important;
 }
 .footer{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .slider-wrapper, .theme-default{
@@ -34,4 +34,12 @@ h1{
 
 h2{
     font-size: 3em !important; font-weight: bolder !important;
+}
+
+a.btn{
+    color: white !important;
+}
+
+.jumbotron{
+    margin-bottom: 0px !important;
 }
