@@ -1,9 +1,17 @@
 *{
     padding: 0px; margin: 0px;
 }
+body{
+    background-color: white !important;
+}
 
 dl, nav{
     margin: 0px !important;
+}
+
+.navbar{
+    background-color:rgba(0,0,0, 0.8) !important;
+    font-size: 17px !important;
 }
 .footer{
     margin-top: 20px;
@@ -11,4 +19,19 @@ dl, nav{
 
 .slider-wrapper, .theme-default{
     margin: 0px !important;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0,0,0, 0.8);
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 5em !important; font-weight: bolder !important;
+}
+
+h2{
+    font-size: 3em !important; font-weight: bolder !important;
 }
