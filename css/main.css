@@ -1,0 +1,61 @@
+*{
+    padding: 0px; margin: 0px;
+}
+body{
+    background-color: white !important;
+}
+
+dl{
+    margin: 0px !important;
+}
+
+.navbar{
+    background-color:white !important;
+    font-size: 15px !important;
+    border-bottom: 5px solid red;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
+
+.footer{
+    margin-top: 0px;
+}
+
+.slider-wrapper, .theme-default{
+    margin: 0px !important;
+}
+
+
+h1{
+    font-size: 4em !important; font-weight: bolder !important;
+}
+
+h2{
+    font-size: 2em !important; font-weight: bolder !important;
+}
+
+a.btn{
+    color: white !important;
+}
+
+.jumbotron{
+    margin-bottom: 0px !important;
+}
+
+.card img{
+    padding: 0px; height: 270px;
+}
+
+.card a, .card a:visited{
+     color: black;
+}
+
+#slider{
+    height: 400px;
+}
+
