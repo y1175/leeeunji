@@ -21,21 +21,29 @@ hr{border:10px solid black;}
             margin:0px auto;
 
         }
+#java:hover{
+
+     opacity: 0.4;
+    filter: alpha(opacity=40);
+}
        /* button{
             border:1px solid silver;
         }*/
 .btn-group{
-    border:1px solid black;
-    width: 500px;
+    border:1px solid silver;
+    width: 400px;
     background-color: silver;
-    color:black;
+ /*   color:black;*/
     text-decoration-color: black;
     text-align: center;
 }
+.btn-group:hover{
+    background-color: lightslategrey;
+}
 
-        a:hover{color:black;
+        a:hover{/*color:black;*/
            text-decoration: none;
-background-color:black;}
+/*background-color:black;*/}
 
 aside{
     /*background: silver;*/
