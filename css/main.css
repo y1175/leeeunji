@@ -38,6 +38,10 @@ nav {
     margin: 0px auto;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
 .footer{
     margin-top: 0px;
 }
