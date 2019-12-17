@@ -1,0 +1,37 @@
+
+#result{
+    width: 80%;
+    height: 300px;
+    border: 5px solid red;
+    border-radius: 20px;
+    background-color: white;
+    /*마찬가지 의미 없음 그림만 보여줌*/
+    position: relative;
+    /*버튼 누르면 나타났다가 사라졌다가 하는거 보여줄라고 포지션 이래 잡음 마찬가지로 의미 없음*/
+}
+
+.serc{
+
+    display: none;
+}
+
+#result>h2{
+    text-align: center;
+    margin: 50px;
+    /*걍 잡은거 의미 없음 그림만 보여줄라고*/
+}
+
+#result>ul>li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    top: 20px;
+    left: 150px;
+    /*위치만 살짝 본거 역시 의미 없음*/
+
+}
+
+#result>ul>li>a{
+    text-decoration: none;
+}
