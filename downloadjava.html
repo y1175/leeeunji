@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="css/downloadjava.css">
+
+
+
 
 </head>
 
@@ -55,6 +58,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">사이트</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">질의응답</a>
                     </li>
@@ -77,14 +81,32 @@
 
     <body>
         <div id="wrap">
+    <div id="content">
+              <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">다운로드</a></li>
+    <li class="breadcrumb-item active" aria-current="page">언어</li>
+    <li class="breadcrumb-item active" aria-current="page">JAVA</li>
+  </ol>
+</nav>
+      <nav id="prev_next">
+           <ul>
+                        <li><a class="menuLink" href="#">아직없음 인트로넣을까</a></li>
+                        <li><div id="now"><a class="menuLink" href="#">JAVA</a></div></li>
+                        <li><a class="menuLink" href="#">ORACLE</a></li>
 
-            <img id="java" src="img/Java.jpg" alt="java">
-            <!--<hr>-->
-            <div class="progress">
+                </ul>
+      </nav>
+
+
+            <a href="http://www.naver.com"><img id="java" src="img/Java.jpg" alt="java"></a>
+            <hr>
+            <!--60%상태 진행바 인데 안넣는게 나을까-->
+            <!--<div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                     60%
                 </div>
-            </div>
+            </div>-->
             <aside class="nav-down">
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
@@ -98,30 +120,61 @@
                     </div>
                 </div>
             </aside>
-            <!--   <ul>
-     <li><a href="#install">설치</a></li>
-      <li><a href="#guide">설치가이드</a></li>
-      <li><a href="#api">API</a></li>
 
-   </ul>-->
+
+
 
             <div id="install">
-                <h5><a href="http://www.naver.com">설치</a></h5>
-                <p>Java를 설치해보자. 우선 가장 기본이 되는 Java SE JDK를 설치한다.</p>
+                <h3><a href="http://www.naver.com">설치</a></h3>
+                <pre>
+Java를 설치해보자. 우선 가장 기본이 되는 Java SE JDK를 설치한다.
 
-                <p>자바를 설치하는 방법은 운영체제마다 다르다. 운영체제 별로 자바를 설치하는 방법에 대해서 다른 토픽을 통해서 다루고 있기 때문에</p>
-                <p> 자신의 운영체제에 맞는 자바 설치 방법을 찾아서 설치를 진행하자.</p>
-                <p>다운로드 링크도 넣기</p>
+자바를 설치하는 방법은 운영체제마다 다르다. 운영체제 별로 자바를 설치하는 방법에 대해서
+다른 토픽을 통해서 다루고 있기 때문에 자신의 운영체제에 맞는 자바 설치 방법을 찾아서 설치를 진행하자.
+
+-버전
+Java 의 버전은 역사적인 이유로 복잡하다. 현재 2013년 12월 기준으로 Java의 정식 명칭은 'Java SE 7'이다.
+ 하지만 이것을 JDK 1.7이라고도 하고, JDK 7이라고도 하므로 혼란이 있다.
+  자바의 역사에 대해서는 Java version history를 참고한다.
+
+-JDK의 분류
+자바의 개발환경인 JDK에는 3가지가 있다. 이 중에 가장 중요한 JDK는 Java SE다.
+ Java SE는 Java EE나 Java ME의 기반 환경이기도 하므로 무엇을 하든 간에 Java SE를 JDK를 설치해야 한다. 우리 수업은 Java SE를 다룬다.
+
+Java SE (Standard Edition)
+자바의 핵심으로 일반적으로 자바라고 하면 Java SE를 의미한다. 우리 수업은 Java SE에 대한 수업이다.
+Java EE (Enterprise Edition)
+기업용 시장에서 사용하는 자바 개발환경
+Jave Me (Micro Edition)
+모바일 개발을 위해서 사용하는 자바 버전
+
+                </pre>
             </div>
             <hr>
             <div id="guide">
-                <h5><a href="">설치가이드</a></h5>
+                <h3><a href="">설치가이드</a></h3>
+                  <p align="middle">
+                   <iframe width="100%" height="480"
+
+src="https://www.youtube.com/embed/r5xvtN8DC9A"
+
+frameborder="0" allow="autoplay; encrypted-media"
+
+                           allowfullscreen></iframe></p>
+                    <pre>
+
+
+                </pre>
 
             </div>
             <hr>
             <div id="api">
-                <h5><a href="">API</a></h5>
+                <h3><a href="">API</a></h3>
+                <pre>
 
+
+                </pre>
+            </div>
             </div>
 
         </div>
@@ -159,10 +212,14 @@
         <iframe class="embed-responsive-item" src="..."></iframe>
     </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">

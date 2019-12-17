@@ -1,0 +1,103 @@
+/*
+#now{background-color: black !imortant;}*/
+
+#prev_next{
+height: 100px;
+    widows: 300px;
+}
+h3 a{
+    font-size:20px;
+    font-weight: bold;
+   /* text-decoration: none;*/
+    text-decoration-color: black;
+
+
+}
+
+                #prev_next ul li {
+                        list-style: none;
+                        color: white;
+                        background-color: silver;
+                        float: left;
+                        line-height: 30px;
+                        vertical-align: middle;
+                        text-align: center;
+
+                    margin: 5px 120px;
+                        /*padding-right: 200px;*/
+                }
+
+                #prev_next .menuLink {
+                        text-decoration:none;
+                        color: white;
+                        display: block;
+                        width: 150px;
+                        font-size: 12px;
+                        font-weight: bold;
+
+                }
+                #prev_next .menuLink:hover {
+
+                        background-color: #4d4d4d;
+                }
+
+
+hr{border:10px solid black;}
+
+#content{
+    border: 1px solid silver;
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/*iframe{margin: 0px auto;}*/
+
+
+
+        #java{
+            width: 400px;
+            height: 300px;
+            /*position:relative;
+            left:200px;*/
+            display: block;
+            margin:0px auto;
+
+        }
+#java:hover{
+
+     opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.btn-group{
+    border:1px solid silver;
+    width: 400px;
+    background-color: silver;
+ /*   color:black;*/
+    text-decoration-color: black;
+    text-align: center;
+}
+.btn-group:hover{
+    background-color: lightslategrey;
+}
+
+        a:hover{/*color:black;*/
+           text-decoration: none;
+/*background-color:black;*/}
+
+aside{
+    /*background: silver;*/
+    height: 40px;
+    position: fixed;
+    left:50%;
+    top: 30;
+    transition: top 0.2s ease-in-out;
+    /*width: 300px;*/
+    /*color:white;*/
+}
+.progress-bar{background-color: black;}
+
+.nav-up {
+    top: -40px;
+}
