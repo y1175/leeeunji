@@ -82,7 +82,10 @@ a.btn{
     height: 400px !important;
 }
 
-<<<<<<< HEAD
-=======
+.modal-content{
+    left: -100px;
+}
 
->>>>>>> origin/master
+#img1{
+    position: absolute; z-index: -1;
+}
