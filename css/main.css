@@ -1,8 +1,24 @@
+
+
+
 *{
     padding: 0px; margin: 0px;
 }
+
+@font-face {
+
+    font-family: 'BMHANNA_11yrs';
+
+    src: url('../font/BMHANNA_11yrs.woff') format('woff');
+}
+
+
 body{
     background-color: white !important;
+}
+
+h1{
+    font-family: 'BMHANNA_11yrs';
 }
 
 dl{
@@ -32,7 +48,7 @@ nav {
 
 
 h1{
-    font-size: 4em !important; font-weight: bolder !important;
+    font-size: 6em !important; font-weight: bolder !important;
 }
 
 h2{

@@ -1,0 +1,16 @@
+div.position-right{
+    float:right;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+
+div.tagselected{
+
+
+   background: linear-gradient(to bottom, #33ccff 0%, #6666ff 100%);
+
+
+
+
+}
