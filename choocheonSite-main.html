@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/choocheonSite-main.css">
     <title>점프 투 코딩</title>
   </head>
   <body>
@@ -110,7 +111,6 @@
             </div>
         </header>
 
-        <!-- Button to trigger modal -->
  <section>
   <div class="container">
     <!--경로-->
@@ -128,27 +128,67 @@
     <div class="container">
 <div class="row">
    <div class="col">
+
     <nav class="navbar navbar-light bg-light">
   <form class="form-inline">
+
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
   </form>
-</nav>
-      <!--태그목록-->
+ </nav>
+
    </div>
+    <!--태그목록-->
+    </div>
    <div class="row">
    <div class="col">
     <p class="h5">태그 목록 : </p>
 
-    <span class="badge badge-primary">코딩정보</span>
-     <span class="badge badge-primary">코딩강의</span>
-     <span class="badge badge-primary">코딩문제</span>
-     <span class="badge badge-primary">블로그</span>
-     <span class="badge badge-primary">해외</span>
-     <span class="badge badge-primary">국내</span>
+    <span class="badge badge-primary" id="tag-codinginfo">코딩정보</span>
+     <span class="badge badge-primary" id="tag-codinglect">코딩강의</span>
+     <span class="badge badge-primary" id="tag-codingquiz">코딩문제</span>
+     <span class="badge badge-primary" id="tag-blog">블로그</span>
+     <span class="badge badge-primary" id="tag-abroad">해외</span>
+     <span class="badge badge-primary" id="tag-korea">국내</span>
 </div>
+
+
+
+     <!--사이트 추천 작성하는 폼-->
+  <!-- Button trigger modal -->
+  <div class="position-right">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#to_site_choocheon_form">
+ <p>추천 사이트 제보하기</p>
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="to_site_choocheon_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">apply</button>
+      </div>
     </div>
+  </div>
+</div>
+
+
+
+
     </div>
+
     </div>
 
 
@@ -167,13 +207,18 @@
     <div class="col-12">
 
      <!--카드 공간은 한줄에 두칸. 여기부터 시작-->
+
       <div class="row">
   <div class="col-sm-6">
 
 
    <!--카드 하나에 사이트 하나가 들어감-->
+
     <div class="card">
+
+     <div class="tag-codinglect">    <!--tag-->
       <div class="card-body">
+
         <h5 class="card-title">생활코딩</h5>
         <div class="container">
   <div class="row">
@@ -183,15 +228,81 @@
     <div class="col">
      <p>일반인들에게 프로그래밍을 알려주는 무료 온라인, 오프라인 수업사이트입니다.</p>
      <a href="choocheonSite-sub1.html">→자세히</a>
+
+           <!-- Button trigger modal -->
+<!--모달 연결하는 법:  data-target부분과 Modal id를 일치시킨다(보면 알것임)-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal1">
+  자세히
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">생활코딩</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+             <div class="container-fluid">
+  <div class="row-fluid">
+   <div class="col">
+    <p>태그 :
+             <span class="badge badge-primary">코딩강의</span>
+     </p>
+
+    </div>
+       </div>
+        </div>
+
+              <div class="container">
+        <div class="row">
+        <div class="col">
+        <a href="https://opentutorials.org/" target="_blank"><img src="img/img.choocheonSite/senghwal1.png" class="img-thumbnail" alt="logo"></a>
+
+
+            </div>
+            <!--text파트-->
+            <div class="col">
+            <p>생활코딩은 일반인들에게 프로그래밍을 알려주는 무료 온라인, 오프라인 수업 사이트입니다.</p>
+            <p><a href="https://opentutorials.org/" target="_blank">→사이트로 이동</a></p>
+            <p>주요 언어 : </p>
+           <p>#Java #html #css #JavaScript #PHP #DATABASE  #Oracle #SQL #jQuery</p>
+
+
+           </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal end-->
+
+
+
+
      <br>
-     <span class="badge badge-primary">코딩정보</span>
+
      <span class="badge badge-primary">코딩강의</span>
     </div>
   </div>
           </div>
         <a href="https://opentutorials.org/" target="_blank" class="btn btn-dark">사이트로 이동</a>
-      </div>
+
+
+
+        </div>
     </div>
+      </div>
+
     <!--카드 하나 끝-->
 
 
@@ -199,6 +310,7 @@
   <div class="col-sm-6">
 
      <div class="card">
+     <div class="tag-codinginfo tag-abroad">
       <div class="card-body">
         <h5 class="card-title">W3Schools</h5>
         <div class="container">
@@ -208,16 +320,76 @@
     </div>
     <div class="col">
      <p>W3스쿨즈(w3schools.com)는 온라인으로 웹 기술을 배우는 교육용 웹 사이트입니다.</p>
-      <a href="choocheonSite-sub1.html">→자세히</a>
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal2">
+  자세히
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">W3schools</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+             <div class="container-fluid">
+  <div class="row-fluid">
+   <div class="col">
+    <p>태그 : <span class="badge badge-primary">코딩정보</span>
+     <span class="badge badge-primary">해외</span>
+     </p>
+
+    </div>
+       </div>
+        </div>
+
+              <div class="container">
+        <div class="row">
+        <div class="col">
+        <a href="https://www.w3schools.com/" target="_blank"><img src="img/img.choocheonSite/w3schools_logo.png" class="img-thumbnail" alt="logo"></a>
+
+
+            </div>
+            <!--text파트-->
+            <div class="col">
+            <p>W3스쿨즈(w3schools.com)는 온라인으로 웹 기술을 배우는 교육용 웹 사이트입니다.</p>
+            <p><a href="https://www.w3schools.com/" target="_blank">→사이트로 이동</a></p>
+            <p>주요 언어 : </p>
+           <p>#Java #html #css #JavaScript #PHP #DATABASE  #Oracle #SQL #jQuery</p>
+
+
+           </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal end-->
+
+
       <br>
      <span class="badge badge-primary">코딩정보</span>
      <span class="badge badge-primary">해외</span>
     </div>
   </div>
           </div>
-        <a href="#" class="btn btn-dark">사이트로 이동</a>
+        <a href="https://www.w3schools.com/" target="_blank" class="btn btn-dark">사이트로 이동</a>
       </div>
     </div>
+</div>
+  <!--두번째카드 끝-->
 
 
   </div>
@@ -230,6 +402,7 @@
 
 
            <div class="card">
+           <div class="tag-codinginfo tag-korea">
       <div class="card-body">
         <h5 class="card-title">devkuma</h5>
         <div class="container">
@@ -238,8 +411,68 @@
       <img src="img/img.choocheonSite/devkuma.jpg" alt="logo" class="img-thumbnail">
     </div>
     <div class="col">
-     <p>개발 지식 공유 프로젝트, 데브쿠마는 프로그래밍 개발에 대한 지식 공유를 목표로 하고 있습니다.</p>
+     <p>데브쿠마는 프로그래밍 개발에 대한 지식 공유를 목표로 하고 있습니다.</p>
       <a href="choocheonSite-sub1.html">→자세히</a>
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal3">
+  자세히
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">W3schools</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+             <div class="container-fluid">
+  <div class="row-fluid">
+   <div class="col">
+    <p>태그 :      <span class="badge badge-primary">코딩정보</span>
+     <span class="badge badge-primary">국내</span>
+     </p>
+
+    </div>
+       </div>
+        </div>
+
+              <div class="container">
+        <div class="row">
+        <div class="col">
+        <a href="http://devkuma.com/" target="_blank"><img src="img/img.choocheonSite/devkuma.jpg" class="img-thumbnail" alt="logo"></a>
+
+
+            </div>
+            <!--text파트-->
+            <div class="col">
+            <p>개발 지식 공유 프로젝트, 데브쿠마는 프로그래밍 개발에 대한 지식 공유를 목표로 하고 있습니다.</p>
+            <p><a href="http://devkuma.com/" target="_blank">→사이트로 이동</a></p>
+            <p>주요 언어 : </p>
+           <p>#Java #html #css #JavaScript #PHP #DATABASE  #Oracle #SQL #jQuery</p>
+
+
+           </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal end-->
+
+
+
+
       <br>
      <span class="badge badge-primary">코딩정보</span>
      <span class="badge badge-primary">국내</span>
@@ -249,12 +482,14 @@
         <a href="#" class="btn btn-dark">사이트로 이동</a>
       </div>
     </div>
-
+</div>
+  <!--3번째 카드 끝-->
 
   </div>
   <div class="col-sm-6">
 
     <div class="card">
+     <div class="tag-codingquiz tag-korea">
       <div class="card-body">
         <h5 class="card-title">Baekjoon OJ</h5>
         <div class="container">
@@ -265,17 +500,80 @@
     <div class="col">
      <p>최백준씨(ID: baekjoon)에 의해 개설된 알고리즘 트레이닝 사이트입니다.</p>
       <a href="choocheonSite-sub1.html">→자세히</a>
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal4">
+  자세히
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Baekjoon OJ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+             <div class="container-fluid">
+  <div class="row-fluid">
+   <div class="col">
+    <p>태그 :      <span class="badge badge-primary">코딩문제</span>
+                  <span class="badge badge-primary">국내</span>
+     </p>
+
+    </div>
+       </div>
+        </div>
+
+              <div class="container">
+        <div class="row">
+        <div class="col">
+        <a href="https://www.acmicpc.net/" target="_blank"><img src="img/img.choocheonSite/baekjoon.png" class="img-thumbnail" alt="logo"></a>
+
+
+            </div>
+            <!--text파트-->
+            <div class="col">
+            <p>baekjoon OJ는 최백준씨(ID: baekjoon)에 의해 개설된 알고리즘 트레이닝 사이트입니다.</p>
+            <p><a href="https://www.acmicpc.net/" target="_blank">→사이트로 이동</a></p>
+            <p>주요 언어 : </p>
+           <p>#Java #html #css #JavaScript #PHP #DATABASE  #Oracle #SQL #jQuery</p>
+
+
+           </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal end-->
+
+
+
       <br>
      <span class="badge badge-primary">코딩문제</span>
      <span class="badge badge-primary">국내</span>
     </div>
   </div>
           </div>
-        <a href="#" class="btn btn-dark">사이트로 이동</a>
+        <a href="https://www.acmicpc.net/" class="btn btn-dark" target="_blank">사이트로 이동</a>
       </div>
     </div>
-
   </div>
+<!--4번째 카드 끝-->
+
+
+
 </div>
 
 
@@ -283,13 +581,37 @@
 
 
 
+</div>
+    <!--2번째 row 끝-->
 
       </div>
   </div>
+
+  <!--사이트내용끝-->
+
+
+
+
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
+
+
 
 
     </section>
+
 
    <footer class="footer" style="background-color: antiquewhite">
         <div class="container-fluid" >
