@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼 누르면 나옴</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+<style>
+
+  #page-wrapper {
+    padding-left: 250px;
+  }
+  
+  #sidebar-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    background-color: rgb(0, 0, 0,0.7);
+    overflow: auto;
+    left: 0px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  /* 사이드바 스타일 */
+  
+  .sidebar-nav {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 1.5em;
+    line-height: 2.8em;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+    h3{
+        margin: 10px;
+        padding: 30px 5px;
+    }
+    
+   li>ul{
+        display: none;
+    }
+    
+    #line {
+        width: 200px;
+        position: relative;
+        left: 20px;
+        top: -15px;
+        height: 1px;
+        background-color: white;    
+    }
+    
+    
+</style>
+   <script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+
+   <script>
+    
+       $(document).ready(function(){
+          $('li').on('click',function(){
+              let ch = $(this).children('ul');
+              $(ch).toggle();
+          });
+           
+          $('#btn').on('click', function (event) {
+           event.stopPropagation();
+        $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+            //$('#sidebar-wrapper').show(400);
+            $('#sidebar-wrapper').animate({left: '250px'}, 500);
+        } else {
+            //$('#sidebar-wrapper').animate({left: '70px'}, 300);
+            // 이걸 바로 잡으면 옆으로 샥 펼쳐짐 근데 왜 안되냐고
+            //$('#sidebar-wrapper').hide(s400);
+             $('#sidebar-wrapper').animate({left: '0px'}, 500);
+        };
+
+       
+       });
+       });
+       
+    </script>
+   
+   
+    </head>
+<body>
+
+<div id="page-wrapper">
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#"><h3>점프 투 코딩</h3></a>
+        <div id="line"></div>
+      </li>
+      <li><a href="#">홈</a></li>
+      <li><a href="#" id="m1">언어소개</a>
+      <ul>
+      <li><a href="#">INTRO</a></li>
+      <li><a href="#">HTML & CSS</a></li>
+      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
+      <li><a href="#">JAVA</a></li>
+      <li><a href="#">ORACLE</a></li>
+      </ul>
+      </li>
+      
+      <li><a href="#">언어강좌</a>
+      <ul>
+      <li><a href="#">INTRO</a></li>
+      <li><a href="#">HTML & CSS</a></li>
+      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
+      <li><a href="#">JAVA</a></li>
+      <li><a href="#">ORACLE</a></li>
+      <li><a href="#">기타</a></li>
+      </ul>
+      </li>
+      <li><a href="#">다운로드</a>
+      <ul>
+          <li><a href="#">언어</a></li>
+          <li><a href="#">개발 툴</a></li>
+      </ul>
+        </li>
+      <li><a href="#">사이트 추천</a></li>
+      <li><a href="#">질의응답</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
+  <button id="btn"> 버튼 </button>
+  
+</div>
+</body>
+</html>
