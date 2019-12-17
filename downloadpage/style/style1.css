@@ -1,6 +1,11 @@
 <style>
 hr{border:10px solid black;}
 
+#content{
+    border: 1px solid silver;
+    width: 80%;
+    margin: 0px auto;
+}
 
 
        /* div{
