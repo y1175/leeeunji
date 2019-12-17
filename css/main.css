@@ -18,7 +18,7 @@ dl, nav{
 }
 
 .slider-wrapper, .theme-default{
-    margin: 0px !important;
+    margin-top: 0px !important;
 }
 
 
@@ -35,9 +35,16 @@ a.btn{
 }
 
 .jumbotron{
-    margin-bottom: 0px !important;
+    margin-top: 40px !important; margin-bottom: 0px !important; padding: 0px;
 }
 
+.jumbotron img{
+    height: 100.5% !important;
+}
+
+.jumbotron .col-5:nth-child(1){
+    padding: 70px;
+}
 .card img{
     padding: 0px; height: 270px;
 }
@@ -46,6 +53,8 @@ a.btn{
      color: black;
 }
 
-#slider{
-    height: 400px;
+.slider-wrapper, .nivo-main-image{
+    height: 400px !important;
 }
+
+
