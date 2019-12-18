@@ -1,6 +1,18 @@
+@font-face {
+
+    font-family: 'BMHANNA_11yrs';
+
+
+    src: url('../font/BMHANNA_11yrs.woff') format('woff');
+
+}
+
+
+
 img{
     max-width: 100%;
-    max-height:100%;
+    max-height: 100%;
+
 }
 
 div.position-right{
@@ -8,6 +20,9 @@ div.position-right{
     display:inline-block;
     margin-bottom: 10px;
 }
+
+
+
 
 
 div.tagselected{
@@ -20,11 +35,37 @@ div.tagselected{
 
 }
 
+h3 {
+    text-align: center;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 4em;
+}
+
+.card-title{
+    font-family: 'BMHANNA_11yrs';
+    font-size:3em;
+}
+
+p{
+    font-family: 'BMHANNAAir';
+}
+.btn{
+    font-family : 'BMHANNAAir';
+}
+
+.go-site{
+    display:inline-block;
+    margin-left:60%;
+}
+
 @media (max-width: 720px) {
     .desktopbtn{ display: none; } }
 @media (min-width: 719px) {
     .mobilebtn{ display: none; } }
 
 
+.img-thumbnail:hover{
+    opacity: 0.4;
+}
 
 

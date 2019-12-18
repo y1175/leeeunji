@@ -13,6 +13,13 @@
     src: url('../font/BMHANNA_11yrs.woff') format('woff');
 }
 
+@font-face {
+
+    font-family: 'BMHANNAAir';
+
+    src: url('../font/BMHANNAAir.woff') format('woff');
+}
+
 
 body{
     background-color: white !important;
