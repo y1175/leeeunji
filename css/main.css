@@ -85,7 +85,3 @@ a.btn{
 .modal-content{
     left: -100px;
 }
-
-#img1{
-    position: absolute; z-index: -1;
-}
