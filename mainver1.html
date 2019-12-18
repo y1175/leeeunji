@@ -18,72 +18,73 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
+    <div class="container-fluid" id="rap">
+        <header>
+
             <div class="row" style="margin-bottom: 20px">
-                <div class="col-sm">aaa</div>
+                <div class="col-sm">
+</div>
                 <div class="col-sm">bbb</div>
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
+
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto" style="margin: 0px auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">언어소개</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item" href="#">java</a>
+                                <a class="dropdown-item" href="#">oracle</a>
+                                <a class="dropdown-item" href="#">html</a>
+                                <a class="dropdown-item" href="#">...</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다운로드</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                <a class="dropdown-item" href="#">java</a>
+                                <a class="dropdown-item" href="#">oracle</a>
+                                <a class="dropdown-item" href="#">html</a>
+                                <a class="dropdown-item" href="#">...</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">사이트</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">질의응답</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="slider-wrapper theme-default" style="min-width:100%">
+
+            <div id="slider" class="nivoSlider Height 100%" style="min-width: 100%"> <img src="img/toystory.jpg" data-thumb="img/toystory.jpg" alt="" class="h-auto" /> <a href="http://dev7studios.com"><img src="img/up.jpg" data-thumb="img/up.jpg" alt="" title="This is an example of a caption" class="h-auto" /></a> <img src="img/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" class="h-auto" /> <img src="img/nemo.jpg" data-thumb="img/nemo.jpg" alt="" title="#htmlcaption" class="h-auto" /> </div>
+            <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto" style="margin: 0px auto">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">언어소개</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">java</a>
-                            <a class="dropdown-item" href="#">oracle</a>
-                            <a class="dropdown-item" href="#">html</a>
-                            <a class="dropdown-item" href="#">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다운로드</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="#">java</a>
-                            <a class="dropdown-item" href="#">oracle</a>
-                            <a class="dropdown-item" href="#">html</a>
-                            <a class="dropdown-item" href="#">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">사이트</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">질의응답</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-
-    <div class="slider-wrapper theme-default" style="min-width: 82%">
-
-        <div id="slider" class="nivoSlider Height 100%" style="min-width: 100%"> <img src="img/toystory.jpg" data-thumb="img/toystory.jpg" alt="" class="h-auto" /> <a href="http://dev7studios.com"><img src="img/up.jpg" data-thumb="img/up.jpg" alt="" title="This is an example of a caption" class="h-auto" /></a> <img src="img/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" class="h-auto" /> <img src="img/nemo.jpg" data-thumb="img/nemo.jpg" alt="" title="#htmlcaption" class="h-auto" /> </div>
-        <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
-    </div>
 
 
 
 
-    <div class="container-fluid">
 
         <div class="row justify-content-center">
-            <div class="col-10">
+            <div class="col-12">
                 <h2>최신 소식</h2>
                 <div class="card-deck">
                     <div class="card">
@@ -121,13 +122,7 @@
             </div>
         </div>
 
-    </div>
-
-
-
-
-    <div class="jumbotron" style="margin-top:20px; border-bottom: 2px solid #e6e6e6">
-        <div class="container-fluid">
+        <div class="jumbotron" style="margin-top:20px; border-bottom: 2px solid #e6e6e6">
             <div class="row justify-content-center">
                 <div class="col-5">
                     <h2 class="display-4">언어! 어떤 것 부터 시작해야 할까요?</h2>
@@ -141,165 +136,149 @@
                 <div class="col-5">
                     <!--<img src="img/start.PNG" class="img-fluid" data-toggle="modal" data-target="#exampleModal" alt="Responsive image" style="width: 100%">-->
                     <img src="img/coding.PNG" class="img-fluid" data-toggle="modal" data-target="#exampleModal" alt="Responsive image" style="width: 100%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <iframe width="720" height="480" src="https://www.youtube.com/embed/g-JsWsWVSV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-
-            <div class="col-10">
-               <h2>추천 영상</h2>
-               </div>
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center">
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <iframe width="720" height="480" src="https://www.youtube.com/embed/g-JsWsWVSV0" allowfullscreen></iframe>
                             </div>
-
                         </div>
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row justify-content-center">
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <img src="img/coding.PNG" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
-
+            </div>
         </div>
+
+
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </div>
+        <div class="col-10">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <h2>추천 영상</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4">
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/sara_jane_dunn_the_next_software_revolution_programming_biological_cells" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!--<h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/michael_s_a_graziano_how_close_are_we_to_uploading_our_minds" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
+                                <!--<img src="img/coding.PNG" class="d-block w-100" alt="...">-->
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/janelle_shane_the_danger_of_ai_is_weirder_than_you_think" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/emmett_shear_what_streaming_means_for_the_future_of_entertainment" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/glenn_cantave_how_augmented_reality_is_changing_activism" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/ivan_poupyrev_everything_around_you_can_become_a_computer" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/rosalind_picard_an_ai_smartwatch_that_detects_seizures" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/dina_zielinski_how_we_can_store_digital_data_in_dna" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a></div>
+    </div>
+
     <!--<svg class="bi bi-play" width="5em" height="5em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M12.804 10L7 6.633v6.734L12.804 10zm.792-.696a.802.802 0 010 1.392l-6.363 3.692C6.713 14.69 6 14.345 6 13.692V6.308c0-.653.713-.998 1.233-.696l6.363 3.692z" clip-rule="evenodd"/>
 </svg>-->
 
 
     <footer class="footer" style="background-color:antiquewhite">
-        <div class="container-fluid">
-            <dl class="row">
-                <dt class="col-sm-3">주소 : </dt>
-                <dd class="col-sm-9">서울시 서초구 강남대로 459 백암빌딩</dd>
+        <dl class="row">
+            <dt class="col-sm-3">주소 : </dt>
+            <dd class="col-sm-9">서울시 서초구 강남대로 459 백암빌딩</dd>
 
-                <dt class="col-sm-3">점프투코딩 : </dt>
-                <dd class="col-sm-9">김진영,안은별,박진우,김현진,이은지,정용인</dd>
+            <dt class="col-sm-3">점프투코딩 : </dt>
+            <dd class="col-sm-9">김진영,안은별,박진우,김현진,이은지,정용인</dd>
 
-                <dt class="col-sm-3">문의 : </dt>
-                <dd class="col-sm-9">02-3486-9600</dd>
+            <dt class="col-sm-3">문의 : </dt>
+            <dd class="col-sm-9">02-3486-9600</dd>
 
-                <dt class="col-sm-3">팩스 : </dt>
-                <dd class="col-sm-9">02-6007-1245</dd>
+            <dt class="col-sm-3">팩스 : </dt>
+            <dd class="col-sm-9">02-6007-1245</dd>
 
-                <dt class="col-sm-9">Copyright (c)점프투코딩 All Rights Reserved</dt>
-            </dl>
-        </div>
+            <dt class="col-sm-9">Copyright (c)점프투코딩 All Rights Reserved</dt>
+            <dd></dd>
+        </dl>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/js.bootstrap.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
-
     </script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -313,9 +292,30 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
-        })();
+        });
+
+
+
+
+
+          $('li').on('click',function(){
+              let ch = $(this).children('ul');
+              $(ch).toggle();
+          });
+
+          $('#btn').on('click', function (event) {
+           event.stopPropagation();
+        $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+            //$('#sidebar-wrapper').show(400);
+            $('#sidebar-wrapper').animate({left: '250px'}, 500);
+        } else {
+            //$('#sidebar-wrapper').animate({left: '70px'}, 300);
+            //$('#sidebar-wrapper').hide(s400);
+             $('#sidebar-wrapper').animate({left: '0px'}, 500);
+        };
+       });
+
 
     </script>
-</body>
-
-</html>
+</body></html>

@@ -23,48 +23,98 @@
 
             <div class="row" style="margin-bottom: 20px">
                 <div class="col-sm">
-<div id="page-wrapper">
-  <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a href="#"><h3>점프 투 코딩</h3></a>
-        <div id="line"></div>
-      </li>
-      <li><a href="#">홈</a></li>
-      <li><a href="#" id="m1">언어소개</a>
-      <ul>
-      <li><a href="#">INTRO</a></li>
-      <li><a href="#">HTML & CSS</a></li>
-      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
-      <li><a href="#">JAVA</a></li>
-      <li><a href="#">ORACLE</a></li>
-      </ul>
-      </li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Launch demo modal
+                    </button>
 
-      <li><a href="#">언어강좌</a>
-      <ul>
-      <li><a href="#">INTRO</a></li>
-      <li><a href="#">HTML & CSS</a></li>
-      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
-      <li><a href="#">JAVA</a></li>
-      <li><a href="#">ORACLE</a></li>
-      <li><a href="#">기타</a></li>
-      </ul>
-      </li>
-      <li><a href="#">다운로드</a>
-      <ul>
-          <li><a href="#">언어</a></li>
-          <li><a href="#">개발 툴</a></li>
-      </ul>
-        </li>
-      <li><a href="#">사이트 추천</a></li>
-      <li><a href="#">질의응답</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </div>
-  <button id="btn"> 버튼 </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div id="sid1" class="modal-dialog modal-dialog-centered" role="document" style="position:absolute">
+                            <div class="modal-content">
+                                <div class="list">
 
-</div></div>
+                                    <ul class="sidebar-nav">
+                                        <li class="sidebar-brand">
+                                            <a href="#">
+                                                <h3>점프 투 코딩</h3>
+                                            </a>
+                                            <div id="line"></div>
+                                        </li>
+                                        <li><a href="#">홈</a></li>
+                                        <li><a href="#">언어소개</a>
+                                            <ul>
+                                                <li><a href="#">ㄴ INTRO</a></li>
+                                                <li><a href="#">ㄴ HTML & CSS</a></li>
+                                                <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                                <li><a href="#">ㄴ JAVA</a></li>
+                                                <li><a href="#">ㄴ ORACLE</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">언어강좌</a>
+                                            <ul>
+                                                <li><a href="#">ㄴ INTRO</a></li>
+                                                <li><a href="#">ㄴ HTML & CSS</a></li>
+                                                <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                                <li><a href="#">ㄴ JAVA</a></li>
+                                                <li><a href="#">ㄴ ORACLE</a></li>
+                                                <li><a href="#">ㄴ 기타</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">다운로드</a>
+                                            <ul>
+                                                <li><a href="#">ㄴ 언어</a></li>
+                                                <li><a href="#">ㄴ 개발 툴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">사이트 추천</a></li>
+                                        <li><a href="#">질의응답</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm">bbb</div>
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
@@ -129,7 +179,7 @@
                 <h2>최신 소식</h2>
                 <div class="card-deck">
                     <div class="card">
-                        <a href="http://www.itworld.co.kr/news/138286">
+                        <a href="http://www.itworld.co.kr/news/138286" target="_blank">
                             <img src="http://www.itworld.co.kr/files/itworld/2019/12/laptop-with-colorful-speech-bubbles_balloons_alerts-from-emai_collaboration-tools_notification_by-oleksandr-hruts-getty-100813264-large.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">“정보 과부하?” 팀 협업 앱을 길들이는 5가지 요령</h5>
@@ -140,7 +190,7 @@
                     </div>
 
                     <div class="card">
-                        <a href="http://www.itworld.co.kr/insight/139282">
+                        <a href="http://www.itworld.co.kr/insight/139282" target="_blank">
                             <img src="http://www.itworld.co.kr/files/ciokr/2019/12/GettyImages-483766463.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">쿠키 없는 세상에서 데이터의 미래는?</h5>
@@ -150,7 +200,7 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a href="http://www.itworld.co.kr/insight/138124#csidx221d3e568307cf3abe0a9e5a7b28bcf">
+                        <a href="http://www.itworld.co.kr/insight/138124#csidx221d3e568307cf3abe0a9e5a7b28bcf" target="_blank">
                             <img src="http://www.itworld.co.kr/files/itworld/2019/12/GettyImages-1169138648.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">번역으로 유출되는 데이터와 기업의 대응 전략</h5>
@@ -176,8 +226,8 @@
                 </div>
                 <div class="col-5">
                     <!--<img src="img/start.PNG" class="img-fluid" data-toggle="modal" data-target="#exampleModal" alt="Responsive image" style="width: 100%">-->
-                    <img src="img/coding.PNG" class="img-fluid" data-toggle="modal" data-target="#exampleModal" alt="Responsive image" style="width: 100%">
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <img src="img/coding.PNG" class="img-fluid" data-toggle="modal" data-target="#exampleModal2" alt="Responsive image" style="width: 100%">
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <iframe width="720" height="480" src="https://www.youtube.com/embed/g-JsWsWVSV0" allowfullscreen></iframe>
@@ -240,18 +290,24 @@
                     <div class="carousel-item">
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
 
                             </div>
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/emmett_shear_what_streaming_means_for_the_future_of_entertainment" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/emmett_shear_what_streaming_means_for_the_future_of_entertainment" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/glenn_cantave_how_augmented_reality_is_changing_activism" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/glenn_cantave_how_augmented_reality_is_changing_activism" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
@@ -261,18 +317,24 @@
                     <div class="carousel-item">
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/ivan_poupyrev_everything_around_you_can_become_a_computer" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/ivan_poupyrev_everything_around_you_can_become_a_computer" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
 
                             </div>
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/rosalind_picard_an_ai_smartwatch_that_detects_seizures" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/rosalind_picard_an_ai_smartwatch_that_detects_seizures" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/dina_zielinski_how_we_can_store_digital_data_in_dna" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div></div>
+                                <div style="max-width:854px">
+                                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/dina_zielinski_how_we_can_store_digital_data_in_dna" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
+                                </div>
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
@@ -313,13 +375,14 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/js.bootsrrap.js"></script>
+    <script src="js/js.bootstrap.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
+
     </script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -336,27 +399,14 @@
         });
 
 
+        $('li').on('click', function() {
+            let ch = $(this).children('ul');
+            $(ch).toggle();
+        });
 
-
-
-          $('li').on('click',function(){
-              let ch = $(this).children('ul');
-              $(ch).toggle();
-          });
-
-          $('#btn').on('click', function (event) {
-           event.stopPropagation();
-        $(this).toggleClass('open');
-        if ($(this).hasClass('open')) {
-            //$('#sidebar-wrapper').show(400);
-            $('#sidebar-wrapper').animate({left: '250px'}, 500);
-        } else {
-            //$('#sidebar-wrapper').animate({left: '70px'}, 300);
-            //$('#sidebar-wrapper').hide(s400);
-             $('#sidebar-wrapper').animate({left: '0px'}, 500);
-        };
-       });
 
 
     </script>
-</body></html>
+</body>
+
+</html>
