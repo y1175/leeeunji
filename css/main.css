@@ -28,7 +28,7 @@ dl{
 .navbar{
     background-color:white !important;
     font-size: 15px !important;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid orange;
     margin-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@ a.btn{
 }
 
 .jumbotron{
-    margin-top: 40px !important; margin-bottom: 0px !important; padding: 0px;
+    margin-top: 50px !important; margin-bottom: 0px !important; padding: 0px;
 }
 
 .jumbotron img{
@@ -82,10 +82,30 @@ a.btn{
      color: black;
 }
 
-.slider-wrapper, .nivo-main-image{
-    height: 400px !important;
+.slider-wrapper, .nivo-main-image, #slider img{
+    height: 350px !important;
 }
 
 .modal-content{
     left: -100px;
+}
+
+#carouselExampleCaptions{
+    margin: 50px auto;
+}
+
+#carouselExampleCaptions img{
+    border-bottom: 3px solid rgb(232,232,232);
+}
+
+#rap{
+    padding: 0px 10%;
+}
+
+.carousel-control-prev{
+    left: -15%; top:-100px; position: relative; background-color: red;  background-size: 1rem 1rem;
+
+}
+.carousel-control-next{
+    top: -110px; left:100%; position: relative; background-color: red;
 }
