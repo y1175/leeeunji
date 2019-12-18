@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>질의응답</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/qa.css">
 
@@ -65,52 +66,158 @@
             </div>
         </nav>
     </header>
-    <h3>질의응답</h3>
+    <br>
+    <br>
+    <h3>자주하는 질문</h3>
+    <br>
+    <br>
+
+    <div class="container ">
+        <div class="panel-group" id="faqAccordion">
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 새로운 사이트를 추천하고 싶어요!</a>
+                    </h4>
+                </div>
+                <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답변</span></h5>
+                        <p>
+                            답변내용
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 추천 사이트가 사라지거나 변했어요. 추천할 만한 사이트가 아니라고 생각해요.</a>
+                    </h4>
+
+                </div>
+                <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답변</span></h5>
+
+                        <p>답변내용</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 질문질문</a>
+                    </h4>
+
+                </div>
+                <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답변</span></h5>
+
+                        <p>질문지룸ㄴ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 질문질문</a>
+                    </h4>
+
+                </div>
+                <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답안</span></h5>
+
+                        <p>블라블라</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 질문질문</a>
+                    </h4>
+
+                </div>
+                <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답안</span></h5>
+
+                        <p>블라블라</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+                    <h4 class="panel-title">
+                        <a href="#" class="ing">Q. 질문질문</a>
+                    </h4>
+
+                </div>
+                <div id="question5" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <h5><span class="label label-primary">답안</span></h5>
+
+                        <p>블라블라</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/panel-group-->
+    </div>
+<br>
+<br>
+  <h3>Q&A</h3>
+   <br>
     <form action="post" class="frm">
-            <ul id="qa">
-                <li>
-    <label for="subject">제목</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </li>
-                <li>
-    <label for="subject">이메일</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </li>
-                <li>
-                     <div class="form-group">
-    <label for="exampleFormControlTextarea1">내용</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
-  </div>
-                </li>
-                <li id="bt">
+        <ul id="qa">
+            <li>
+                <label for="subject">제목</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </li>
+            <li>
+                <label for="subject">이메일</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">내용</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+                </div>
+            </li>
+            <div id="bt">
                 <input type="button" class="btn btn-secondary" id="reset" value="reset">
                 <!-- Button trigger modal -->
                 <input type="button" class="btn btn-primary" id="send" data-toggle="modal" data-target="#exampleModal" value="send">
-                </li>
+            </div>
+                    </ul>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin: 0px auto">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">등록하시겠습니까?</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                확인 후 답변 드리겠습니다.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">아니요</button>
-                                <input type="reset" class="btn btn-primary" data-dismiss="modal" value="네">
-                            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin: 0px auto">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">등록하시겠습니까?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            확인 후 답변 드리겠습니다.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">아니요</button>
+                            <input type="reset" class="btn btn-primary" data-dismiss="modal" value="네">
                         </div>
                     </div>
                 </div>
-            </ul>
+            </div>
     </form>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>

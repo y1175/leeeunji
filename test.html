@@ -10,8 +10,25 @@
 </head>
 <body>
 
+<div id="link">My video</div>
 
-
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="text" id="name" name="name" maxlength="5">
+<input type="button" id="btn" value="전송">
+<br>
+<input type="reset" id="btn" value="전송">
+<!--
 <div id="wrapper">
 <div class="slider-wrapper theme-default">
 <div id="slider" class="nivoSlider"> <img src="img/toystory.jpg" data-thumb="img/toystory.jpg" alt="" /> <a href="http://dev7studios.com"><img src="img/up.jpg" data-thumb="img/up.jpg" alt="" title="This is an example of a caption" /></a> <img src="img/walle.jpg" data-thumb="demo/images/walle.jpg" alt="" data-transition="slideInLeft" /> <img src="img/nemo.jpg" data-thumb="img/nemo.jpg" alt="" title="#htmlcaption" /> </div>
@@ -37,6 +54,21 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+</script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('#link').click(function () {
+        var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+        $('#myModal').modal('show');
+        $('#myModal iframe').attr('src', src);
+    });
+
+    $('#myModal button').click(function () {
+        $('#myModal iframe').removeAttr('src');
+    });
 
 </script>
 </body>

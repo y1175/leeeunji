@@ -3,7 +3,7 @@
     padding: 0px;
     display: block;
     margin: 0px auto;
-    width: 60%;
+    width: 69%;
 }
 
 #qa li {
@@ -21,6 +21,18 @@ h3 {
     font-family: 'BMHANNA_11yrs';
     font-size: 4em;
 }
+
+.container {
+    padding: 0px;
+     width: 80%;
+}
+
+
+#bt{
+    padding-left: 47%;
+}
+
+
 
 
 
