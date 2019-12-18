@@ -1,8 +1,9 @@
-
-
-
 *{
     padding: 0px; margin: 0px;
+}
+
+#rap{
+    padding: 0px 8.5%;
 }
 
 @font-face {
@@ -89,8 +90,8 @@ a.btn{
      color: black;
 }
 
-.slider-wrapper, .nivo-main-image, #slider img{
-    height: 350px !important;
+.slider-wrapper, .nivo-main-image, #slider{
+    height: 350px !important; border-radius: 3px;
 }
 
 .modal-content{
@@ -102,17 +103,20 @@ a.btn{
 }
 
 #carouselExampleCaptions img{
-    border-bottom: 3px solid rgb(232,232,232);
+    border-bottom: 3px solid rgb(232,232,232); border-radius: 5px;
 }
 
-#rap{
-    padding: 0px 10%;
-}
+
 
 .carousel-control-prev{
-    left: -15%; top:-100px; position: relative; background-color: red;  background-size: 1rem 1rem;
+   background-color: black; left : 80%; height: 50px; margin: auto 0px; border-radius: 50px;
 
 }
 .carousel-control-next{
-    top: -110px; left:100%; position: relative; background-color: red;
+    background-color: black; left : 0%; height: 50px; margin: auto 0px; border-radius: 50px;
+}
+
+
+iframe{
+    border-radius: 5px;
 }

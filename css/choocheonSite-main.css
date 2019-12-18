@@ -7,15 +7,6 @@
 
 }
 
-@font-face {
-
-    font-family: 'BMHANNAAir';
-
-
-    src: url('../font/BMHANNAAir.woff') format('woff');
-
-}
-
 
 
 img{
@@ -73,5 +64,8 @@ p{
     .mobilebtn{ display: none; } }
 
 
+.img-thumbnail:hover{
+    opacity: 0.4;
+}
 
 
