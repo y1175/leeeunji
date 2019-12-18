@@ -1,8 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
-
-
-*{
-    padding: 0px; margin: 0px;
+#rap {
+    padding: 0px 8.5%;
 }
 
 @font-face {
@@ -20,20 +22,20 @@
 }
 
 
-body{
+body {
     background-color: white !important;
 }
 
-h1{
+h1 {
     font-family: 'BMHANNA_11yrs';
 }
 
-dl{
+dl {
     margin: 0px !important;
 }
 
-.navbar{
-    background-color:white !important;
+.navbar {
+    background-color: white !important;
     font-size: 15px !important;
     border-bottom: 5px solid orange;
     margin-bottom: 20px;
@@ -49,70 +51,204 @@ nav {
     color: black;
 }
 
-.footer{
+.footer {
     margin-top: 0px;
 }
 
-.slider-wrapper, .theme-default{
+.slider-wrapper,
+.theme-default {
     margin-top: 0px !important;
 }
 
 
-h1{
-    font-size: 6em !important; font-weight: bolder !important;
+h1 {
+    font-size: 6em !important;
+    font-weight: bolder !important;
 }
 
-h2{
-    font-size: 2em !important; font-weight: bolder !important;
+h2 {
+    font-size: 2em !important;
+    font-weight: bolder !important;
 }
 
-a.btn{
+a.btn {
     color: white !important;
 }
 
-.jumbotron{
-    margin-top: 50px !important; margin-bottom: 0px !important; padding: 0px;
+.jumbotron {
+    margin-top: 50px !important;
+    margin-bottom: 0px !important;
+    padding: 0px;
 }
 
-.jumbotron img{
+.jumbotron img {
     height: 100.5% !important;
 }
 
-.jumbotron .col-5:nth-child(1){
+.jumbotron .col-5:nth-child(1) {
     padding: 70px;
 }
-.card img{
-    padding: 0px; height: 270px;
+
+.card img {
+    padding: 0px;
+    height: 270px;
 }
 
-.card a, .card a:visited{
-     color: black;
+.card a,
+.card a:visited {
+    color: black;
 }
 
-.slider-wrapper, .nivo-main-image, #slider img{
+.slider-wrapper,
+.nivo-main-image,
+#slider {
     height: 350px !important;
+    border-radius: 3px;
 }
 
-.modal-content{
+.modal-content {
     left: -100px;
 }
 
-#carouselExampleCaptions{
+#carouselExampleCaptions {
     margin: 50px auto;
 }
 
-#carouselExampleCaptions img{
-    border-bottom: 3px solid rgb(232,232,232);
+#carouselExampleCaptions img {
+    border-bottom: 3px solid rgb(232, 232, 232);
+    border-radius: 5px;
 }
 
-#rap{
-    padding: 0px 10%;
+
+
+.carousel-control-prev {
+    background-color: black;
+    left: 80%;
+    height: 50px;
+    margin: auto 0px;
+    border-radius: 50px;
+
 }
 
-.carousel-control-prev{
-    left: -15%; top:-100px; position: relative; background-color: red;  background-size: 1rem 1rem;
+.carousel-control-next {
+    background-color: black;
+    left: 0%;
+    height: 50px;
+    margin: auto 0px;
+    border-radius: 50px;
+}
 
+
+iframe {
+    border-radius: 5px;
 }
-.carousel-control-next{
-    top: -110px; left:100%; position: relative; background-color: red;
+
+
+#page-wrapper {
+    padding-left: 250px;
 }
+
+#sidebar-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    background-color: rgb(0, 0, 0, 0.7);
+    overflow: auto;
+    left: 0px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+/* 사이드바 스타일 */
+
+.sidebar-nav {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 1.5em;
+    line-height: 2.8em;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+h3 {
+    margin: 10px;
+    padding: 30px 5px;
+}
+
+li > ul {
+    display: none;
+}
+
+#line {
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top: -15px;
+    height: 1px;
+    background-color: white;
+}
+
+#sid1{
+    margin: -1px auto; left: 98px;
+}
+        .list {
+            width: 300px;
+            height: 968px;
+
+        }
+        .gray{
+            background-color: gray;
+        }
+        *,
+        .modal {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h3 {
+
+            margin: 0px auto;
+        }
+
+        li>ul {
+            display: none; display: inline-block;
+        }
+
+        .sidebar-nav li {
+            list-style: none;
+            text-indent: 1.5em;
+            line-height: 2.8em;
+        }
+
+        .sidebar-nav>li>a {
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar-nav li>a {
+            display: block;
+            color: black;
+            left: 50px;
+        }
+        .sidebar-nav>li>a:hover{
+            color: gray; background-color: silver;
+        }
