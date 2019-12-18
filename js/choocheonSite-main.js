@@ -1,4 +1,3 @@
- let arr=[];
 $(document).ready(function(){
 
 $('#tag-codinginfo').on('click',function(){
@@ -67,6 +66,27 @@ $('#tag-blog').on('click',function(){
 
 });
 
+
+     $('li').on('click',function(){
+              let ch = $(this).children('ul');
+              $(ch).toggle();
+          });
+
+          $('#btn').on('click', function (event) {
+           event.stopPropagation();
+        $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+            //$('#sidebar-wrapper').show(400);
+            $('#sidebar-wrapper').animate({left: '250px'}, 500);
+        } else {
+            //$('#sidebar-wrapper').animate({left: '70px'}, 300);
+            // 이걸 바로 잡으면 옆으로 샥 펼쳐짐 근데 왜 안되냐고
+            //$('#sidebar-wrapper').hide(s400);
+             $('#sidebar-wrapper').animate({left: '0px'}, 500);
+        };
+
+
+       });
 
 
 
