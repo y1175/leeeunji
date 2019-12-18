@@ -22,7 +22,49 @@
         <header>
 
             <div class="row" style="margin-bottom: 20px">
-                <div class="col-sm">aaa</div>
+                <div class="col-sm">
+<div id="page-wrapper">
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#"><h3>점프 투 코딩</h3></a>
+        <div id="line"></div>
+      </li>
+      <li><a href="#">홈</a></li>
+      <li><a href="#" id="m1">언어소개</a>
+      <ul>
+      <li><a href="#">INTRO</a></li>
+      <li><a href="#">HTML & CSS</a></li>
+      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
+      <li><a href="#">JAVA</a></li>
+      <li><a href="#">ORACLE</a></li>
+      </ul>
+      </li>
+
+      <li><a href="#">언어강좌</a>
+      <ul>
+      <li><a href="#">INTRO</a></li>
+      <li><a href="#">HTML & CSS</a></li>
+      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
+      <li><a href="#">JAVA</a></li>
+      <li><a href="#">ORACLE</a></li>
+      <li><a href="#">기타</a></li>
+      </ul>
+      </li>
+      <li><a href="#">다운로드</a>
+      <ul>
+          <li><a href="#">언어</a></li>
+          <li><a href="#">개발 툴</a></li>
+      </ul>
+        </li>
+      <li><a href="#">사이트 추천</a></li>
+      <li><a href="#">질의응답</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
+  <button id="btn"> 버튼 </button>
+
+</div></div>
                 <div class="col-sm">bbb</div>
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
@@ -266,6 +308,7 @@
             <dd class="col-sm-9">02-6007-1245</dd>
 
             <dt class="col-sm-9">Copyright (c)점프투코딩 All Rights Reserved</dt>
+            <dd></dd>
         </dl>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -291,6 +334,28 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         });
+
+
+
+
+
+          $('li').on('click',function(){
+              let ch = $(this).children('ul');
+              $(ch).toggle();
+          });
+
+          $('#btn').on('click', function (event) {
+           event.stopPropagation();
+        $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+            //$('#sidebar-wrapper').show(400);
+            $('#sidebar-wrapper').animate({left: '250px'}, 500);
+        } else {
+            //$('#sidebar-wrapper').animate({left: '70px'}, 300);
+            //$('#sidebar-wrapper').hide(s400);
+             $('#sidebar-wrapper').animate({left: '0px'}, 500);
+        };
+       });
 
 
     </script>
