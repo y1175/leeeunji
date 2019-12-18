@@ -1,3 +1,8 @@
+img{
+    max-width: 100%;
+    max-height:100%;
+}
+
 div.position-right{
     float:right;
     display:inline-block;
@@ -14,3 +19,12 @@ div.tagselected{
 
 
 }
+
+@media (max-width: 720px) {
+    .desktopbtn{ display: none; } }
+@media (min-width: 719px) {
+    .mobilebtn{ display: none; } }
+
+
+
+
