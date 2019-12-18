@@ -1,3 +1,18 @@
+@font-face {
+
+    font-family: 'BMHANNA_11yrs';
+
+
+    src: url('../font/BMHANNA_11yrs.woff') format('woff');
+
+}
+
 div.position-right{
     float:right;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 25px;
 }
