@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .list {
+            width: 300px;
+            height: 1200px;
+        }
+        .gray{
+            background-color: gray;
+        }
+        *,
+        .modal {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h3 {
+
+            margin: 0px auto;
+        }
+
+        li>ul {
+            display: none; display: inline-block;
+        }
+
+        .sidebar-nav li {
+            list-style: none;
+            text-indent: 1.5em;
+            line-height: 2.8em;
+        }
+
+        .sidebar-nav>li>a {
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar-nav li>a {
+            display: block;
+            color: black;
+            left: 50px;
+        }
+        .sidebar-nav>li>a:hover{
+            color: gray; background-color: silver;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="position:absolute">
+            <div class="modal-content">
+                <div class="list">
+
+                        <ul id="sid1" class="sidebar-nav">
+                            <li class="sidebar-brand">
+                                <a href="#">
+                                    <h3>점프 투 코딩</h3>
+                                </a>
+                                <div id="line"></div>
+                            </li>
+                            <li><a href="#">홈</a></li>
+                            <li><a href="#" >언어소개</a>
+                                <ul>
+                                    <li><a href="#">ㄴ INTRO</a></li>
+                                    <li><a href="#">ㄴ HTML & CSS</a></li>
+                                    <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="#">ㄴ JAVA</a></li>
+                                    <li><a href="#">ㄴ ORACLE</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">언어강좌</a>
+                                <ul>
+                                    <li><a href="#">ㄴ INTRO</a></li>
+                                    <li><a href="#">ㄴ HTML & CSS</a></li>
+                                    <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="#">ㄴ JAVA</a></li>
+                                    <li><a href="#">ㄴ ORACLE</a></li>
+                                    <li><a href="#">ㄴ 기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">다운로드</a>
+                                <ul>
+                                    <li><a href="#">ㄴ 언어</a></li>
+                                    <li><a href="#">ㄴ 개발 툴</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">사이트 추천</a></li>
+                            <li><a href="#">질의응답</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/js.bootstrap.js"></script>
+
+    <script>
+
+        $('li').on('click', function() {
+            let ch = $(this).children('ul');
+            $(ch).toggle();
+        });
+
+        $('#sid1').on('mouseover', function() {
+            let pr = $(this).children().children('li');
+            console.log(pr);
+
+            pr.toggleClass('gray');
+        });
+    </script>
+</body></html>
