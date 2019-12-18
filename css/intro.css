@@ -1,12 +1,25 @@
-*{
-   font-family: 'BMHANNAAir';
+* {
+    font-family: 'BMHANNAAir';
 }
 
 
 h2 {
     text-align: center;
     font-family: 'BMHANNA_11yrs';
-     font-size: 4em !important;
+    font-size: 4em !important;
+}
+
+.btn {
+    font-size: 0.35em;
+    color: black;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 2em !important;
 }
 
 .mb-0 {
@@ -15,13 +28,15 @@ h2 {
     font-size: 5em;
 }
 
-.col-12{
+.col-12 {
     padding: 0px;
 }
 
-.accordion{
+.accordion {
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
+
 }
 
 
@@ -30,7 +45,7 @@ h2 {
     width: 80%;
 }
 
-.post>p:first-of-type {
+.post > p:first-of-type {
     font-size: 130%;
     font-family: 'BMHANNAAir';
 }
