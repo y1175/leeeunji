@@ -1308,6 +1308,7 @@
       if ($(this._element).hasClass(ClassName$3.SHOW)) {
         this.hide();
       } else {
+
         this.show();
       }
     };
