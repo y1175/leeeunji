@@ -64,6 +64,16 @@ nav {
     color: black;
 }
 
+<<<<<<< HEAD
+.footer{
+    margin-top: 0px; margin-bottom: 10px;
+    border-top: 1px solid silver;
+    color: gray !important;
+    font-size: 1em;
+    font-family: 'BMHANNAAir';
+}
+=======
+>>>>>>> origin/master
 
 .slider-wrapper,
 .theme-default {
@@ -71,16 +81,24 @@ nav {
 }
 
 
+<<<<<<< HEAD
+
+.text-center {
+=======
 h1 {
     padding: 0px; margin: 0px;
+>>>>>>> origin/master
     font-size: 6em !important;
     font-weight: bolder !important;
 }
 
+
+/*
 h2 {
     font-size: 2em !important;
     font-weight: bolder !important;
 }
+*/
 
 a.btn {
     color: white !important;
