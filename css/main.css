@@ -16,6 +16,9 @@
     font-family: 'BMHANNAAir';
 }
 
+.col-sm img{
+    margin :0px; padding :0px;
+}
 dl {
     margin: 0px !important;
 }
@@ -48,6 +51,7 @@ nav {
 
 
 h1 {
+    padding: 0px; margin: 0px;
     font-size: 6em !important;
     font-weight: bolder !important;
 }
