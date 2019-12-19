@@ -29,6 +29,7 @@
 
     </style>
 
+
 </head>
 
 <body>
@@ -51,7 +52,7 @@
       </li>
 
       <li><a href="#">언어강좌</a>
-      <ul>
+      <ul id="study_lang">
       <li><a href="#">INTRO</a></li>
       <li><a href="#">HTML & CSS</a></li>
       <li><a href="#">JAVASCRIPT & JQUERY</a></li>
@@ -72,6 +73,9 @@
     </ul>
   </div>
 </div>
+
+
+
 
     <header>
         <div class="container-fluid">
@@ -208,11 +212,25 @@ s.setAttribute('data-timestamp', +new Date());
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
+
+            $('#study_lang').show();
+
         $('li').on('click',function(){
               let ch = $(this).children('ul');
               $(ch).toggle();
           });
     </script>
+
+      <div class="row justify-content-center">
+              <footer class="footer col-5" style="min-width:60%">
+            <dl class="row" style="min-width:60%">
+                <dt class="col-sm-6">Copyright &#64; 2019 Jump To Coding Inc. 모든 권리 보유. </dt>
+                <dt class="col-sm-6"><a href="#">개인정보 처리방침</a> | <a href="#">약관</a> | <a href="#">판매 및 환불</a> | <a href="#">법적 고지</a> | <a href="#">사이트 맵</a></dt>
+                <dd style="text-align: center; display: inline-block; margin: 0px auto;">사업자등록번호 : 123-45-678910 | 주소 : 서울시 서초구 강남대로 459 백암빌딩 <br>| 점프투코딩 : 김진영, 김현진, 박진우, 안은별, 이은지, 정용인
+                | 대표전화 : 010-7144-3797</dd>
+            </dl>
+        </footer>
+      </div>
 
 
 </body></html>
