@@ -139,7 +139,6 @@ h3 {
 
 
 
-/* 사이드바 스타일 */
 .modal-content{
     left :-100px;
 }
@@ -150,7 +149,7 @@ h3 {
 }
 
 .sidebar-nav li li {
-    text-indent: 4em;
+    text-indent: 1em;
     list-style: none;
 }
 
@@ -173,7 +172,7 @@ h3 {
 .sidebar-nav li a:hover {
     color: orange;
     background-color: lightgray;
-    text-indent: 5.2em;
+    text-indent: 3.2em;
     font-size: 1.5m;
     border: border;
 
@@ -182,7 +181,7 @@ h3 {
 .sidebar-nav > li > a:hover {
     color: gray;
     background-color: silver;
-        text-indent: 2.2em;
+        text-indent: 2em;
 
 }
 
