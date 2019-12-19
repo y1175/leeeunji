@@ -19,26 +19,24 @@
 
 <body>
     <div class="container-fluid" id="rap">
+       <!-- header -->
         <header>
-
-            <div class="row" style="margin-bottom: 20px">
+            <div class="row">
                 <div class="col-sm">
                     <!-- Button trigger modal -->
-                    <img class="btn" src="icons/list.svg" alt="" width="128" height="128" title="Bootstrap" data-toggle="modal" data-target="#exampleModal">
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div id="sid1" class="modal-dialog modal-dialog-centered" role="document" style="position:absolute">
+                    <img class="btn" src="icons/list.svg" alt="" width="128" height="128" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
+                    <!-- sidebar Modal -->
+                    <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbarModalLabel" aria-hidden="true">
+                        <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
                             <div class="modal-content">
-                                <div class="list">
-
+                                <div class="sidlist">
                                     <ul class="sidebar-nav">
-                                        <li class="sidebar-brand">
+                                           <div>
                                             <a href="#">
-                                                <h3>점프 투 코딩</h3>
+                                                점프 투 코딩
                                             </a>
-                                            <div id="line"></div>
-                                        </li>
+                                            </div>
+                                            <div class="line"></div>
                                         <li><a href="#">홈</a></li>
                                         <li><a href="#">언어소개</a>
                                             <ul>
@@ -382,9 +380,6 @@
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
-
-    </script>
-    <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
         _gaq.push(['_setDomainName', 'jqueryscript.net']);
@@ -397,16 +392,8 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         });
-
-
-        $('li').on('click', function() {
-            let ch = $(this).children('ul');
-            $(ch).toggle();
-        });
-
-
-
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
