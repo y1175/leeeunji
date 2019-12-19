@@ -12,18 +12,16 @@
     src: url('../font/BMHANNAAir.woff') format('woff');
 }
 
-<<<<<<< HEAD
 body {
     background-color: white !important;
-
 }
 
 h1 {
     font-family: 'BMHANNA_11yrs';
-=======
+}
+
 * {
     font-family: 'BMHANNAAir';
->>>>>>> origin/master
 }
 
 .col-sm img{
@@ -215,7 +213,6 @@ iframe {
 
 .sidebar-nav > li > ul {
     display: none;
-    display: block;
 }
 .sidebar-nav div{
     text-align: center;
