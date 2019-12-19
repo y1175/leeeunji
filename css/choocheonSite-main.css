@@ -139,49 +139,71 @@ h3 {
 
 
 
-/*sidebar*/
-#page-wrapper {
-    padding-left: 250px;
-  }
+/* 사이드바 스타일 */
+.modal-content{
+    left :-100px;
+}
+.sidebar-nav li {
+    font-size: 1.3m;
+    text-indent: 2em;
+    line-height: 3em;
+}
 
-  #sidebar-wrapper {
-    position: absolute;
-    width: 250px;
-   height: 205%;
-    margin-left: -250px;
-    background-color: rgb(0, 0, 0,0.7);
-    overflow: auto;
-    left: 0px;
-  }
-
-  #page-content-wrapper {
-    width: 100%;
-    padding: 20px;
-  }
-  /* 사이드바 스타일 */
-
-  .sidebar-nav {
-    width: 250px;
-    margin: 0;
-    padding: 0;
+.sidebar-nav li li {
+    text-indent: 4em;
     list-style: none;
-  }
+}
 
-  .sidebar-nav li {
-    text-indent: 1.5em;
-    line-height: 2.8em;
-  }
-
-  .sidebar-nav li a {
+.sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: white;
-  }
+    color: black;
 
-  .sidebar-nav li a:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-  }
+}
+
+.line {
+    width: 250px;
+    position: relative;
+    left: 10px;
+    height: 3px;
+    background-color: black;
+}
+
+
+.sidebar-nav li a:hover {
+    color: orange;
+    background-color: lightgray;
+    text-indent: 5.2em;
+    font-size: 1.5m;
+    border: border;
+
+}
+
+.sidebar-nav > li > a:hover {
+    color: gray;
+    background-color: silver;
+        text-indent: 2.2em;
+
+}
+
+.sidebar-nav > li > a {
+    margin: 0px auto;
+    font-size: 1.6em;
+}
+
+.sidebar-nav > li > ul {
+    display: none;
+}
+.sidebar-nav div{
+    text-align: center;
+}
+.sidebar-nav div a{
+    font-size: 3em;
+    color: black;
+}
+/* color option*/
 
    li>ul{
         display: none;
+}
+
