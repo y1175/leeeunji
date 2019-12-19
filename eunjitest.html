@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <style>
+    .side.image{
+    position:relative;
+    bottom: 200;
+        left:400px;
+
+
+}
+/*back이미지*/
+.backimage{
+    position:absolute;
+
+}
+/*학습사이트로 버튼*/
+/*button2{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:absolute;
+    top:130px;
+    left:180px;
+
+
+  height:30px;
+  font-size:1.0em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+    border-radius: 5px;
+    width: 150px;
+}
+button2:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button2:before,button2:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button2:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button2:hover:before,button2:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}*/
+       /* BUTTON 2 */
+  /*   .container {
+  padding: 2em;
+}
+*/
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  /*background: none;*/
+ border: 1px solid cadetblue;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+/*  margin: 1em auto;
+  padding: 2em 6em;*/
+  position: absolute;
+ /* text-transform: uppercase;*/
+    background-color: cadetblue;
+    width: 150px;
+    height: 70px;
+    left:350px;
+    top:120px;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+/*이미지위에 텍스트*/
+        .imagetext{
+            position: absolute;
+            top:50px;
+            left: 50px;
+            color:white;
+            font-size:40px;
+            font-weight: bold;
+        }
+
+        .testbutton{
+            background-color:cadetblue;
+            color:white;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            position:absolute;
+            font-size:25px;
+            left:300px;
+            top:120px;
+            text-align: center;
+
+
+        }
+        .testbutton:hover{
+            background-color: dodgerblue;
+            transition: 0.7s;
+        }
+
+    </style>
+</head>
+<body>
+     <!--!!!!!!!!!!!!!!!!!!아래 사이트로 넘어가는 이미지!!!!!!!!!!!!!!지금 고치는중!!!-->
+                    <div class="side image">
+                     <a href="#" class="backimage"><img src="img/learncodingdark.jpg" alt="learncoding"
+                     width="100%" height="230px" ></a>
+                     <div class="imagetext">
+                         설치가 끝났으면,
+
+                     </div>
+                     <a href="#">
+                     <div class="testbutton">
+                         학습하기 >
+                     </div></a>
+    </div><!--side image-->
+
+</body>
+</html>
