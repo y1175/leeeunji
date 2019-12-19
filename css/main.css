@@ -16,21 +16,29 @@ body {
     background-color: white !important;
 }
 
+}
 h1 {
     font-family: 'BMHANNA_11yrs';
 }
 
 * {
-    font-family: 'BMHANNAAir';
+    font-family: 'BMHANNAAir'; font-size: 1em;
 }
 
 .col-sm img{
     margin :0px; padding :0px;
 }
-dl {
-    margin: 0px !important;
+
+dd, dt, dl{
+    margin: 2px 0px !important; padding: 0px !important;
+}
+dt>a {
+    color: gray !important; font-weight: 600;
 }
 
+dd{
+    font-size: 0.8em !important;
+}
 .navbar {
     background-color: white !important;
     font-size: 15px !important;
@@ -48,8 +56,11 @@ nav {
     color: black;
 }
 
-.footer {
-    margin-top: 0px;
+.footer{
+    margin-top: 0px; margin-bottom: 10px;
+    border-top: 1px solid silver;
+    color: gray !important;
+    font-size: 1em;
 }
 
 .slider-wrapper,
@@ -103,10 +114,6 @@ a.btn {
     height: 350px !important;
     border-radius: 3px;
 }
-
-/*.modal-content {
-    left: -100px;
-}*/
 
 #carouselExampleCaptions {
     margin: 50px auto;
