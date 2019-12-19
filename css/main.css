@@ -12,10 +12,8 @@
     src: url('../font/BMHANNAAir.woff') format('woff');
 }
 
-<<<<<<< HEAD
 body {
     background-color: white !important;
-
 }
 
 h1 {
@@ -23,6 +21,9 @@ h1 {
 
 }
 
+.col-sm img{
+    margin :0px; padding :0px;
+}
 dl {
     margin: 0px !important;
 }
@@ -55,6 +56,7 @@ nav {
 
 
 h1 {
+    padding: 0px; margin: 0px;
     font-size: 6em !important;
     font-weight: bolder !important;
 }
@@ -208,7 +210,6 @@ iframe {
 
 .sidebar-nav > li > ul {
     display: none;
-    display: block;
 }
 .sidebar-nav div{
     text-align: center;
