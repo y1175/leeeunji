@@ -22,7 +22,7 @@ height: 100px;
                         vertical-align: middle;
                         text-align: center;
                         border-radius: 5px;
-                    margin: 5px 30px;
+                    margin: 5px 15px;
                         /*padding-right: 200px;*/
                 }
 #prev_next ul{
@@ -129,7 +129,9 @@ font-size:50px;}
     /*border:1px solid silver;*/
     width: 70px;
     height: 70px;
-    background-color: orange;
+    border: 1px solid silver;
+    background-color: white;
+    /*background-color: orange;*/
    /* color: black !important;*/
    /* text-decoration-color: black !important;*/
     text-align: center;
@@ -139,8 +141,10 @@ font-size:50px;}
     display:block;
     top:400px;
     z-index: 99999;
-    margin-bottom: 20px;
-    border-radius: 100px;
+    margin-bottom: 1px;
+    color:black;
+    font-size:10px;
+    /*border-radius: 100px;*/
 
 }
 /*.btn-group.btn-group-justified{display:none;}*/
@@ -149,13 +153,31 @@ font-size:50px;}
     display:flex
 }*/
 .btn-group:hover{
+    background-color: whitesmoke;
+}
+.btn.btn-default a{color:black !important;}
+
+
+.testbutton.inside{
+    background-color: orange;
+    width: 100px;
+    font-size:17px;
+    height: 40px;
+    text-align: center;
+}
+.testbutton.inside:hover{
     background-color: darkorange;
 }
-.btn.btn-default a{color:white !important;}
-
-
-
-
+.testbutton.inside.install{
+    position: relative;
+    left:60%;
+    top:-50px;
+}
+.testbutton.inside.api{
+    position: relative;
+    left:60%;
+    top:-50px;
+}
 
         a:hover{/*color:black;*/
            text-decoration: none;
