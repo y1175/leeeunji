@@ -46,7 +46,7 @@
 
 
     <div class="container">
-     <!--   <div id="carbonads-container">
+        <!--   <div id="carbonads-container">
             <div class="carbonad">
                 <div id="azcarbon"></div>
             </div>
@@ -68,33 +68,33 @@
 
 
                 <div class="col-12 ">
-                    <div class="accordion" id="faqExample">
+                    <div class="accordion" id="accordionExample">
                         <div class="card">
-                            <div class="card-header p-2" id="headingOne">
-                                <h5 class="mb-0">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         역사
                                     </button>
-                                </h5>
+                                </h2>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
                                     첫 공개 자바 버전은 1995년의 자바 1.0이었다. 한 번 쓰고 어느 곳에도 실행 <b>"Write Once, Run Anywhere"</b>하는 것을 약속하였고 인기 플랫폼에 무료 런타임을 제공하였다.
-                                    <br> 자바 2(JDK 1.2 ~ 1.4)의 출현으로 여러 다양한 플랫폼에서 사용할 수 있는 설정들을 만들었다. 자바는 사실상 (de facto)의 표준이며 자바 커뮤니티 프로세스(Java Community Process)를 통해 관리되고 있다.
-                                    <br>2009년, 제작사인 썬 마이크로시스템즈가 오라클과 인수 합병됨에 따라 자바에 대한 권리 및 유지보수는 오라클로 넘어가게 되었다.
+                                    자바 2(JDK 1.2 ~ 1.4)의 출현으로 여러 다양한 플랫폼에서 사용할 수 있는 설정들을 만들었다. 자바는 사실상 (de facto)의 표준이며 자바 커뮤니티 프로세스(Java Community Process)를 통해 관리되고 있다.
+                                    2009년, 제작사인 썬 마이크로시스템즈가 오라클과 인수 합병됨에 따라 자바에 대한 권리 및 유지보수는 오라클로 넘어가게 되었다.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header p-2" id="headingTwo">
-                                <h5 class="mb-0">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         철학
                                     </button>
-                                </h5>
+                                </h2>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <p>다음 5가지의 핵심 목표를 지니고 있다.</p>
 
@@ -113,24 +113,22 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header p-2" id="headingThree">
-                                <h5 class="mb-0">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         자바 파생응용 분야
                                     </button>
-                                </h5>
+                                </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <ul>
                                         <li><strong>자바 서버 페이지(JSP, JavaServer Pages)</strong></li>
 
-                                        <li><strong>안드로이드 (운영 체제) : </strong>
-                                            <ul>
-                                                <li> 안드로이드는 자바 VM에 해당하는 달빅계열하에 특수한 경우의 자바 로그래밍이라고 부를수 있다.</li>
-                                            </ul>
-                                        </li>
-
+                                        <li><strong>안드로이드 (운영 체제) : </strong></li>
+                                        <ul>
+                                            <li> 안드로이드는 자바 VM에 해당하는 달빅계열하에 특수한 경우의 자바 로그래밍이라고 부를수 있다.</li>
+                                        </ul>
                                     </ul>
                                 </div>
                             </div>
@@ -140,12 +138,37 @@
             </div>
         </div>
 
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://jumptocoding.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
         <div class="pagination">
             <a class="pagination-item older" href="/page2/">Older</a>
             <span class="pagination-item newer">Newer</span>
         </div>
     </div>
-     <footer class="footer" style="background-color:antiquewhite">
+
+
+    <footer class="footer" style="background-color:antiquewhite">
         <dl class="row">
             <dt class="col-sm-3">주소 : </dt>
             <dd class="col-sm-9">서울시 서초구 강남대로 459 백암빌딩</dd>
@@ -165,9 +188,6 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
