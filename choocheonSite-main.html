@@ -124,7 +124,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="choocheonSite-main.html">사이트</a>
+                                    <a class="nav-link" href="choocheonSite-main.html">사이트 추천</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">질의응답</a>
@@ -213,21 +213,60 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="to_site_choocheon_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="to_site_choocheon_form" tabindex="-1" role="dialog"  aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h3 class="modal-title">사이트 제보</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">apply</button>
+    <form action="post">
+        <div id="out"></div>
+        <ul>
+            <li>
+                <label for="subject">제목</label>
+                <br>
+                <input type="text" id="subject" size="40" placeholder="제목을 입력하세요.">
+            </li>
+            <li>
+                <label for="mail">메일</label>
+                <br>
+                <input type="text" id="mail" size="40" placeholder="답변 받을 메일 주소를 입력해주세요.">
+            </li>
+            <li>
+                <label for="val">내용</label>
+                <br>
+                <textarea name="val" id="val" cols="39" rows="20" placeholder="내용을 입력하세요."></textarea>
+            </li>
+        </ul>
+            <input type="reset" class="btn btn-secondary" id="reset" value="reset">
+            <!-- Button trigger modal -->
+            <input type="reset" class="btn btn-primary" id="send" data-toggle="modal" data-target="#exampleModal" value="send">
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="sendModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="sendModalLabel">등록하시겠습니까?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            관리자 확인 후 사이트 추천 카테고리에 업로드 될 예정입니다.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">아니요</button>
+                            <input type="reset" class="btn btn-primary" data-dismiss="modal" value="네">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
       </div>
     </div>
   </div>
@@ -1082,10 +1121,6 @@
 
 
 </div>
-
-
-
-
 
 
 
