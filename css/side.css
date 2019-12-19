@@ -1,4 +1,13 @@
-  #page-wrapper {
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #page-wrapper{
+        display: none;
+    }
+
+}
+
+
+#page-wrapper {
 padding-left: 250px;
       height: 100%;
     z-index: 9999;
