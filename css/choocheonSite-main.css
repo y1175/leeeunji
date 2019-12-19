@@ -96,6 +96,11 @@ div.tagselected .modal{
 	}
 }
 
+.modal .close{
+   /* 밤하나 폰트는 X표시가 안나와서..*/
+    font-family: cursive;
+
+}
 
 h3 {
     text-align: center;
@@ -123,6 +128,14 @@ h3 {
 .img-thumbnail:hover{
     opacity: 0.4;
 }
+
+.modal-body ul li{
+
+    list-style:none;
+    margin-bottom:5px;
+    margin-left:-10px;
+}
+
 
 
 
