@@ -22,7 +22,7 @@ height: 100px;
                         vertical-align: middle;
                         text-align: center;
                         border-radius: 5px;
-                    margin: 5px 30px;
+                    margin: 5px 15px;
                         /*padding-right: 200px;*/
                 }
 #prev_next ul{
@@ -80,17 +80,18 @@ height: 100px;
 }*/
 #content{
     border: 1px solid silver;
-    width: 80%;
+    width: 60%;
     margin: 0px auto;
 }
 .content2{
     padding-left: 80px ;
 }
-.side{padding-left:-80px !important;
-    margin-left:0px;
-width: 119.4% !important;
-position: relative !important;
-right: 81px;}
+/*
+
+.side:hover button2{transform: translateX(30px);}
+.side:hover .backimage{transform: translateX(-30px);}
+*/
+
 
 
 /* #java{
@@ -126,14 +127,24 @@ font-size:50px;}
 
 .btn-group{
     /*border:1px solid silver;*/
-    width: 400px;
-    background-color: orange;
+    width: 70px;
+    height: 70px;
+    border: 1px solid silver;
+    background-color: white;
+    /*background-color: orange;*/
    /* color: black !important;*/
    /* text-decoration-color: black !important;*/
     text-align: center;
-      border-radius: 5px;
+     /* border-radius: 5px;*/
     position:relative;
-    bottom:50px;
+    left:450px;
+    display:block;
+    top:400px;
+    z-index: 99999;
+    margin-bottom: 1px;
+    color:black;
+    font-size:10px;
+    /*border-radius: 100px;*/
 
 }
 /*.btn-group.btn-group-justified{display:none;}*/
@@ -142,13 +153,31 @@ font-size:50px;}
     display:flex
 }*/
 .btn-group:hover{
+    background-color: whitesmoke;
+}
+.btn.btn-default a{color:black !important;}
+
+
+.testbutton.inside{
+    background-color: orange;
+    width: 100px;
+    font-size:17px;
+    height: 40px;
+    text-align: center;
+}
+.testbutton.inside:hover{
     background-color: darkorange;
 }
-.btn.btn-default a{color:white !important;}
-
-
-
-
+.testbutton.inside.install{
+    position: relative;
+    left:60%;
+    top:-50px;
+}
+.testbutton.inside.api{
+    position: relative;
+    left:60%;
+    top:-50px;
+}
 
         a:hover{/*color:black;*/
            text-decoration: none;
@@ -173,8 +202,8 @@ aside{
 
 
 ////////////////////////////////
-   @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+/*   @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);*/
        .imagelink{
             display: block;
             position:relative;
@@ -294,3 +323,63 @@ figure.snip1384.hover i {
   transform: translate(0px, 0px);
   opacity: 1;
 }
+/*//////////////////////////////////////////////버튼/////////////////*/
+/*body{
+  text-align:center;
+}
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}*/
+
+.side{padding-left:-80px !important;
+    margin-left:0px;
+width: 119.4% !important;
+position: relative !important;
+right: 81px;}
+/*학습사이트로 이미지 전체 div*/
+
+  .side.image{
+    position:relative;
+    bottom: 150px;
+        left:-70px;
+
+
+}
+/*back이미지*/
+.backimage{
+    position:absolute;
+
+}
+
+/*이미지위에 텍스트*/
+        .imagetext{
+            position: absolute;
+            top:50px;
+            left: 50px;
+            color:white;
+            font-size:40px;
+            font-weight: bold;
+        }
+
+        .testbutton{
+            background-color:cadetblue;
+            color:white;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            position:absolute;
+            font-size:25px;
+            left:300px;
+            top:120px;
+            text-align: center;
+
+
+        }
+        .testbutton:hover{
+            background-color: dodgerblue;
+            transition: 0.7s;
+        }
+
