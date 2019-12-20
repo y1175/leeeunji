@@ -1,0 +1,74 @@
+1.body부분의 css를 교체
+2. 1번에서 변경되지 않는 부분들을 일일이 잡아준다. (darkmode의 class추가를 통해 변경)
+3. 바꾸고싶은 버튼은 색반전을 통해 바꿨음.    색반전 코드 -webkit-filter: invert(100%); filter: invert(100%);
+4. 반대로 돌아오는 부분도 같은방식으로 구현.
+5. 해보고 안되면 도입하지않아도 됨.
+
+
+/*스위치 모양*/
+<div class="custom-control custom-switch">
+
+  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+
+  <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+
+</div>
+
+
+
+
+/*다크모드 스크립트*/
+
+$(document).ready(function(){
+
+
+
+        $('#darkSwitch').on('click',function(){
+            {
+                if($('#darkSwitch').is(':checked')) //스위치가 체크상태일때
+                    {
+                $('body').css('backgroundColor','');    //적용시킬부분의 배경,글자색 css를 초기화시킴
+                $('body').css('color','');
+                $('body').css('backgroundColor','black');
+                $('body').css('color','lightgray');
+
+                $('.card,.modal-body,.modal-header,.modal-footer').addClass('darkmode');  //바디에서 적용이 안되는 부분들을 일일이 적용
+                $('.badge, .btn-primary, img.btn ,#plus').addClass('darkbadge');  //darkbadge 클래스를 추가시키면 색반전되는 css를 만들어놨음.
+                    }
+                else{                                //else(체크해제됐을때의 상태)에서 원래대로 돌아오게끔 구현
+                   $('body').css('backgroundColor',''); 
+                $('body').css('color','');
+                $('body').css('backgroundColor','white');
+                $('body').css('color','black');
+                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('darkmode');
+                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('lightmode');
+                $('.badge, .btn-primary, img.btn ,#plus').removeClass('darkbadge');
+                }
+            }
+
+
+    });
+    
+    
+    
+    /*style css*/
+    
+    .darkmode{
+    background-color: black !important;
+    color:lightgray;
+
+
+}
+.darkbadge{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+
+
+
+.lightmode{
+    background-color: white !important;
+    color:black;
+
+}
