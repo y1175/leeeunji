@@ -1,125 +1,103 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>다운로드 JAVA</title>
+    <title>점프 투 코딩</title>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/downloadjava.css">
-
-<style>
-    .container{
-
-        border-right : 1px solid silver;
-        border-left: 1px solid silver;
-        width: 60%;
-        margin: 0px auto !important;
-
-    }
-
-    </style>
-
 </head>
-
 <body>
- <div id="page-wrapper">
-  <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a href="#"><h3 id="tt">점프 투 코딩</h3></a>
-        <div id="line"></div>
-      </li>
-      <li><a href="#">홈</a></li>
-      <li><a href="#">언어소개</a>
-      <ul>
-      <li><a href="#">INTRO</a></li>
-      <li><a href="#">HTML & CSS</a></li>
-      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
-      <li><a href="#">JAVA</a></li>
-      <li><a href="#">ORACLE</a></li>
-      </ul>
-      </li>
-
-      <li><a href="#">언어강좌</a>
-      <ul>
-      <li><a href="#">HTML & CSS</a></li>
-      <li><a href="#">JAVASCRIPT & JQUERY</a></li>
-      <li><a href="#">JAVA</a></li>
-      <li><a href="#">ORACLE</a></li>
-      <li><a href="#">기타</a></li>
-      </ul>
-      </li>
-      <li><a href="#">다운로드</a>
-      <ul>
-          <li><a href="#">언어</a></li>
-          <li><a href="#">개발 툴</a></li>
-      </ul>
-        </li>
-      <li><a href="#">사이트 추천</a></li>
-      <li><a href="#">질의응답</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </div>
-</div>
-
+         <!-- 16:9 aspect rati -->
+ <!--   <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r5xvtN8DC9A"></iframe>
+    </div>
+     4:3 aspect ratio
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r5xvtN8DC9A"></iframe>
+    </div>
+            -->
     <header>
         <div class="container-fluid">
             <div class="row" style="margin-bottom: 20px">
-<br><br>
-
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
         </div>
-
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto" style="margin: 0px auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link where">언어></a>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">언어소개</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">java</a>
+                            <a class="dropdown-item" href="#">oracle</a>
+                            <a class="dropdown-item" href="#">html</a>
+                            <a class="dropdown-item" href="#">...</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다운로드</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">java</a>
+                            <a class="dropdown-item" href="#">oracle</a>
+                            <a class="dropdown-item" href="#">html</a>
+                            <a class="dropdown-item" href="#">...</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JAVA</a>
+                        <a class="nav-link" href="#">사이트</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ORACLE</a>
+                        <a class="nav-link" href="#">질의응답</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </nav>
     </header>
+    <!-- navber -->
+    <body>
+        <div id="wrap">
+            <div id="content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">다운로드</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">언어</li>
+                        <li class="breadcrumb-item active" aria-current="page">JAVA</li>
+                    </ol>
+                </nav>
+                <nav id="prev_next">
+                    <ul>
+                        <li><a class="menuLink" href="#">HTML</a></li>
+                        <li class="menuLinknow">JAVA</li>
+                        <li><a class="menuLink" href="#">ORACLE</a></li>
+                    </ul>
+                </nav>
 
 
-    <div class="container" >
-        <div class="posts-container mx-auto px-3 my-5">
-            <div class="posts">
-                <div class="post">
-
-                    <h1 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
-                        JAVA
-                    </h1>
-                    <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"> BEFORE</button>
-
-                    <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;">NEXT</button>
-
-
-      <!--언어 이미지 -->
+        <!--언어 이미지 -->
 <div class="imagelink">
 <figure class="snip1384">
   <img src="img/Java.jpg" alt="java" >
@@ -133,7 +111,8 @@
                 <!--언어 이미지 -->
 
                 <div id="line"></div>
-<!--스크롤 배너-->
+
+                <!--스크롤 배너-->
                 <aside class="nav-down">
                     <!--<div class="btn-group btn-group-justified" role="group" aria-label="...">-->
                         <div class="btn-group" role="group">
@@ -150,38 +129,37 @@
                  <!--스크롤 배너-->
 
                 <!--내용 시작-->
-               <div class="content2" align="middle">
+               <div class="content2">
 
                <!--1. 설치-->
                 <div id="install">
-                    <h3 align="middle">설치</h3>
+                    <h3>설치</h3>
 
                     <a href="#">
                      <div class="testbutton inside install">
                          설치하기 >
                      </div></a>
-                    <pre align="middle">
-Java를 설치해보자. 우선 가장 기본이 되는 Java SE JDK를 설치한다.
+                    <pre>
+Java를 설치해보자. 우선 가장 기본이 되는
+ Java SE JDK를 설치한다.
 
 자바를 설치하는 방법은 운영체제마다 다르다.
 운영체제 별로 자바를 설치하는 방법에 대해서
 다른 토픽을 통해서 다루고 있기 때문에
 자신의 운영체제에 맞는 자바 설치 방법을 찾아서 설치를 진행하자.
-
 -버전
 Java 의 버전은 역사적인 이유로 복잡하다. 현재 2013년 12월 기준으로
 Java의 정식 명칭은 'Java SE 7'이다.
  하지만 이것을 JDK 1.7이라고도 하고, JDK 7이라고도 하므로 혼란이 있다.
   자바의 역사에 대해서는 Java version history를 참고한다.
-
 -JDK의 분류
 자바의 개발환경인 JDK에는 3가지가 있다. 이 중에 가장 중요한 JDK는 Java SE다.
  Java SE는 Java EE나 Java ME의 기반 환경이기도 하므로 무엇을 하든 간에
   Java SE를 JDK를 설치해야 한다.
-
+ 우리 수업은 Java SE를 다룬다.
 Java SE (Standard Edition)
 자바의 핵심으로 일반적으로 자바라고 하면 Java SE를 의미한다.
- 처음 자바를 시작할때 보통 Java SE 를 다룬다.
+ 우리 수업은 Java SE에 대한 수업이다.
 Java EE (Enterprise Edition)
 기업용 시장에서 사용하는 자바 개발환경
 Jave Me (Micro Edition)
@@ -191,7 +169,7 @@ Jave Me (Micro Edition)
                 <!--1. 설치-->
 
                 <!--2. 영상-->
-                <div id="guide" >
+                <div id="guide">
                     <h3>설치가이드</h3>
                     <!--유투브 동영상 넣음-->
                     <div class="side">
@@ -204,7 +182,7 @@ Jave Me (Micro Edition)
                  <!--2. 영상-->
 
                 <!--3.API-->
-                <div id="api" >
+                <div id="api">
                     <div class="subtitle">
                     <h3>API</h3>
                       <div id="toright">
@@ -226,9 +204,9 @@ Java SE(JDK)를 설치하면 자바 시스템을 제어하기 위한 API를 제�
 <br>
 
                   <!--!!!!!!!!!!!!!!!!!!아래 사이트로 넘어가는 이미지!!!!!!!!!!!!!!지금 고치는중!!!-->
-                    <div class="side image" >
+                    <div class="side image">
                      <a href="#" class="backimage"><img src="img/learncodingdark.jpg" alt="learncoding"
-                     width="100%" height="230px" align="middle" ></a>
+                     width="100%" height="230px" ></a>
                      <div class="imagetext">
                          설치가 끝났으면,
                      </div>
@@ -242,10 +220,6 @@ Java SE(JDK)를 설치하면 자바 시스템을 제어하기 위한 API를 제�
                 <!--댓글창-->
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                     <br>
                     <br>
                     <br>
                     <br>
@@ -274,69 +248,50 @@ Java SE(JDK)를 설치하면 자바 시스템을 제어하기 위한 API를 제�
             </div>
         </div>
         </div>
+    </body>
+    <!--아래 footer-->
+   <footer class="footer" style="background-color:antiquewhite">
+        <div class="container-fluid">
+            <dl class="row">
+                <dt class="col-sm-3">주소 : </dt>
+                <dd class="col-sm-9">서울시 서초구 강남대로 459 백암빌딩</dd>
+                <dt class="col-sm-3">점프투코딩 : </dt>
+                <dd class="col-sm-9">김진영,안은별,박진우,김현진,이은지,정용인</dd>
+                <dt class="col-sm-3">문의 : </dt>
+                <dd class="col-sm-9">02-3486-9600</dd>
+                <dt class="col-sm-3">팩스 : </dt>
+                <dd class="col-sm-9">02-6007-1245</dd>
+                <dt class="col-sm-9">Copyright (c)점프투코딩 All Rights Reserved</dt>
+            </dl>
         </div>
-    </div>
-
-
-
-
-                  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5dfae15243be710e1d22bb34/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-
-    /*진영댓글인듯*/
-</script>
-<!--End of Tawk.to Script-->
-
-
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://191218-project.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<!--진영댓글인듯-->
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>
-        $('li').on('click',function(){
-              let ch = $(this).children('ul');
-              $(ch).toggle();
-          });
+    <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
     </script>
-        <script>
+    <!--메인에 있던 스크립트-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!--스크롤 내려갈때는 배너를 숨기고 올라갈때 나타남-->
+    <script>
         /*이미지 마우스 효과 */
 $(".hover").mouseleave(
   function () {
@@ -379,5 +334,16 @@ $(".hover").mouseleave(
     <!--  스크롤 내려갈때는 배너 나타나고 올라갈때 사라짐-->
 
 
+    <!--진영 댓글-->
+    <script>
 
-</body></html>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://191218-project.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
