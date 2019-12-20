@@ -83,3 +83,37 @@ $('#tag-blog').on('click',function(){
 
 
 });
+
+$(document).ready(function(){
+
+
+
+        $('#darkSwitch').on('click',function(){
+            {
+                if($('#darkSwitch').is(':checked'))
+                    {
+                $('body').css('backgroundColor','');
+                $('body').css('color','');
+                $('body').css('backgroundColor','black');
+                $('body').css('color','lightgray');
+
+                $('.card,.modal-body,.modal-header,.modal-footer').addClass('darkmode');
+                $('.badge, .btn-primary, img.btn').addClass('darkbadge');
+
+                    }
+                else{
+                   $('body').css('backgroundColor','');
+                $('body').css('color','');
+                $('body').css('backgroundColor','white');
+                $('body').css('color','black');
+                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('darkmode');
+                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('lightmode');
+                $('.badge, .btn-primary, img,btn').removeClass('darkbadge');
+                }
+            }
+
+
+    });
+
+
+});
