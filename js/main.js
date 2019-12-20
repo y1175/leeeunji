@@ -27,10 +27,17 @@ $(document).ready(function () {
     });
 
     /* figcaption */
-        $(".hover").mouseleave(
-            function() {
-                $(this).removeClass("hover");
-            }
-        );
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
 
+    $('.sidebar-nav li:first a').css({
+        'text-align': 'center',
+        'text-indent': '0em',
+        'font-size': '3em',
+        'color': 'black',
+        'font-weight': '600'
+    })
 })
