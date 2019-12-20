@@ -51,15 +51,13 @@ h3 {
 }
 pre {
     font-size: 140%;
-
-
-
     font-family: 'BMHANNAAir';
     font-family: 'Do Hyeon', sans-serif;
-
-
-
     text-align: center;
     white-space:pre-line;
 }
 
+
+.nav-item a:hover{
+    color: orange !important ;
+}
