@@ -1,10 +1,17 @@
-*{font-family: 'BMHANNAAir';}
+\
 
 h3 a{
     font-size:20px;
     font-weight: bold;
     color:black !important;
 
+}
+
+*,pre{
+    font-family: 'BMHANNAAIR';
+}
+pre{
+    font-size:20px;
 }
 
 
@@ -67,20 +74,22 @@ font-size:50px;}
 
 .btn-group{
     /*border:1px solid silver;*/
-    width: 50px;
-    height: 50px;
-   /* border: 1px solid silver;
-    background-color: white;*/
+    width: 80px;
+    height: 90px;
+   /* border: 1px solid silver;*/
+    background-color: white;
+    border: 1px solid silver;
     /*background-color: orange;*/
    /* color: black !important;*/
    /* text-decoration-color: black !important;*/
     text-align: center;
      /* border-radius: 5px;*/
     position:relative;
-    left:600px;
+    left:500px;
     display:block;
     top:200px;
     /*z-index: 99999 !important;*/
+ /*   margin-bottom: 100px;*/
 
     color:black;
     font-size:10px;
@@ -127,6 +136,7 @@ button.btn.btn-default{z-index: 99999 !important;}
     position: relative;
     /*left:60%;*/
     top:-50px;
+    left:250px;
 }
 .testbutton.inside.api{
     position: relative;
@@ -153,6 +163,8 @@ aside{
 .nav-up {
     top: -40px;
 }
+.side iframe{position: relative;
+right: 20px;}
 
 
 
@@ -181,7 +193,7 @@ figure.snip1384 {
     left:25%;
 
 }
-figure.snip1384 * {cfvvhhjhnuuuuuuuuuhnuhjjkkkkkkkkkkkkkkkkkkkkkkkkkkkki
+figure.snip1384 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
@@ -308,13 +320,18 @@ right: 100px;}
 .backimage{
     position:absolute;
     top:150px;
-    right:75px;
-    width: 95%;
+    right:170px;
+    width:80%;
 /*    height: 300px !important;*/
 
 }
 .backimage img{
    height: 300px !important;
+}
+#disqus_thread{width: 900px;
+    position: relative;
+    right: 70px;
+
 }
 
 
@@ -322,7 +339,7 @@ right: 100px;}
         .imagetext{
             position: absolute;
             top:220px;
-            left: 50px;
+            left: 90px;
             color:white;
             font-size:40px;
             font-weight: bold;
