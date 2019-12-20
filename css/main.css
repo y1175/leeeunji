@@ -45,6 +45,7 @@ h5 {
     font-size: 1em !important;
     font-weight: bolder !important;
 }
+
 .col-sm img {
     margin: 0px;
     padding: 0px;
@@ -85,13 +86,15 @@ dd {
     background-color: black !important;
     font-size: 15px !important;
     border-bottom: 5px solid orange;
-    margin-bottom: 20px;
+    border-radius: 10px;
+
 }
 
 nav {
     width: 70%;
     display: block;
     margin: 0px auto;
+
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -156,11 +159,15 @@ a.btn {
     color: black;
 }
 
+#slider {
+    height: 100% !important;
+    border-radius: 3px;
+}
+
 .slider-wrapper,
 .nivo-main-image,
-#slider {
-    height: 350px !important;
-    border-radius: 3px;
+#slider > img {
+    height: 320px;
 }
 
 #carouselExampleCaptions {
