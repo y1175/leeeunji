@@ -1,4 +1,4 @@
-
+*{font-family: 'BMHANNAAir';}
 
 h3 a{
     font-size:20px;
@@ -53,7 +53,7 @@ height: 100px;
                 }
 
 
-/*hr{border:10px solid black;}*/
+
 /*전체 몸통 폭 지정*/
 .linkbutton{
      line-height: 30px;
@@ -75,9 +75,7 @@ height: 100px;
     position:relative;
     left:300px;
 }
-/*.linkbutton a:hover{
-    color:white !important;
-}*/
+
 #content{
     border: 1px solid silver;
     width: 60%;
@@ -86,24 +84,7 @@ height: 100px;
 .content2{
     padding-left: 80px ;
 }
-/*
 
-.side:hover button2{transform: translateX(30px);}
-.side:hover .backimage{transform: translateX(-30px);}
-*/
-
-
-
-/* #java{
-            width: 400px;
-            height: 300px;
-            position:relative;
-            left:200px;
-            display: block;
-            margin: 0px auto;
-
-
-        }*/
 #line{
 
     width: 90% !important;
@@ -137,16 +118,18 @@ font-size:50px;}
     text-align: center;
      /* border-radius: 5px;*/
     position:relative;
-    left:450px;
+    left:600px;
     display:block;
     top:400px;
-    z-index: 99999;
-    margin-bottom: 1px;
+    /*z-index: 99999 !important;*/
+
     color:black;
     font-size:10px;
+
     /*border-radius: 100px;*/
 
 }
+button.btn.btn-default{z-index: 99999 !important;}
 /*.btn-group.btn-group-justified{display:none;}*/
 
 /*.subtitle{
@@ -164,18 +147,19 @@ font-size:50px;}
     font-size:17px;
     height: 40px;
     text-align: center;
+    padding-top:5px;
 }
 .testbutton.inside:hover{
     background-color: darkorange;
 }
 .testbutton.inside.install{
     position: relative;
-    left:60%;
+    /*left:60%;*/
     top:-50px;
 }
 .testbutton.inside.api{
     position: relative;
-    left:60%;
+    left: 150px;
     top:-50px;
 }
 
@@ -213,21 +197,20 @@ aside{
 
 figure.snip1384 {
   font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
   margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+
   width: 50%;
   color: #ffffff;
   text-align: left;
   font-size: 16px;
   background-color: #000000;
     position:relative;
-    left:35%;
+    left:25%;
 
 }
-figure.snip1384 * {
+figure.snip1384 * {cfvvhhjhnuuuuuuuuuhnuhjjkkkkkkkkkkkkkkkkkkkkkkkkkkkki
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
@@ -338,31 +321,41 @@ body:before{
     margin-left:0px;
 width: 119.4% !important;
 position: relative !important;
-right: 81px;}
+right: 100px;}
 /*학습사이트로 이미지 전체 div*/
 
   .side.image{
     position:relative;
     bottom: 150px;
         left:-70px;
+      margin: 0px auto;
 
 
 }
 /*back이미지*/
 .backimage{
     position:absolute;
+    top:150px;
+    right:75px;
+    width: 95%;
+/*    height: 300px !important;*/
 
 }
+.backimage img{
+   height: 300px !important;
+}
+
 
 /*이미지위에 텍스트*/
         .imagetext{
             position: absolute;
-            top:50px;
+            top:220px;
             left: 50px;
             color:white;
             font-size:40px;
             font-weight: bold;
         }
+
 
         .testbutton{
             background-color:cadetblue;
@@ -373,8 +366,9 @@ right: 81px;}
             position:absolute;
             font-size:25px;
             left:300px;
-            top:120px;
+            top:300px;
             text-align: center;
+            padding-top: 5px;
 
 
         }
