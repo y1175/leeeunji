@@ -1,4 +1,4 @@
-\
+@media screen and (max-width:1024px) { #disqus_thread,.backimage,div.testbutton,.btngroup{ display: none; } }
 
 h3 a{
     font-size:20px;
@@ -85,7 +85,7 @@ font-size:50px;}
     text-align: center;
      /* border-radius: 5px;*/
     position:relative;
-    left:500px;
+    left:570px;
     display:block;
     top:200px;
     /*z-index: 99999 !important;*/
