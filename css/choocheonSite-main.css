@@ -15,7 +15,6 @@
 }
 
 .darkmode{
-        font-family: 'BMHANNAAir';
     background-color: black !important;
     color:lightgray;
 
@@ -30,7 +29,6 @@
 
 
 .lightmode{
-           font-family: 'BMHANNAAir';
     background-color: white !important;
     color:black;
 
