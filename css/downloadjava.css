@@ -6,52 +6,6 @@ h3 a{
     color:black !important;
 
 }
-/*이전 현재 다음 메뉴바*/
-#prev_next{
-height: 100px;
-    widows: 300px;
-
-}
-
-#prev_next ul li {
-                        list-style: none;
-                        color: white;
-                        background-color: silver;
-                        float: left;
-                        line-height: 30px;
-                        vertical-align: middle;
-                        text-align: center;
-                        border-radius: 5px;
-                    margin: 5px 15px;
-                        /*padding-right: 200px;*/
-                }
-#prev_next ul{
-    display: inline-block;
-    margin: 0px auto;
-}
-.menuLinknow{
-    font-size:50px;
-    color:black !important;
-    background-color:white !important;
-
-}
-
-                #prev_next .menuLink {
-                        text-decoration:none;
-                        color: white;
-                    display: block;
-                        width: 150px;
-                        font-size: 12px;
-                        font-weight: bold;
-                   /* border-radius: 200px;*/
-
-                }
-                #prev_next .menuLink:hover {
-
-                        background-color: dimgray;
-                    border-radius: 5px;
-                }
-
 
 
 /*전체 몸통 폭 지정*/
@@ -104,14 +58,19 @@ font-size:50px;}
         right:30%;
     z-index: 3;}
 
+
+
+
+
+
 /*움직이는 배너*/
 
 .btn-group{
     /*border:1px solid silver;*/
-    width: 70px;
-    height: 70px;
-    border: 1px solid silver;
-    background-color: white;
+    width: 50px;
+    height: 50px;
+   /* border: 1px solid silver;
+    background-color: white;*/
     /*background-color: orange;*/
    /* color: black !important;*/
    /* text-decoration-color: black !important;*/
@@ -120,7 +79,7 @@ font-size:50px;}
     position:relative;
     left:600px;
     display:block;
-    top:400px;
+    top:200px;
     /*z-index: 99999 !important;*/
 
     color:black;
@@ -136,9 +95,21 @@ button.btn.btn-default{z-index: 99999 !important;}
     display:flex
 }*/
 .btn-group:hover{
-    background-color: whitesmoke;
+   /* background-color: whitesmoke;*/
 }
 .btn.btn-default a{color:black !important;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .testbutton.inside{

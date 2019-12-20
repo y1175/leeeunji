@@ -57,6 +57,13 @@ h1{
     margin-bottom: 20px;
 }
 
+.title-line{
+    width:60%;
+    height:5px;
+    background-color:orange;
+    margin:0 auto;
+}
+
 nav {
     width: 60%;
     display: block;
