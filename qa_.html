@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/main3.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/side.css">
       <link rel="stylesheet" href="css/rs.css">
 
     <style>
@@ -24,7 +23,7 @@
 
             border-right: 1px solid silver;
             border-left: 1px solid silver;
-            width: 60%;
+            width: 80%;
 
         }
 
@@ -37,53 +36,6 @@
 
 
 <body>
-    <div id="page-wrapper">
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        <h3 id="tt">점프 투 코딩</h3>
-                    </a>
-                    <div id="line"></div>
-                </li>
-                <li><a href="#">홈</a></li>
-                <li><a href="#">언어소개</a>
-                    <ul>
-                        <li><a href="#">ㄴ INTRO</a></li>
-                        <li><a href="#">ㄴ HTML & CSS</a></li>
-                        <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
-                        <li><a href="#">ㄴ JAVA</a></li>
-                        <li><a href="#">ㄴ ORACLE</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">언어강좌</a>
-                    <ul id="study_lang">
-                        <li><a href="#">ㄴ INTRO</a></li>
-                        <li><a href="#">ㄴ HTML & CSS</a></li>
-                        <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
-                        <li><a href="#">ㄴ JAVA</a></li>
-                        <li><a href="#">ㄴ ORACLE</a></li>
-                        <li><a href="#">ㄴ 기타</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">다운로드</a>
-                    <ul>
-                        <li><a href="#">ㄴ 언어</a></li>
-                        <li><a href="#">ㄴ 개발 툴</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">사이트 추천</a></li>
-                <li><a href="#">질의응답</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
     <header>
         <div class="container-fluid">
             <div class="row" style="margin-bottom: 20px">
@@ -132,25 +84,131 @@
                 <div class="post">
 
                     <h1 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto; font-size: 4em;">
-                        INTRO
+                        질의응답
                     </h1>
-                    <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"> BEFORE</button>
-
-                    <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;">NEXT</button>
 
 
-                    <div style="max-width:854px; margin: 30px auto;">
-                        <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/KhptxxfMQ_Q" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
+
+
+   <div class="container py-3">
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="accordion" id="faqExample">
+                <div class="card">
+                    <div class="card-header p-2" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Q: 질문
+                            </button>
+                          </h5>
                     </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>A:</b> 블라블라
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Q: 질문
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>A:</b> 블라블라
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             Q: 질문
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>A:</b> 블라블라
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                             Q: 질문
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>A:</b> 블라블라
+                        </div>
+                    </div>
+                </div>
+                                <div class="card">
+                    <div class="card-header p-2" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                             Q: 질문
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>A:</b> 블라블라
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+<br>
+  <h3>Q&A</h3>
+   <br>
+       <form action="post" class="frm">
+        <ul id="qa">
+            <li>
+                <label for="subject">제목</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </li>
+            <li>
+                <label for="subject">이메일</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">내용</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+                </div>
+            </li>
+            <div id="bt">
+                <input type="reset" class="btn btn-secondary" id="reset" value="reset">
+                <!-- Button trigger modal -->
+                <input type="button" class="btn btn-primary" id="send" data-toggle="modal" data-target="#exampleModal" value="send">
+
+            </div>
+            </ul>
+                           </form>
 
 
   <ul id="floatMenu">
 
         <li class="menu">
 
+
             <a>
                 <div id="plus"><img src="icons/document-text.svg" alt="document" ></div>
             </a>
+
+
+
+
+
 
 
             <ul class="hide">
@@ -184,34 +242,6 @@
 
 
 
-                    <br>
-                    <p style="text-align: center;">
-
-                        지금까지 언어에 대한 자세한 소개를 통해 각각 언어를 살펴보았다.
-                    </p>
-                    <br>
-                    <p>
-                        하지만 단지 역사, 특징 등을 안다고 해서 그 언어의 달인, 언어 마스터 라고 할 순 없을 것이다. 그러므로 이제부터 다양한 언어 강좌 소개를 소개해볼까 한다.
-
-                    </p>
-                    <br>
-                    <p>
-                        사실 입문자의 가장 큰 고충은 무엇을 모르는지 모르는 상태이다. 과거에는 교육을 받기 위해 특정 시간, 특정 장소로 이동해야 했다. 하지만 인터넷의 발달로 지금은 온라인에서도 손쉽게 수업을 받을 수 있다. 사실 온라인에는 프로그래밍을 배우기 위해 필요한 거의 모든 정보들이 있지만, 이 지식들은 게시판이나 블로그 또는 커뮤니티에 내부 포스팅으로 파편화 되어 있다.
-                    </p>
-                    <br>
-                    <p>그래서 최소 무엇을 검색해야 하는지, 내가 어떤 것들을 모르는지 아는 사람들에게 인터넷은 더없이 좋은 공간이지만, ‘내가 무엇을 모르는지조차 모르는 상태’의 입문자에게 온라인은 그다지 좋은 공간이라고 할 수 없다.
-                    </p>
-                    <br>
-                    <p style="text-align: center; font-size: 25px">
-                        이러한 고충을 해결하기 위해 점프투코딩이라는 홈페이지가 생겨났다.
-                    </p>
-                    <p>
-                        <br>
-                        지금까진 입문자들에게 언어를 소개했다면, 이제부턴 언어 강좌를 통해 레벨업을 해보자! 이제부턴 ‘무엇을 모르는지 모르는 상태’에서 최소 ‘무엇을 모르는지는 아는 상태’가 되어보자!
-                    </p>
-                    <br>
-                    <br><br>
-
 
 
                     <!--Start of Tawk.to Script-->
@@ -231,27 +261,6 @@
                     </script>
                     <!--End of Tawk.to Script-->
 
-                    <div id="disqus_thread"></div>
-                    <script>
-                        /**
-                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                        /*
-                        var disqus_config = function () {
-                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        };
-                        */
-                        (function() { // DON'T EDIT BELOW THIS LINE
-                            var d = document,
-                                s = d.createElement('script');
-                            s.src = 'https://191218-project.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
                 </div>
@@ -330,10 +339,6 @@
 
 
 
-</body>
-
-
-
     <div class="row justify-content-center">
         <footer class="footer col-5" style="min-width:60%">
             <dl class="row" style="min-width:60%">
@@ -343,6 +348,12 @@
                     | 대표전화 : 010-7144-3797</dd>
             </dl>
         </footer>
-
     </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
