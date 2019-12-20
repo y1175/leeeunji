@@ -18,8 +18,22 @@
 </head>
 
 <body>
+    <div class="topnv fixed-top row">
+
+    </div>
+    <div class="topsearch row">
+        <div class="col-12">
+            <form class="form-inline">
+                <input class="form-control w-75" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+                <button class="btn btn-outline-success w-25" type="submit">Search</button>
+
+            </form>
+        </div>
+    </div>
     <div class="container-fluid" id="rap">
         <!-- header -->
+
+
         <header>
             <div class="row">
                 <div class="col-sm">
@@ -71,8 +85,10 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <img class="btn" src="icons/search.svg" alt="" width="48" height="48" title="Bootstrap" data-toggle="modal" data-target="#searchbar">
-                    <div class="modal" id="searchbar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <img id="searchbtn" class="btn" src="icons/search.svg" alt="" width="48" height="48" title="Bootstrap">
+
+                    <!--<img class="btn" src="icons/search.svg" alt="" width="48" height="48" title="Bootstrap" data-toggle="modal" data-target="#searchbar">-->
+                    <!--<div class="modal" id="searchbar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -95,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <img src="img/logo/orange.png" id="titleimg" class="image-fluid" alt="">
@@ -220,7 +236,7 @@
                     <h2 class="display-4">언어! 어떤 것 부터 시작해야 할까요?</h2>
                     <p class="lead">점프 투 코딩에서 추천하는 언어 및 교육 순서!
                         <br>차근차근 따라해봅시다!
-                        </p>
+                    </p>
                     <hr class="my-4">
                     <p>It uses utility classes for typography and spacing.</p>
 

@@ -38,6 +38,16 @@ $(document).ready(function () {
         'text-indent': '0em',
         'font-size': '3em',
         'color': 'black',
-        'font-weight': '600'
+        'font-weight': '600',
+        'margin-bottom': '10px;'
     })
+
+    $('#searchbtn').on('click',function(){
+       let sbar=$('.topsearch div');
+
+        if(sbar.css('opacity')=='0')
+            sbar.css('opacity','1')
+        else
+            sbar.css('opacity','0');
+    });
 })
