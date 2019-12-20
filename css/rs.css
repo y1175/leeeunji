@@ -1,0 +1,86 @@
+#floatMenu {
+    position: absolute;
+    z-index: 1;
+    float: center;
+    left: 87%;
+    bottom: 300px;
+
+}
+
+.menu a {
+    cursor: pointer;
+}
+
+.menu .hide {
+    display: none;
+    height: 360px;
+}
+
+
+.hide {
+
+    border: 1px solid silver;
+    padding: 0px 5px 30px 10px;
+    /*background-color: white;*/
+}
+
+.hide p.recent {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hide p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+#plus {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    position: relative;
+    right: 40px;
+    top: 75px;
+
+    /*background-color: white;*/
+
+}
+
+#plus img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -10px;
+    top: -20px;
+    /*border: 1px solid silver;*/
+}
+
+
+.menu {
+    position: relative;
+    bottom: 300px;
+}
+
+
+.menu img {
+    width: 70px;
+    height: 70px !important;
+    border: 1px solid silver;
+}
+
+#plus > img {
+    border: 0px;
+
+}
