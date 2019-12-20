@@ -257,7 +257,7 @@ dd{
 
 
 /*recent_sidebar*/
-
+@media screen and (max-width:1024px) { div#plus { display: none; } }
 #floatMenu{
             position: absolute;
             z-index: 1;
