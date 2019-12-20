@@ -14,6 +14,12 @@ h2 {
 }
 
 
+.col-sm-6 > a{
+    color: gray !important;
+    font-weight: 100;
+}
+
+
 h3 {
     text-align: center;
     font-family: 'BMHANNA_11yrs';
