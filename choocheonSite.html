@@ -10,7 +10,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
     <script src="js/choocheonSite-main.js"></script>
 
-
     </head>
 <body>
 <div class="custom-control custom-switch">
@@ -161,10 +160,10 @@
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="main.html">홈</a></li>
-    <li class="breadcrumb-item active" aria-current="page">사이트</li>
+    <li class="breadcrumb-item active" aria-current="page">사이트 추천</li>
   </ol>
 </nav>
-<h3>추천 사이트</h3>
+<h3>사이트 추천</h3>
 
 
 
@@ -197,6 +196,43 @@
      <span class="badge badge-primary" id="tag-korea">국내</span>
 </div>
 
+ <ul id="floatMenu">
+
+        <li class="menu">
+
+            <a>
+                <div id="plus"><img src="icons/document-text.svg" alt="document" ></div>
+            </a>
+
+
+            <ul class="hide">
+                <li>
+                <p class="recent">최근 본 글</p>
+                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
+                </li>
+                <li>
+                   <p>프로그래머스</p>
+                </li>
+                <li>
+
+                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
+                </li>
+                <li>
+                    <p>언어강좌INTRO</p>
+                </li>
+                <li>
+
+                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
+                </li>
+                <li>
+                    <p>ECLIPSE설치</p>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
 
 
      <!--사이트 추천 작성하는 폼-->
@@ -1152,7 +1188,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
-                    <div id="disqus_thread"></div>
+
 
 
 
@@ -1177,6 +1213,41 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
 
 
+<script>
 
+
+        $(document).ready(function() {
+            // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+            $(".menu>a").click(function() {
+                var submenu = $(this).next("ul");
+
+                // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
+                if (submenu.is(":visible")) {
+                    submenu.slideUp();
+                } else {
+                    submenu.slideDown();
+                }
+
+            });
+
+
+      /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+	// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+	var floatPosition = parseInt($("#floatMenu").css('top'));
+	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+	$(window).scroll(function() {
+		// 현재 스크롤 위치를 가져온다.
+		var scrollTop = $(window).scrollTop();
+		var newPosition = scrollTop + floatPosition + "px";
+
+		$("#floatMenu").stop().animate({
+			"top" : newPosition
+		}, 300);
+
+	}).scroll();
+        });
+
+    </script>
 </body>
 </html>

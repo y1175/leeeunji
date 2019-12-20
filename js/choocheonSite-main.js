@@ -98,7 +98,7 @@ $(document).ready(function(){
                 $('body').css('color','lightgray');
 
                 $('.card,.modal-body,.modal-header,.modal-footer').addClass('darkmode');
-                $('.badge, .btn-primary, img.btn').addClass('darkbadge');
+                $('.badge, .btn-primary, img.btn ,#plus, .modal .close').addClass('darkbadge');
 
                     }
                 else{
@@ -108,7 +108,7 @@ $(document).ready(function(){
                 $('body').css('color','black');
                 $('.card,.modal-body,.modal-header,.modal-footer').removeClass('darkmode');
                 $('.card,.modal-body,.modal-header,.modal-footer').removeClass('lightmode');
-                $('.badge, .btn-primary, img,btn').removeClass('darkbadge');
+                $('.badge, .btn-primary, img.btn ,#plus, .modal .close').removeClass('darkbadge');
                 }
             }
 

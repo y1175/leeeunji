@@ -22,8 +22,8 @@ body {
     background-color: white !important;
 }
 
-*{
-    font-family: 'BMHANNAAir' ;
+* {
+    font-family: 'BMHANNAAir';
     font-size: 1em;
 }
 
@@ -40,6 +40,11 @@ h2 {
     font-weight: bolder !important;
 }
 
+
+h5 {
+    font-size: 1em !important;
+    font-weight: bolder !important;
+}
 .col-sm img {
     margin: 0px;
     padding: 0px;
@@ -58,9 +63,10 @@ dt > a {
     font-weight: 600;
 }
 
-dt{
+dt {
     font-size: 1em !important;
 }
+
 dd {
     font-size: 0.8em !important;
 }
@@ -92,7 +98,8 @@ nav {
     color: white;
 }
 
-.nav-item a, .nav-item a:visited{
+.nav-item a,
+.nav-item a:visited {
     color: black;
 }
 
@@ -266,16 +273,6 @@ iframe {
 
 .sidebar-nav > li > ul {
     display: none;
-}
-
-.sidebar-nav div {
-    text-align: center;
-}
-
-.sidebar-nav div a {
-    font-size: 3em;
-    color: black;
-    font-weight: 600;
 }
 
 /* color option*/
