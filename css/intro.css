@@ -1,19 +1,17 @@
-* {
-    font-family: 'BMHANNAAir';
-}
+
 
 
 h2 {
     text-align: center;
     font-family: 'BMHANNA_11yrs';
-    font-size: 4em !important;
+    font-size: 4em;
 }
 
-.post btn {
+.col-12 .btn {
+    color:orange;
     font-size: 0.35em;
-    color: black;
-}
 
+}
 
 
 h3 {
@@ -22,21 +20,11 @@ h3 {
     font-size: 2em !important;
 }
 
-.mb-0 {
-    text-align: center;
-    font-family: 'BMHANNA_11yrs';
-    font-size: 5em;
-}
-
-.col-12 {
-    padding: 0px;
-}
 
 .accordion {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 100%;
-
 }
 
 
@@ -45,14 +33,27 @@ h3 {
     width: 80%;
 }
 
-.post > p:first-of-type {
+.card-header{
+    padding: 0px;
+}
+
+
+.card-body{
     font-size: 130%;
     font-family: 'BMHANNAAir';
+
 }
-
-
 pre {
-   font-size: 130%;
+    font-size: 140%;
+
+
+
     font-family: 'BMHANNAAir';
+    font-family: 'Do Hyeon', sans-serif;
+
+
+
     text-align: center;
+    white-space:pre-line;
 }
+
