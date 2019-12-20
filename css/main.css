@@ -14,7 +14,7 @@
 
 #titleimg {
     position: absolute;
-    left: 10%;
+    left: 80%;
     z-index: -1;
 }
 
@@ -22,72 +22,13 @@ body {
     background-color: white !important;
 }
 
+*{
+    font-family: 'BMHANNAAir' ;
+    font-size: 1em;
 }
 
 h1 {
     font-family: 'BMHANNA_11yrs';
-}
-
-* {
-    font-family: 'BMHANNAAir';
-    font-size: 1em;
-}
-
-.col-sm img {
-    margin: 0px;
-    padding: 0px;
-}
-
-/* footer */
-dd,
-dt,
-dl {
-    margin: 2px 0px !important;
-    padding: 0px !important;
-}
-
-dt > a {
-    color: gray !important;
-    font-weight: 600;
-}
-
-dd {
-    font-size: 0.8em !important;
-}
-
-.footer {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-top: 1px solid silver;
-    color: gray !important;
-    font-size: 1em;
-}
-
-.navbar {
-    background-color: white !important;
-    font-size: 15px !important;
-    border-bottom: 5px solid orange;
-    margin-bottom: 20px;
-}
-
-nav {
-    width: 60%;
-    display: block;
-    margin: 0px auto;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: black;
-}
-
-
-.slider-wrapper,
-.theme-default {
-    margin-top: 0px !important;
-}
-
-
-h1 {
     padding: 0px;
     margin: 0px;
     font-size: 5.5em !important;
@@ -99,13 +40,78 @@ h2 {
     font-weight: bolder !important;
 }
 
+.col-sm img {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* footer */
+dd,
+dt,
+dl {
+    margin: 0px 0px !important;
+    padding: 0px !important;
+}
+
+dt > a {
+    color: gray !important;
+    font-weight: 600;
+}
+
+dt{
+    font-size: 1em !important;
+}
+dd {
+    font-size: 0.8em !important;
+}
+
+
+.footer {
+    margin-top: 0px;
+    padding: 10px 0px;
+    border-top: 1px solid silver;
+    color: gray !important;
+    font-size: 1em;
+}
+
+/* mian navbar */
+.navbar {
+    background-color: black !important;
+    font-size: 15px !important;
+    border-bottom: 5px solid orange;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-item a, .nav-item a:visited{
+    color: black;
+}
+
+/* main slider */
+.slider-wrapper,
+.theme-default {
+    margin-top: 0px !important;
+}
+
+
+
+
 a.btn {
     color: white !important;
 }
 
 /* jumbo*/
 .jumbotron {
-    margin-top: 4em !important;
+    margin-top: 3em !important;
     margin-bottom: 0px !important;
     padding: 0px;
     max-height: 23em !important;
@@ -269,6 +275,7 @@ iframe {
 .sidebar-nav div a {
     font-size: 3em;
     color: black;
+    font-weight: 600;
 }
 
 /* color option*/
