@@ -1,6 +1,13 @@
 
 
 
+
+
+
+
+@media screen and (max-width:1024px) { div#plus { display: none; } }
+
+
 #floatMenu{
             position: absolute;
             z-index: 1;
@@ -54,6 +61,12 @@ ul li{list-style:none;}
 
 .menu{position: relative;
 bottom:300px;}
+/*
+a.nav-link{
+    position: relative !important;
+    top:20px !important!;
+}
+*/
 
 
         .menu img {
