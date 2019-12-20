@@ -7,22 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-     <title>점프 투 코딩</title>
+    <title>점프 투 코딩</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/main3.css">
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/intro.css">
+
 </head>
 
 <body>
-   <header>
+    <div id="page-wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <h3 id="tt">점프 투 코딩</h3>
+                    </a>
+                    <div id="line"></div>
+                </li>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">언어소개</a>
+                    <ul>
+                        <li><a href="#">ㄴ INTRO</a></li>
+                        <li><a href="#">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="#">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
+                        <li><a href="#">ㄴ JAVA</a></li>
+                        <li><a href="#">ㄴ ORACLE</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">언어강좌</a>
+                    <ul id="study_lang">
+                        <li><a href="#">ㄴ INTRO</a></li>
+                        <li><a href="#">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="#">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
+                        <li><a href="#">ㄴ JAVA</a></li>
+                        <li><a href="#">ㄴ ORACLE</a></li>
+                        <li><a href="#">ㄴ 기타</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">다운로드</a>
+                    <ul>
+                        <li><a href="#">언어</a></li>
+                        <li><a href="#">개발 툴</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">사이트 추천</a></li>
+                <li><a href="#">질의응답</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
         <div class="container-fluid">
             <div class="row" style="margin-bottom: 20px">
-                <div class="col-sm">aaa</div>
-                <div class="col-sm">bbb</div>
+                <br><br>
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
         </div>
@@ -32,85 +78,106 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto" style="margin: 0px auto">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">언어소개</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">java</a>
-                            <a class="dropdown-item" href="#">oracle</a>
-                            <a class="dropdown-item" href="#">html</a>
-                            <a class="dropdown-item" href="#">...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">다운로드</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="#">java</a>
-                            <a class="dropdown-item" href="#">oracle</a>
-                            <a class="dropdown-item" href="#">html</a>
-                            <a class="dropdown-item" href="#">...</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">사이트</a>
+                        <a class="nav-link" href="#">HTML &#38; CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">질의응답</a>
+                        <a class="nav-link" href="#">JAVASCRIPT &#38; JQUERY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#">JAVA</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-        <div class="container d-flex align-items-md-center py-2">
-            <nav class="nav mx-auto">
-                <a class="text-dark py-1 mr-3" href="#">intro</a>
-                <a class="text-dark py-1 mr-3" href="#">java</a>
-                <a class="text-dark py-1 mr-3" href="#">oracle</a>
-                <a class="text-dark py-1 mr-3" href="#">html</a>
-                <a class="text-dark py-1 mr-3" href="#">javascript</a>
-                <a class="text-dark py-1 mr-3" href="#">jquery</a>
-            </nav>
-        </div>
-    </nav>
+
     <div class="container">
-        <div id="carbonads-container">
-            <div class="carbonad">
-                <div id="azcarbon"></div>
-            </div>
-        </div>
         <div class="posts-container mx-auto px-3 my-5">
             <div class="post">
-                <h1 class="post-title fw-500">
+
+                <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
                     INTRO
-                </h1>
+                </h2>
+                <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"> HOME</button>
 
-               <div class="movie"><iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe></div>
+                <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;">HTML &#38; CSS</button>
 
-
-                <h2 id="intro">소개</h2>
+                <div class="movie"><iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe></div>
                 <br>
-                <p>소개 페이지입니다.</p>
-                <br><br>
-                <div class="pagination">
-                    <a class="pagination-item older" href="/page2/">Older</a>
-                    <span class="pagination-item newer">Newer</span>
-                </div>
+                <p style="text-align: center"><b>'기계'와 '사람'의 대화를 가능하게 하다. '프로그래밍 언어'</b></p>
+                <pre>
+프로그래밍 언어는 인간이 기계를 가르치고 통제할 수 있게 해준다.
+이 과정을 더 효과적이고 단순하게 만들기 위해 수 많은 컴퓨터 언어들이 존재한다.
+이와 같은 프로그래밍 언어의 역사는 쉽게 정리할 수 없을 만큼 다양하고 길다.
+그 중에는 사라진 언어도 있으며, 현재까지 건재하고 있는 언어와 그 사용법을 증명할 언어,
+새로 생겨날 수 백 수 천 개의 프로그래밍 언어가 있다.
+
+그렇다면 현재 수백 개의 프로그래밍 언어가 존재하는데, 왜 계속해서 새로운 언어들이 출시되고 있는 것일까?
+새로운 분야의 개발에 따른 새로운 언어의 필요성과 효율성 측면 등의 많은 이유가 있을 것이다.
+
+지금 이 순간, 또 어떤 프로그래밍 언어들이 개발되고 있을까?
+
+조금 더 쉽고, 간단한 언어의 탄생을 기대하며
+상위권에 랭크된 'JAVA', JAVASCRIPT'. 'HTML' 에 대한 소개를 시작하도록 하겠다.
+                    <br>
+                </pre>
+
             </div>
         </div>
+        <div id="disqus_thread"></div>
     </div>
+
+
+    <div class="row justify-content-center">
+        <footer class="footer col-5" style="min-width:500px">
+            <dl class="row" style="min-width:500px">
+                <dt class="col-sm-6">Copyright &#64; 2019 Jump To Coding Inc. 모든 권리 보유. </dt>
+                <dt class="col-sm-6"><a href="#">개인정보 처리방침</a> | <a href="#">약관</a> | <a href="#">판매 및 환불</a> | <a href="#">법적 고지</a> | <a href="#">사이트 맵</a></dt>
+                <dd>사업자등록번호 : 123-45-678910 | 주소 : 서울시 서초구 강남대로 459 백암빌딩 | 점프투코딩 : 김진영, 김현진, 박진우, 안은별, 이은지, 정용인 | 대표전화 : 010-7133-2619</dd>
+            </dl>
+        </footer>
+    </div>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://jumptocoding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-</body></html>
+    <script>
+        $(document).ready(function() {
+            $('li').on('click', function() {
+                let ch = $(this).children('ul');
+                $(ch).toggle();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

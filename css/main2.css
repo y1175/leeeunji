@@ -1,19 +1,21 @@
+@@ -1,12 +1,3 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#rap {
+    padding: 0px 8.5%;
+}
+
 @font-face {
 
     font-family: 'BMHANNA_11yrs';
-
-    src: url('../font/BMHANNA_11yrs.woff') format('woff');
-}
-
-@font-face {
-
-    font-family: 'BMHANNAAir';
-
-    src: url('../font/BMHANNAAir.woff') format('woff');
-}
+@@ -23,15 +14,37 @@
 
 body {
     background-color: white !important;
+
 }
 
 }
@@ -36,6 +38,8 @@ dt>a {
     color: gray !important; font-weight: 600;
 }
 
+dl {
+    margin: 0px !important;
 dd{
     font-size: 0.8em !important;
 }
@@ -48,118 +52,48 @@ dd{
 }
 
 .navbar {
-    background-color: white !important;
-    font-size: 15px !important;
-    border-bottom: 5px solid orange;
-    margin-bottom: 20px;
-}
-
-nav {
-    width: 60%;
-    display: block;
-    margin: 0px auto;
-}
-
-.navbar-dark .navbar-nav .nav-link {
+@@ -51,9 +64,6 @@ nav {
     color: black;
 }
 
-<<<<<<< HEAD
-.footer{
-    margin-top: 0px; margin-bottom: 10px;
-    border-top: 1px solid silver;
-    color: gray !important;
-    font-size: 1em;
-    font-family: 'BMHANNAAir';
+.footer {
+    margin-top: 0px;
 }
-=======
->>>>>>> origin/master
 
 .slider-wrapper,
 .theme-default {
-    margin-top: 0px !important;
-}
+@@ -62,6 +72,7 @@ nav {
 
 
-<<<<<<< HEAD
-
-.text-center {
-=======
 h1 {
     padding: 0px; margin: 0px;
->>>>>>> origin/master
     font-size: 6em !important;
     font-weight: bolder !important;
 }
-
-
-/*
-h2 {
-    font-size: 2em !important;
-    font-weight: bolder !important;
-}
-*/
-
-a.btn {
-    color: white !important;
-}
-
-.jumbotron {
-    margin-top: 50px !important;
-    margin-bottom: 0px !important;
-    padding: 0px;
-}
-
-.jumbotron img {
-    height: 100.5% !important;
-}
-
-.jumbotron .col-5:nth-child(1) {
-    padding: 70px;
-}
-
-.card img {
-    padding: 0px;
-    height: 270px;
-}
-
-.card a,
-.card a:visited {
-    color: black;
-}
-
-.slider-wrapper,
-.nivo-main-image,
-#slider {
-    height: 350px !important;
+@@ -106,10 +117,6 @@ a.btn {
     border-radius: 3px;
+}
+
+.modal-content {
+    left: -100px;
 }
 
 #carouselExampleCaptions {
     margin: 50px auto;
 }
-
-#carouselExampleCaptions img {
-    border-bottom: 3px solid rgb(232, 232, 232);
+@@ -119,8 +126,6 @@ a.btn {
     border-radius: 5px;
 }
+
+
 
 .carousel-control-prev {
     background-color: black;
     left: 80%;
-    height: 50px;
-    margin: auto 0px;
-    border-radius: 50px;
-
-}
-
-.carousel-control-next {
-    background-color: black;
-    left: 0%;
-    height: 50px;
-    margin: auto 0px;
+@@ -138,8 +143,91 @@ a.btn {
     border-radius: 50px;
 }
+
 
 /* video */
 iframe {

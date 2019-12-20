@@ -9,7 +9,7 @@ h2 {
     font-size: 4em !important;
 }
 
-.btn {
+.post btn {
     font-size: 0.35em;
     color: black;
 }
@@ -48,4 +48,11 @@ h3 {
 .post > p:first-of-type {
     font-size: 130%;
     font-family: 'BMHANNAAir';
+}
+
+
+pre {
+   font-size: 130%;
+    font-family: 'BMHANNAAir';
+    text-align: center;
 }
