@@ -5,7 +5,7 @@
             position: absolute;
             z-index: 1;
             float:center;
-            left:80%;
+            left:87%;
 
         }
         .menu a {
@@ -14,7 +14,9 @@
 
         .menu .hide {
             display: none;
+            height: 360px;
         }
+
 
         .hide {
 
@@ -22,6 +24,10 @@
             padding: 0px 5px 30px 10px;
             background-color: white;
         }
+.hide p.recent{font-weight: bold;font-size: 13px;}
+.hide p{font-size: 12px;}
+
+
 
 
 
@@ -31,20 +37,21 @@
         }
 
         #plus {
-            width: 25px;
-            height: 25px;
-            border: 1px solid silver;
+            width: 0px; height: 75px;
             text-align: center;
             position: relative;
-            left:-26px;
-            top:50px;
-            background-color: white;
+            right:40px;
+            top:75px;
+
+            /*background-color: white;*/
 
         }
+#plus img{width: 40px; height: 40px;
+/*border: 1px solid silver;*/}
 
 
         img {
             width: 70px;
-            height: 70px;
+            height: 70px !important;
             border: 1px solid silver;
         }
