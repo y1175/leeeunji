@@ -5,6 +5,25 @@
         font-weight: bolder;
     }
 
+    .post-title {
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        font-size: 50px;
+    }
+
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+        font-family: 'BMHANNA_11yrs';
+        font-size: 20px;
+    }
+
+    nav {
+        display: block;
+        margin: 0px auto;
+    }
+
 
 }
 
@@ -22,13 +41,13 @@
         padding: 0px 10px;
     }
 
-        nav {
+    nav {
         width: 95%;
         display: block;
         margin: 0px auto;
     }
 
-        .post-title{
+    .post-title {
         text-align: center;
         display: block;
         margin: 0px auto;
@@ -60,13 +79,12 @@
         margin: 0px auto;
     }
 
-    .post-title{
+    .post-title {
         text-align: center;
         display: block;
         margin: 0px auto;
         font-size: 4em;
     }
-
 
 }
 
@@ -103,17 +121,17 @@ h1 {
     font-family: 'BMHANNA_11yrs';
 }
 
-.text-center>a:link{
+.text-center > a:link {
     color: black;
     text-decoration: none;
 }
 
-.text-center>a:visited{
+.text-center > a:visited {
     color: black;
     text-decoration: none;
 }
 
-.text-center>a:hover{
+.text-center > a:hover {
     color: black;
     text-decoration: none;
 }
