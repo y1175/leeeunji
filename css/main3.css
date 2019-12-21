@@ -3,9 +3,6 @@
     margin: 0px;
 }
 
-#rap {
-    padding: 0px 8.5%;
-}
 
 @font-face {
 
@@ -95,29 +92,6 @@ a.btn {
     color: white !important;
 }
 
-.jumbotron {
-    margin-top: 50px !important;
-    margin-bottom: 0px !important;
-    padding: 0px;
-}
-
-.jumbotron img {
-    height: 100.5% !important;
-}
-
-.jumbotron .col-5:nth-child(1) {
-    padding: 70px;
-}
-
-.card img {
-    padding: 0px;
-    height: 270px;
-}
-
-.card a,
-.card a:visited {
-    color: black;
-}
 
 .slider-wrapper,
 .nivo-main-image,
@@ -130,33 +104,7 @@ a.btn {
     left: -100px;
 }
 
-#carouselExampleCaptions {
-    margin: 50px auto;
-}
 
-#carouselExampleCaptions img {
-    border-bottom: 3px solid rgb(232, 232, 232);
-    border-radius: 5px;
-}
-
-
-
-.carousel-control-prev {
-    background-color: black;
-    left: 80%;
-    height: 50px;
-    margin: auto 0px;
-    border-radius: 50px;
-
-}
-
-.carousel-control-next {
-    background-color: black;
-    left: 0%;
-    height: 50px;
-    margin: auto 0px;
-    border-radius: 50px;
-}
 
 
 iframe {
