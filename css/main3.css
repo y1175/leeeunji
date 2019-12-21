@@ -1,3 +1,61 @@
+@media  (min-width:320px) and (max-width:480px) {
+
+    .text-center {
+        font-size: 5.5em;
+        font-weight: bolder;
+    }
+
+
+}
+
+@media  (min-width:481px) and (max-width:768px) {
+
+    .text-center {
+        font-size: 8em;
+        font-weight: bolder;
+    }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 20px;
+    padding: 0px 14px;
+}
+
+
+
+}
+
+
+
+@media (min-width: 769px) {
+
+    .text-center {
+        font-size: 8em;
+        font-weight: bolder;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 25px;
+    padding: 0px 1rem;
+}
+
+    nav {
+    width: 55%;
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+}
+
+
+
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -27,6 +85,7 @@ h1 {
     font-family: 'BMHANNA_11yrs';
 }
 
+
 dl {
     margin: 0px !important;
 }
@@ -38,32 +97,28 @@ dl {
     margin-bottom: 20px;
 }
 
-nav {
-    width: 60%;
-    display: block;
-    margin: 0px auto;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-    color: black;
-   font-family: 'BMHANNA_11yrs';
-}
-dd, dt, dl{
-    margin: 2px 0px !important; padding: 0px
-        !important;
-    font-family: 'BMHANNAAir';
-}
-dt>a {
-    color: blue !important; font-weight: 600;
+dd,
+dt,
+dl {
+    margin: 2px 0px !important;
+    padding: 0px !important;
     font-family: 'BMHANNAAir';
 }
 
-dd{
+dt > a {
+    color: blue !important;
+    font-weight: 600;
+    font-family: 'BMHANNAAir';
+}
+
+dd {
     font-size: 0.8em !important;
 }
 
-.footer{
-    margin-top: 0px; margin-bottom: 10px;
+.footer {
+    margin-top: 0px;
+    margin-bottom: 10px;
     border-top: 1px solid silver;
     color: gray !important;
     font-size: 1em;
@@ -75,11 +130,6 @@ dd{
     margin-top: 0px !important;
 }
 
-
-text-center. {
-    font-size: 6em !important;
-    font-weight: bolder !important;
-}
 
 /*
 h2 {
@@ -111,6 +161,6 @@ iframe {
     border-radius: 5px;
 }
 
-.nav-item a:hover{
-    color: orange !important ;
+.nav-item a:hover {
+    color: orange !important;
 }
