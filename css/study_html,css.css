@@ -12,17 +12,18 @@
     src: url('../font/BMHANNAAir.woff') format('woff');
 }
 
+
 figure.snip1432 {
   color: #fff;
   position: relative;
   overflow: hidden;
-  margin: 10px 120px;
   min-width: 30%;
   max-width: 70%;
   width: 70%;
   background: #000000;
   color: #ffffff;
   text-align: left;
+  margin: 0px auto;
 }
 figure.snip1432 * {
   -webkit-box-sizing: border-box;
@@ -108,10 +109,8 @@ figure.snip1432.hover figcaption h3:nth-of-type(2) {
 
 .im>li{
     list-style: none;
-    display: inline-block;
+    display: inline-block !important;
+    margin: 0px auto !improtant;
 }
 
-.im{
-    text-align: center;
-}
 

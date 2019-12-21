@@ -26,8 +26,6 @@
 
 
         }
-
-
     </style>
 
 
@@ -94,7 +92,7 @@
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon" style="background-color: orange"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto" style="margin: 0px auto">
@@ -143,43 +141,44 @@
                     </div>
 
 
-  <ul id="floatMenu">
+                    <ul id="floatMenu">
 
-        <li class="menu">
+                        <li class="menu">
 
-            <a>
-                <div id="plus"><img src="icons/document-text.svg" alt="document" ></div>
-            </a>
+                            <a>
+                                <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
+                            </a>
 
 
-            <ul class="hide">
-                <li>
-                <p class="recent">최근 본 글</p>
-                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
-                </li>
-                <li>
-                   <p>프로그래머스</p>
-                </li>
-                <li>
+                            <ul class="hide">
+                                <li>
+                                    <p class="recent">최근 본 글</p>
+                                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
+                                </li>
+                                <li>
+                                    <p>프로그래머스</p>
+                                </li>
+                                <li>
 
-                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
-                </li>
-                <li>
-                    <p>언어강좌INTRO</p>
-                </li>
-                <li>
+                                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
+                                </li>
+                                <li>
+                                    <p>언어강좌INTRO</p>
+                                </li>
+                                <li>
 
-                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
-                </li>
-                <li>
-                    <p>ECLIPSE설치</p>
-                </li>
+                                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
+                                </li>
+                                <li>
+                                    <p>ECLIPSE설치</p>
+                                </li>
 
-            </ul>
+                            </ul>
 
-        </li>
+                        </li>
 
-    </ul> <!--최신글 스크롤 배너 끝-->
+                    </ul>
+                    <!--최신글 스크롤 배너 끝-->
 
 
 
@@ -226,7 +225,6 @@
                             s1.setAttribute('crossorigin', '*');
                             s0.parentNode.insertBefore(s1, s0);
                         })();
-
                     </script>
                     <!--End of Tawk.to Script-->
 
@@ -248,7 +246,6 @@
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
-
                     </script>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
@@ -268,10 +265,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
- <script>
-
-
-
+    <script>
         $('#study_lang').show();
 
         $('li').on('click', function() {
@@ -294,38 +288,35 @@
             });
 
 
-// menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-            $(".menu>a").click(function() {
-                var submenu = $(this).next("ul");
+        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+        $(".menu>a").click(function() {
+            var submenu = $(this).next("ul");
 
-                // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
-                if (submenu.is(":visible")) {
-                    submenu.slideUp();
-                } else {
-                    submenu.slideDown();
-                }
+            // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
+            if (submenu.is(":visible")) {
+                submenu.slideUp();
+            } else {
+                submenu.slideDown();
+            }
 
-            });
-
-
-      /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
-	// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-	var floatPosition = parseInt($("#floatMenu").css('top'));
-	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
-
-	$(window).scroll(function() {
-		// 현재 스크롤 위치를 가져온다.
-		var scrollTop = $(window).scrollTop();
-		var newPosition = scrollTop + floatPosition + "px";
-
-		$("#floatMenu").stop().animate({
-			"top" : newPosition
-		}, 300);
-
-	}).scroll();
+        });
 
 
+        /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+        // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+        var floatPosition = parseInt($("#floatMenu").css('top'));
+        // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
 
+        $(window).scroll(function() {
+            // 현재 스크롤 위치를 가져온다.
+            var scrollTop = $(window).scrollTop();
+            var newPosition = scrollTop + floatPosition + "px";
+
+            $("#floatMenu").stop().animate({
+                "top": newPosition
+            }, 300);
+
+        }).scroll();
     </script>
 
 
@@ -341,8 +332,4 @@
 
     </div>
 
-</body>
-
-
-
-</html>
+</body></html>
