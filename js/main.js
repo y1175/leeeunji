@@ -40,35 +40,35 @@ $(document).ready(function () {
         'margin-bottom': '10px;'
     })
 
-    $('#searchbtn').on('click', function () {
+    //검색버튼
+    $('.searchbtn').on('click', function () {
         let sbar = $('.topsearch div');
-
+        var scrollTop = $(window).scrollTop();
         if (sbar.css('opacity') == '0') {
-
             sbar.css({
                 'opacity': '1',
                 'z-index': '1'
             })
+            sbar.css('top', (scrollTop + parseInt(sbar.css('top')))+"px");
         } else {
             sbar.css({
                 'opacity': '0',
-                'z-index': '0'
+                'z-index': '0',
+                'top': '65px'
             });
+            /*sbar.css('top','65px');*/
         }
     });
 
     $(window).scroll(function () {
-        $('.topsearch div').css({
-            'opacity': '0',
-            'z-index': '0'
-        });
+        //최상단 고정바
         var scrollTop = $(window).scrollTop();
+        let sbar = $('.topsearch div');
         if(scrollTop>99){
             $('.topnv').css({
             'opacity': '1',
             'z-index': '1'
         });
-            $('.topsearch div').css('top',)
         }
         else{
            $('.topnv').css({
@@ -76,23 +76,12 @@ $(document).ready(function () {
             'z-index': '0'
         });
         }
+        //검색바
+        sbar.css({
+            'opacity': '0',
+            'z-index': '0',
+            'top': '65px'
+        });
+        /*sbar.css('top','65px');*/
     });
-
-      /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
-	// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-	/*var floatPosition = parseInt($("#floatMenu").css('top'));*/
-	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
-
-	$(window).scroll(function() {
-		// 현재 스크롤 위치를 가져온다.
-
-        /*
-		var newPosition = scrollTop + floatPosition + "px";
-
-		$("#floatMenu").stop().animate({
-			"top" : newPosition
-		}, 300);
-*/
-	}).scroll();
-
 })
