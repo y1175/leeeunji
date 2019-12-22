@@ -316,7 +316,7 @@ iframe {
     position: absolute;
     z-index: 0;
     opacity: 0;
-    transition: opacity 1s;
+    transition-delay: opacity 1s;
     border-top: 1px solid silver;
 }
 

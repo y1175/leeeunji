@@ -74,7 +74,7 @@ $(document).ready(function () {
         //검색바
         sbar.css({
             'opacity': '0',
-            /*'z-index': '0',*/
+            'z-index': '0'
 /*            'top': '65px'*/
         });
         /*sbar.css('top','65px');*/
