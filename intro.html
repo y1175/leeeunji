@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/side.css">
     <link rel="stylesheet" href="css/intro.css">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic+Coding|Noto+Sans+KR|Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Eunbyul/modal.css">
+
 
     <style>
         #plus>img {
@@ -47,6 +49,7 @@
                         <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
                         <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                        <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
                 </li>
 
@@ -68,13 +71,13 @@
                 </li>
                 <li><a href="choocheonSite.html">사이트 추천</a></li>
                 <li><a href="q&a.html">질의응답</a></li>
-                <li><a href="contct.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
     </div>
 
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-center">
             <div class="row" style="margin-bottom: 20px">
                 <br><br>
             </div>
@@ -93,10 +96,13 @@
                         <a class="nav-link" href="intro_HTML&CSS.html">HTML &#38; CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="intro_Javascript&Jquery.html">JS &#38; JQ</a>
+                        <a class="nav-link" href="intro_Javascript&Jquery.html">JAVASCRIPT &#38; JQUERY</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="intro_Java.html">JAVA</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="intro_SQL.html">SQL</a>
                     </li>
                 </ul>
             </div>
@@ -104,7 +110,7 @@
     </header>
 
     <div class="container">
-        <div class="posts-container mx-auto px-3 my-5">
+        <div class="posts-container mx-auto px-3 my-5 ">
             <div class="post">
 
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
@@ -137,10 +143,39 @@
 
 조금 더 쉽고 간단한 언어의 탄생을 기대하며
 상위권에 랭크된 'JAVA', JAVASCRIPT'. 'HTML' 에 대한 소개를 시작하도록 하겠다.
-                </pre>
 
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: orange; border: none">생활코딩 로드맵 연결
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">생활코딩 로드맵</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+</pre>
             </div>
+
+
+
+
+
+
         </div>
+
         <div id="disqus_thread"></div>
     </div>
 
@@ -263,7 +298,6 @@
         </li>
 
     </ul>
-
 
 
 </body>

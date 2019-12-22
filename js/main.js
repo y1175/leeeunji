@@ -1,14 +1,12 @@
 $(document).ready(function () {
-    /* set css*/
+    /* set css */
     $('#rap').css('padding', '0px 8.5%');
     $('body').css('background-color', 'white');
 
     /* header */
     $('h1').css('font-family', 'BMHANNA_11yrs');
 
-
-
-    /* sidebar*/
+    /* sidebar */
     $('#sidbar').css({
             'margin': '-1px auto',
             'left': '98px'
@@ -26,13 +24,6 @@ $(document).ready(function () {
         $(ch).toggle();
     });
 
-    /* figcaption */
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-
     $('.sidebar-nav li:first a').css({
         'text-align': 'center',
         'text-indent': '0em',
@@ -42,12 +33,46 @@ $(document).ready(function () {
         'margin-bottom': '10px;'
     })
 
-    $('#searchbtn').on('click',function(){
-       let sbar=$('.topsearch div');
+    //검색버튼
+    $('.searchbtn').on('click', function () {
+        let sbar = $('.topsearch div');
+        var scrollTop = $(window).scrollTop();
+        if (sbar.css('opacity') == '0') {
+            sbar.css({
+                'opacity': '1',
+                'z-index': '1'
+            })
+            sbar.css('top', (scrollTop + 65)+"px");
+            /*sbar.css('top', (scrollTop + parseInt(sbar.css('top')))+"px");*/
+        } else {
+            sbar.css({
+                'opacity': '0',
+                'z-index': '0'
+            });
+        }
+    });
 
-        if(sbar.css('opacity')=='0')
-            sbar.css('opacity','1')
-        else
-            sbar.css('opacity','0');
+    $(window).scroll(function () {
+        //최상단 고정바
+        var scrollTop = $(window).scrollTop();
+        let sbar = $('.topsearch div');
+        if(scrollTop>99){
+            $('.topnv').css({
+            'opacity': '1',
+            'z-index': '1'
+        });
+            sbar.css('top', (scrollTop + 65)+"px");
+        }
+        else{
+           $('.topnv').css({
+            'opacity': '0',
+            'z-index': '0'
+        });
+        }
+        //검색바
+        sbar.css({
+            'opacity': '0',
+            'z-index': '0'
+        });
     });
 })
