@@ -62,5 +62,37 @@ $(document).ready(function () {
             'opacity': '0',
             'z-index': '0'
         });
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop>99){
+            $('.topnv').css({
+            'opacity': '1',
+            'z-index': '1'
+        });
+            $('.topsearch div').css('top',)
+        }
+        else{
+           $('.topnv').css({
+            'opacity': '0',
+            'z-index': '0'
+        });
+        }
     });
+
+      /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+	// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+	/*var floatPosition = parseInt($("#floatMenu").css('top'));*/
+	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+	$(window).scroll(function() {
+		// 현재 스크롤 위치를 가져온다.
+
+        /*
+		var newPosition = scrollTop + floatPosition + "px";
+
+		$("#floatMenu").stop().animate({
+			"top" : newPosition
+		}, 300);
+*/
+	}).scroll();
+
 })
