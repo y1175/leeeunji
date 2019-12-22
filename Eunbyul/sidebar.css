@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+/*@media (min-width: 320px) and (max-width: 480px) {
 
     #page-wrapper{
         display: none;
@@ -10,13 +10,13 @@
     #page-wrapper{
         display: none;
     }
-}
+}*/
 
 
 
 
 #page-wrapper {
-padding-left: -150px;
+padding-left: 250px;
       height: 100%;
     z-index: 9999;
 
@@ -24,7 +24,7 @@ padding-left: -150px;
 
   #sidebar-wrapper {
     position: fixed;
-    width: 250px;
+    width: 270px;
     height: 100%;
     margin-left: -250px;
     background: #000;
@@ -98,7 +98,6 @@ position: absolute;
 top:0px;
 width: 50px;
 height: 50px;
-right: 0px;
 background-color: #f5f5f5;
 border: none;
 }
@@ -136,4 +135,13 @@ border: none;
     height: 3px;
     background: #262626;
     transition: 0.3s;
+}
+.sidebar-wrapper
+{
+    left:10px;
+}
+
+.active
+{
+    left:-10px;
 }
