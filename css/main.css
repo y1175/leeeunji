@@ -321,13 +321,15 @@ iframe {
 }
 
 form input,
-form button {
+form button,
+#logbtn{
     border: 0px solid white !important;
     border-radius: 0px !important;
     height: 50px !important;
 }
 
-form button {
+form button,
+#logbtn{
     background-color: black !important;
     color: white !important;
 }
