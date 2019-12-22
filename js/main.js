@@ -47,10 +47,8 @@ $(document).ready(function () {
         } else {
             sbar.css({
                 'opacity': '0',
-                'z-index': '0',
-                'top': '65px'
+                'z-index': '0'
             });
-            /*sbar.css('top','65px');*/
         }
     });
 
@@ -75,8 +73,6 @@ $(document).ready(function () {
         sbar.css({
             'opacity': '0',
             'z-index': '0'
-/*            'top': '65px'*/
         });
-        /*sbar.css('top','65px');*/
     });
 })
