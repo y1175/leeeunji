@@ -172,10 +172,15 @@ h3 {
 .modal-content{
     left :-100px;
 }
+.nav-title{
+    font-size:1.6em;
+    font-family: 'BMHANNA_11yrs';
+}
 .sidebar-nav li {
     font-size: 1.3m;
     text-indent: 2em;
     line-height: 3em;
+    margin-left: -1em;
 }
 
 .sidebar-nav li li {
@@ -196,6 +201,8 @@ h3 {
     left: 10px;
     height: 3px;
     background-color: black;
+    margin-top:-15px;
+    margin-bottom:5px;
 }
 
 
@@ -205,6 +212,7 @@ h3 {
     text-indent: 3.2em;
     font-size: 1.5m;
     border: border;
+    margin-left: -20px;
 
 }
 
@@ -212,6 +220,7 @@ h3 {
     color: gray;
     background-color: silver;
         text-indent: 2em;
+    margin-left:-15px;
 
 }
 
