@@ -42,7 +42,7 @@ h2 {
 
 
 h5 {
-    font-size: 1em !important;
+    font-size: 1.25em !important;
     font-weight: bolder !important;
 }
 
@@ -292,7 +292,7 @@ iframe {
     border: 1px solid silver;
     z-index: 0;
     opacity: 0;
-    padding: 5px 50px;
+    padding: 5px 5%;
 }
 
 .topnv h2 {
@@ -324,12 +324,16 @@ form button,
     height: 45px !important;
     padding: 12px;
     margin-top: 9px;
+}
+
+.btn_login{
      margin-left: 10px;
 }
 
 .btn_login:first-child{
 margin-top: 3px;
 }
+
 form button,
 .btn_login{
     background-color: black !important;
