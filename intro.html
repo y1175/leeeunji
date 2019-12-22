@@ -5,9 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-
     <title>언어소개 - INTRO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -16,20 +14,9 @@
     <link rel="stylesheet" href="css/main3.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="Eunbyul/sidebar.css">
     <link rel="stylesheet" href="css/intro.css">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic+Coding|Noto+Sans+KR|Yeon+Sung&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Eunbyul/modal.css">
-
-
-    <style>
-        #plus>img {
-            border: 0px;
-
-        }
-
-    </style>
-
 </head>
 
 <body>
@@ -74,6 +61,9 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
     </div>
 
     <header>
@@ -101,7 +91,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="intro_Java.html">JAVA</a>
                     </li>
-                      <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="intro_SQL.html">SQL</a>
                     </li>
                 </ul>
@@ -206,7 +196,6 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
-
     </script>
 
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -223,83 +212,33 @@
                 $(ch).toggle();
             });
         });
-
     </script>
 
     <script>
         $(document).ready(function() {
-            // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-            $(".menu>a").click(function() {
-                var submenu = $(this).next("ul");
+                    // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+                    $(".menu>a").click(function() {
+                        var submenu = $(this).next("ul");
 
-                // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
-                if (submenu.is(":visible")) {
-                    submenu.slideUp();
-                } else {
-                    submenu.slideDown();
-                }
+                        // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
+                        if (submenu.is(":visible")) {
+                            submenu.slideUp();
+                        } else {
+                            submenu.slideDown();
+                        }
 
-            });
-
-
-            /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
-            // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-            var floatPosition = parseInt($("#floatMenu").css('top'));
-            // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
-
-            $(window).scroll(function() {
-                // 현재 스크롤 위치를 가져온다.
-                var scrollTop = $(window).scrollTop();
-                var newPosition = scrollTop + floatPosition + "px";
-
-                $("#floatMenu").stop().animate({
-                    "top": newPosition
-                }, 300);
-
-            }).scroll();
-        });
-
+                    });
     </script>
 
-    <ul id="floatMenu">
-
-        <li class="menu">
-
-            <a>
-                <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
-            </a>
-
-
-            <ul class="hide">
-                <li>
-                    <p class="recent">최근 본 글</p>
-                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
-                </li>
-                <li>
-                    <p>프로그래머스</p>
-                </li>
-                <li>
-
-                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
-                </li>
-                <li>
-                    <p>언어강좌INTRO</p>
-                </li>
-                <li>
-
-                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
-                </li>
-                <li>
-                    <p>ECLIPSE설치</p>
-                </li>
-
-            </ul>
-
-        </li>
-
-    </ul>
+    <script>
+        $(document).ready(function {
+            $('.sidebarBtn').click(function() {
+                $('#sidebar-wrapper').css('display', 'block');
+            });
+        });
+    </script>
 
 
-</body>
 
-</html>
+
+</body></html>
