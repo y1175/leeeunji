@@ -20,7 +20,6 @@
             <img class="btn" src="icons/list.svg" alt="" width="48" height="48" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
             <img class="btn searchbtn" src="icons/search.svg" alt="" width="35" height="35" title="Bootstrap">
             <h2>점프 투 코딩</h2>
-
         </div>
         <div class="col-sm" style="max-width:80px">
             <a class="btn btn-outline-success float-right btn_login">로그인</a>
@@ -41,7 +40,7 @@
             <div class="row">
                 <div class="col-sm">
                     <!-- Button trigger modal -->
-                    <img class="btn" src="icons/list.svg" alt="" width="64" height="64" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
+                    <a href="#"><img class="btn" src="icons/list.svg" alt="" width="64" height="64" title="Bootstrap" data-toggle="modal" data-target="#sidebar"></a>
                     <!-- sidebar Modal -->
                     <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbarModalLabel" aria-hidden="true">
                         <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
@@ -88,11 +87,10 @@
                     </div>
                     <a href="#" class="btn_login float-right btn-outline-success">로그인</a>
                     <img class="searchbtn btn float-right" src="icons/search.svg" alt="" width="54" height="54" title="Bootstrap" style="margin-top: 5px">
-
                 </div>
             </div>
             <img src="img/logo/orange.png" id="titleimg" class="image-fluid" alt="">
-            <a href="main.html" style="color: black">
+            <a href="main.html" style="color: black; z-index: 1">
                 <h1 class="text-center">점프 투 코딩</h1>
             </a>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
@@ -149,7 +147,7 @@
             <div id="slider" class="nivoSlider Height 100%" style="min-width: 100%">
                 <img src="img/maincode.jpg" data-thumb="img/maincode.jpg" alt="" class="h-auto" />
                 <a href="http://dev7studios.com">
-                    <img src="img/maincode1.jpg" data-thumb="img/maincode1.jpg" alt="" title="This is an example of a caption" class="h-auto" />
+                    <img src="img/maincode1.jpg" data-thumb="img/maincode1.jpg" alt="" title="점프투코딩에 오신걸 환영합니다" class="h-auto" />
                 </a>
                 <img src="img/maincode2.jpg" data-thumb="img/maincode2.jpg" alt="" data-transition="slideInLeft" class="h-auto" />
                 <img src="img/maincomputer.jpg" data-thumb="img/maincomputer.jpg" alt="" title="#htmlcaption" class="h-auto" />
@@ -164,6 +162,8 @@
                     <div class="card">
                         <a href="http://www.itworld.co.kr/news/138286" target="_blank">
                             <img src="http://www.itworld.co.kr/files/itworld/2019/12/laptop-with-colorful-speech-bubbles_balloons_alerts-from-emai_collaboration-tools_notification_by-oleksandr-hruts-getty-100813264-large.jpg" class="card-img-top" alt="...">
+                            <div class="imginprt">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">“정보 과부하?” 팀 협업 앱을 길들이는 5가지 요령</h5>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -214,7 +214,7 @@
                     <a class="btn btn-secondary btn-lg" href="intro.html" role="button" style="margin-top:20px">시작해보기 <em class="spinner-border spinner-border-sm" role="status"></em></a>
                 </div>
                 <div class="col-5">
-                    <img src="img/mainimg2.jpg" class="img-fluid" data-toggle="modal" data-target="#exampleModal2" alt="Responsive image">
+                    <img src="img/mainimg2.jpg" class="stdimg img-fluid" data-toggle="modal" data-target="#exampleModal2" alt="Responsive image" >
                 </div>
                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -363,6 +363,9 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         });
+
     </script>
     <script src="js/main.js"></script>
-</body></html>
+</body>
+
+</html>

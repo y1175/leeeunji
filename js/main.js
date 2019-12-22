@@ -13,7 +13,7 @@ $(document).ready(function () {
         }).children().children() /* sidlist */
         .css({
             'width': '300px',
-            'height': '968px'
+            'height': '967px'
         }).children() /* sidebar-nav */
         .css('padding', '0px').children() /* sidebar-brand */
         .css({
@@ -75,4 +75,38 @@ $(document).ready(function () {
             'z-index': '0'
         });
     });
+
+    //card-body
+    $('.card-img-top').hover(function(){
+
+        $(this).css({opacity: 0.7}).next().css('z-index','1');
+    });
+
+    $('.card-img-top').mouseleave(function(){
+        $(this).css({opacity: 1}).next().css('z-index','-1');
+    })
+
+
+    //jumboimg
+    $('.stdimg').hover(function(){
+
+        $(this).css({opacity: 0.7});
+    });
+    $('.stdimg').mouseleave(function(){
+
+        $(this).css({opacity: 1});
+    });
+
+    $('a').focusin(function(){
+        $(this).css('border','2px solid orange');
+    })
+
+    $('a').focusout(function(){
+        $(this).css('border','0px solid red');
+    })
+
+    $('.carousel video').on('click',function(){
+     console.log('aa');
+
+  });
 })

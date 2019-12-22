@@ -1193,7 +1193,6 @@
    * ------------------------------------------------------------------------
    */
 
-
   $(document).on(Event$2.CLICK_DATA_API, Selector$2.DATA_SLIDE, Carousel._dataApiClickHandler);
   $(window).on(Event$2.LOAD_DATA_API, function () {
     var carousels = [].slice.call(document.querySelectorAll(Selector$2.DATA_RIDE));
