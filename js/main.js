@@ -42,12 +42,20 @@ $(document).ready(function () {
         'margin-bottom': '10px;'
     })
 
-    $('#searchbtn').on('click',function(){
-       let sbar=$('.topsearch div');
+    $('#searchbtn').on('click', function () {
+        let sbar = $('.topsearch div');
 
-        if(sbar.css('opacity')=='0')
-            sbar.css('opacity','1')
-        else
-            sbar.css('opacity','0');
+        if (sbar.css('opacity') == '0') {
+
+            sbar.css({
+                'opacity': '1',
+                'z-index': '1'
+            })
+        } else {
+            sbar.css({
+                'opacity': '0',
+                'z-index': '0'
+            });
+        }
     });
 })
