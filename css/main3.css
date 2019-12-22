@@ -16,7 +16,7 @@
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
-        font-size: 20px;
+/*        font-size: 20px;*/
     }
 
     nav {
@@ -37,8 +37,10 @@
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
+/*
         font-size: 20px;
         padding: 0px 10px;
+*/
     }
 
     nav {
@@ -62,15 +64,17 @@
 @media (min-width: 769px) {
 
     .text-center {
-        font-size: 8em;
+/*        font-size: 8em;*/
         font-weight: bolder;
     }
 
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
+/*
         font-size: 25px;
         padding: 0px 1rem;
+*/
     }
 
     nav {

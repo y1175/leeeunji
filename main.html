@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,11 +16,15 @@
 </head>
 
 <body>
-    <div class="topnv fixed-top row">
-        <img class="btn" src="icons/list.svg" alt="" width="48" height="48" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
-        <img class="btn searchbtn" src="icons/search.svg" alt="" width="35" height="35" title="Bootstrap">
-        <h2>점프 투 코딩</h2>
-        <button class="btn btn-outline-success float-right" type="button" id="logbtn">로그인</button>
+    <div class="topnv fixed-top row row-cols-2">
+        <div class="col-sm form-inline" style="min-width: 70%">
+            <img class="btn" src="icons/list.svg" alt="" width="48" height="48" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
+            <img class="btn searchbtn" src="icons/search.svg" alt="" width="35" height="35" title="Bootstrap">
+            <h2>점프 투 코딩</h2>
+        </div>
+        <div class="col-sm" style="max-width:80px">
+            <a class="btn btn-outline-success float-right btn_login">로그인</a>
+        </div>
     </div>
     <div class="topsearch">
         <div class="col-12">
@@ -81,7 +86,9 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="btn_login float-right btn-outline-success">로그인</a>
                     <img class="searchbtn btn float-right" src="icons/search.svg" alt="" width="54" height="54" title="Bootstrap" style="margin-top: 5px">
+
                 </div>
             </div>
             <img src="img/logo/orange.png" id="titleimg" class="image-fluid" alt="">
@@ -157,6 +164,12 @@
                     <div class="card">
                         <a href="http://www.itworld.co.kr/news/138286" target="_blank">
                             <img src="http://www.itworld.co.kr/files/itworld/2019/12/laptop-with-colorful-speech-bubbles_balloons_alerts-from-emai_collaboration-tools_notification_by-oleksandr-hruts-getty-100813264-large.jpg" class="card-img-top" alt="...">
+                            <div class="imginprt">
+                                sasdasdasd
+
+                                asdfffff
+
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">“정보 과부하?” 팀 협업 앱을 길들이는 5가지 요령</h5>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -186,7 +199,7 @@
                         <a href="http://www.itworld.co.kr/insight/135863" target="_blank">
                             <img src="http://www.itworld.co.kr/files/itworld/2019/11/GettyImages-1181558031.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">사이버 공격으로부터 공급망을 보호하기 위한 5가지 핵심 사항</h5>
+                                <h5 class="card-title">사이버 공격을 막아내기 위한 5가지 핵심 사항</h5>
                                 <p class="card-text"><small class="text-muted">Last updated 8 days ago</small></p>
                             </div>
                         </a>
@@ -356,6 +369,9 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         });
+
     </script>
     <script src="js/main.js"></script>
-</body></html>
+</body>
+
+</html>
