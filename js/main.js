@@ -104,10 +104,9 @@ $(document).ready(function () {
     $('a').focusout(function(){
         $(this).css('border','0px solid red');
     })
-    console.log($('.carousel video'));
-  $('.carousel video').on('click',function(){
+
+    $('.carousel video').on('click',function(){
      console.log('aa');
+
   });
-    /*console.log($('.g-button-play'));
-    .pause*/
 })
