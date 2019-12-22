@@ -292,20 +292,16 @@ iframe {
     border: 1px solid silver;
     z-index: 0;
     opacity: 0;
-    padding: 10px; padding-left: 50px;
+    padding: 5px 50px;
 }
 
 .topnv h2 {
-    margin-top: 5px; margin-left: 20px;
+    margin-left: 20px;
 }
 
 .topnv img {
     margin: 0px;
     padding: 0px;
-}
-
-.topnv .searchbtn{
-    margin-top: 5px;
 }
 
 
@@ -322,14 +318,24 @@ iframe {
 
 form input,
 form button,
-#logbtn{
+ .btn_login{
     border: 0px solid white !important;
     border-radius: 0px !important;
-    height: 50px !important;
+    height: 45px !important;
+    padding: 12px;
+    margin-top: 9px;
+     margin-left: 10px;
 }
 
+.btn_login:first-child{
+margin-top: 3px;
+}
 form button,
-#logbtn{
+.btn_login{
     background-color: black !important;
     color: white !important;
+}
+
+.topnv>div{
+    padding: 0px; margin: 0px;
 }
