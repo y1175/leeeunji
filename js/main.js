@@ -24,13 +24,6 @@ $(document).ready(function () {
         $(ch).toggle();
     });
 
-    /* figcaption */
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-
     $('.sidebar-nav li:first a').css({
         'text-align': 'center',
         'text-indent': '0em',
@@ -49,7 +42,8 @@ $(document).ready(function () {
                 'opacity': '1',
                 'z-index': '1'
             })
-            sbar.css('top', (scrollTop + parseInt(sbar.css('top')))+"px");
+            sbar.css('top', (scrollTop + 65)+"px");
+            /*sbar.css('top', (scrollTop + parseInt(sbar.css('top')))+"px");*/
         } else {
             sbar.css({
                 'opacity': '0',
@@ -69,6 +63,7 @@ $(document).ready(function () {
             'opacity': '1',
             'z-index': '1'
         });
+            sbar.css('top', (scrollTop + 65)+"px");
         }
         else{
            $('.topnv').css({
@@ -79,8 +74,8 @@ $(document).ready(function () {
         //검색바
         sbar.css({
             'opacity': '0',
-            'z-index': '0',
-            'top': '65px'
+            /*'z-index': '0',*/
+/*            'top': '65px'*/
         });
         /*sbar.css('top','65px');*/
     });
