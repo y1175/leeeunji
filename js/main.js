@@ -1,14 +1,12 @@
 $(document).ready(function () {
-    /* set css*/
+    /* set css */
     $('#rap').css('padding', '0px 8.5%');
     $('body').css('background-color', 'white');
 
     /* header */
     $('h1').css('font-family', 'BMHANNA_11yrs');
 
-
-
-    /* sidebar*/
+    /* sidebar */
     $('#sidbar').css({
             'margin': '-1px auto',
             'left': '98px'
@@ -57,5 +55,12 @@ $(document).ready(function () {
                 'z-index': '0'
             });
         }
+    });
+
+    $(window).scroll(function () {
+        $('.topsearch div').css({
+            'opacity': '0',
+            'z-index': '0'
+        });
     });
 })

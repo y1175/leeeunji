@@ -4,7 +4,6 @@ h3 a{
     font-size:20px;
     font-weight: bold;
     color:black !important;
-
 }
 
 *,pre{
@@ -13,7 +12,6 @@ h3 a{
 pre{
     font-size:20px;
 }
-
 
 /*전체 몸통 폭 지정*/
 .linkbutton{
@@ -27,11 +25,14 @@ pre{
     float: right;
     margin-right:  30%;
 }
+
 .linkbutton a{color:black !important;}
+
 .linkbutton:hover{
     background-color: green;
       color:white !important;
 }
+
 .linkbutton2{
     position:relative;
     left:300px;
@@ -42,6 +43,7 @@ pre{
     width: 60%;
     margin: 0px auto;
 }
+
 .content2{
     padding-left: 80px ;
 }
@@ -53,6 +55,7 @@ pre{
     margin: 30px;
 
 }
+
 h3{/*text-align: center;*/
 font-size:50px;}
 /*#java:hover{
@@ -60,18 +63,14 @@ font-size:50px;}
      opacity: 0.4;
     filter: alpha(opacity=40);
 }*/
+
 #toright{float:right !important;
         position: relative;
         right:30%;
     z-index: 3;}
 
 
-
-
-
-
 /*움직이는 배너*/
-
 .btn-group{
     /*border:1px solid silver;*/
     width: 80px;
@@ -112,15 +111,6 @@ button.btn.btn-default{z-index: 99999 !important;}
 
 
 
-
-
-
-
-
-
-
-
-
 .testbutton.inside{
     background-color: orange;
     width: 100px;
@@ -144,7 +134,7 @@ button.btn.btn-default{z-index: 99999 !important;}
     top:-50px;
 }
 
-        a:hover{/*color:black;*/
+a:hover{/*color:black;*/
            text-decoration: none;
 /*background-color:black;*/}
 
