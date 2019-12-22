@@ -80,16 +80,28 @@ $(document).ready(function () {
     $('.card-img-top').hover(function(){
 
         $(this).css({opacity: 0.7}).next().css('z-index','1');
-
     });
 
     $('.card-img-top').mouseleave(function(){
-        console.log('cc');
         $(this).css({opacity: 1}).next().css('z-index','-1');
     })
-    /*$('.card-img-top').next().mouseout(function(){
-       console.log($(this));
-        $(this).css('z-index','-1').prev().css({opacity: 1})
-    });*/
 
+
+    //jumboimg
+    $('.stdimg').hover(function(){
+
+        $(this).css({opacity: 0.7});
+    });
+    $('.stdimg').mouseleave(function(){
+
+        $(this).css({opacity: 1});
+    });
+
+    $('a').focusin(function(){
+        $(this).css('border','2px solid orange');
+    })
+
+    $('a').focusout(function(){
+        $(this).css('border','0px solid red');
+    })
 })

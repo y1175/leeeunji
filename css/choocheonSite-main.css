@@ -72,9 +72,6 @@ nav {
     color: black;
 }
 
-.footer{
-    margin-top: 0px;
-}
 
 .slider-wrapper, .theme-default{
     margin-top: 0px !important;
@@ -95,6 +92,10 @@ div.position-right{
     margin-bottom: 10px;
 }
 
+.page-bottom{
+    width:100%;
+    height:50px;
+}
 
 
 div.tagselected{
