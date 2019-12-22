@@ -1,5 +1,12 @@
-@media screen and (max-width:1024px) { #disqus_thread,.backimage,div.testbutton,.btngroup{ display: none; } }
+@media screen and (max-width:1024px) { .backimage,div.testbutton,.btngroup{ display: none; } }
+@media screen and (min-width: 768px) {
+    .container {
 
+        border-right: 1px solid silver;
+        border-left: 1px solid silver;
+    }
+
+}
 h3 a{
     font-size:20px;
     font-weight: bold;
@@ -328,8 +335,8 @@ right: 100px;}
 /*이미지위에 텍스트*/
         .imagetext{
             position: absolute;
-            top:220px;
-            left: 90px;
+            top:100px;
+            left: 130px;
             color:white;
             font-size:40px;
             font-weight: bold;
@@ -344,8 +351,8 @@ right: 100px;}
             height: 50px;
             position:absolute;
             font-size:25px;
-            left:300px;
-            top:300px;
+            left:360px;
+            top:160px;
             text-align: center;
             padding-top: 5px;
 
