@@ -14,7 +14,7 @@
 
 #titleimg {
     position: absolute;
-    left: 80%;
+    left: 20%;
     z-index: -1;
 }
 
@@ -77,31 +77,46 @@ dd {
     border-top: 1px solid silver;
     color: gray !important;
     font-size: 1em;
+
 }
 
 /* mian navbar */
 .navbar {
-    background-color: black !important;
+    background-color: white !important;
     font-size: 15px !important;
     border-bottom: 5px solid orange;
     border-radius: 10px;
 
+
 }
 
 nav {
-    width: 70%;
+    width: 100%;
     display: block;
     margin: 0px auto;
 
 }
 
+.nav-link:hover {
+    color: orange !important;
+}
+
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: black;
+    text-indent: 3.5em;
+    font-size: 1.2em;
+    font-weight: bolder;
+
+}
+
+.nav-item a:hover {
+    color: orange;
 }
 
 .nav-item a,
 .nav-item a:visited {
     color: black;
+    text-align: center;
 }
 
 /* main slider */
@@ -153,7 +168,7 @@ a.btn {
     opacity: 0.7;
 }*/
 
-.card > a > .imginprt{
+.card > a > .imginprt {
     position: absolute;
     top: 0px;
     opacity: 1;
@@ -349,4 +364,148 @@ form button,
 .topnv > div {
     padding: 0px;
     margin: 0px;
+}
+
+a:focus {
+    border: 3px solid orange !important;
+    z-index: 1 !important;
+}
+
+@media (max-width: 1350px) {
+
+    .navbar,
+    .jumbotron p {
+        display: none;
+
+    }
+
+    h1 {
+        font-size: 3em !important;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    .slider-wrapper,
+    .nivo-main-image,
+    #slider > img {
+        height: 200px;
+    }
+
+    .card img {
+        padding: 0px;
+        height: 200px;
+    }
+
+    .card {
+        min-width: 40%;
+    }
+
+    btn {
+        font-size: 5px !important;
+        vertical-align: baseline;
+    }
+
+    .jumbotron iframe {
+        width: 480px;
+        height: 300px;
+        left: 90px;
+        top: -100px;
+        position: absolute;
+    }
+
+    .footer,
+    di {
+        min-width: 500px !important;
+        margin-left: 2%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .footer,
+    di {
+        min-width: 360px !important;
+        margin-left: 2%;
+    }
+
+    .carousel-item > div > div {
+        visibility: hidden;
+
+    }
+
+    .carousel-item > div > div:first-child {
+        visibility: visible;
+        min-width: 100%;
+    }
+
+    #rap {
+        padding: 0px 5% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .footer,
+    di {
+        min-width: 320px !important;
+        margin-left: 2%;
+    }
+
+    * {
+        font-size: 10px !important;
+    }
+
+    .jumbotron iframe {
+        width: 320px;
+        height: 250px;
+        left: 95px;
+        top: -100px;
+        position: absolute;
+    }
+
+    .slider-wrapper,
+    .nivo-main-image,
+    #slider > img {
+        height: 200px;
+    }
+
+    .carousel-item > div > div {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .carousel-item > div > div:first-child {
+        min-width: 260px;
+        margin: 0px auto;
+    }
+
+    h2 {
+        margin-left: 13px;
+    }
+
+    .col-10 {
+        min-width: 270px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .col-1 {
+        padding: 0px !important;
+    }
+
+    .slider-wrapper,
+    .nivo-main-image,
+    #slider > img {
+        height: 180px;
+    }
+}
 }

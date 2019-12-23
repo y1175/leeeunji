@@ -88,6 +88,7 @@ $(document).ready(function(){
 
 
 
+
         $('#darkSwitch').on('click',function(){
             {
                 if($('#darkSwitch').is(':checked'))
