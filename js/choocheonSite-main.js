@@ -97,9 +97,9 @@ $(document).ready(function(){
                 $('body').css('color','');
                 $('body').css('backgroundColor','black');
                 $('body').css('color','lightgray');
-
-                $('.card,.modal-body,.modal-header,.modal-footer').addClass('darkmode');
-                $('.badge, .btn-primary, img.btn ,#plus, .modal .close').addClass('darkbadge');
+                $('.navbar ul li a').css('color','lightgray');
+                $('.card,.modal-body,.modal-header,.modal-footer,.navbar,.dropdown-menu').addClass('darkmode');
+                $('.badge, .btn-primary, img.btn ,#plus, .modal .close, .navbar-toggler').addClass('darkbadge');
 
                     }
                 else{
@@ -107,9 +107,10 @@ $(document).ready(function(){
                 $('body').css('color','');
                 $('body').css('backgroundColor','white');
                 $('body').css('color','black');
-                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('darkmode');
-                $('.card,.modal-body,.modal-header,.modal-footer').removeClass('lightmode');
-                $('.badge, .btn-primary, img.btn ,#plus, .modal .close').removeClass('darkbadge');
+                $('.navbar ul li a').css('color','black');
+                $('.card,.modal-body,.modal-header,.modal-footer,.navbar,.dropdown-menu').removeClass('darkmode');
+                $('.card,.modal-body,.modal-header,.modal-footer,.navbar,.dropdown-menu').removeClass('lightmode');
+                $('.badge, .btn-primary, img.btn ,#plus, .modal .close,  .navbar-toggler').removeClass('darkbadge');
                 }
             }
 
