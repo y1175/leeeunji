@@ -77,7 +77,6 @@ dd {
     border-top: 1px solid silver;
     color: gray !important;
     font-size: 1em;
-
 }
 
 /* mian navbar */
@@ -94,19 +93,17 @@ nav {
     width: 100%;
     display: block;
     margin: 0px auto;
-
 }
 
 
-.nav-link{
+.nav-link {
     color: black !important;
-    text-indent: 4.1em;
-    font-size: 1.2em;
+    text-indent: 2.95em;
+    font-size: 1.4em;
     font-weight: bolder;
-
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: orange !important;
 }
 
@@ -227,11 +224,11 @@ iframe {
 }
 
 
-#page-wrapper {
+/*#page-wrapper {
     padding-left: 250px;
-}
+}*/
 
-#sidebar-wrapper {
+/*#sidebar-wrapper {
     position: absolute;
     width: 250px;
     height: 100%;
@@ -239,12 +236,12 @@ iframe {
     background-color: rgb(0, 0, 0, 0.7);
     overflow: auto;
     left: 0px;
-}
+}*/
 
-#page-content-wrapper {
+/*#page-content-wrapper {
     width: 100%;
     padding: 20px;
-}
+}*/
 
 /* 사이드바 스타일 */
 .modal-content {
@@ -438,16 +435,28 @@ a:focus {
         visibility: visible;
         min-width: 100%;
     }
-
-    #rap {
-        padding: 0px 5% !important;
-    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     * {
         font-size: 12px !important;
     }
+
+.sidebar-nav li {
+    font-size: 2.3m !important;
+}
+
+.sidebar-nav li a:hover {
+    font-size: 2.5m !important;
+}
+
+.sidebar-nav > li > a:hover {
+    text-indent: 3.2em !important;
+}
+
+.sidebar-nav > li > a {
+    font-size: 2.6em !important;
+}
 }
 
 @media (max-width: 320px) {

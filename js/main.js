@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('h1').css('font-family', 'BMHANNA_11yrs');
 
     /* sidebar */
+
     $('#sidbar').css({
             'margin': '-1px auto',
             'left': '98px'
@@ -19,6 +20,8 @@ $(document).ready(function () {
         .css({
             'list-style': 'none'
         });
+
+
     $('.sidebar-nav').children().on('click', function () {
         let ch = $(this).children('ul');
         $(ch).toggle();
@@ -42,7 +45,7 @@ $(document).ready(function () {
                 'opacity': '1',
                 'z-index': '1'
             })
-            sbar.css('top', (scrollTop + 65)+"px");
+            sbar.css('top', (scrollTop + 65) + "px");
             /*sbar.css('top', (scrollTop + parseInt(sbar.css('top')))+"px");*/
         } else {
             sbar.css({
@@ -56,18 +59,17 @@ $(document).ready(function () {
         //최상단 고정바
         var scrollTop = $(window).scrollTop();
         let sbar = $('.topsearch div');
-        if(scrollTop>99){
+        if (scrollTop > 99) {
             $('.topnv').css({
-            'opacity': '1',
-            'z-index': '1'
-        });
-            sbar.css('top', (scrollTop + 65)+"px");
-        }
-        else{
-           $('.topnv').css({
-            'opacity': '0',
-            'z-index': '0'
-        });
+                'opacity': '1',
+                'z-index': '1'
+            });
+            sbar.css('top', (scrollTop + 65) + "px");
+        } else {
+            $('.topnv').css({
+                'opacity': '0',
+                'z-index': '0'
+            });
         }
         //검색바
         sbar.css({
@@ -77,30 +79,27 @@ $(document).ready(function () {
     });
 
     //card-body
-    $('.card-img-top').hover(function(){
+    $('.card-img-top').hover(function () {
 
-        $(this).css({opacity: 0.7}).next().css('z-index','1');
+        $(this).css({
+            opacity: 0.7
+        }).next().css('z-index', '1');
     });
 
-    $('.card-img-top').mouseleave(function(){
-        $(this).css({opacity: 1}).next().css('z-index','-1');
+    $('.card-img-top').mouseleave(function () {
+        $(this).css({
+            opacity: 1
+        }).next().css('z-index', '-1');
+    })
+
+    $('.btn').on('click', function () {
+        if ($(window).width() < 577)
+            $('#sidbar').children().children().css('width', $(window).width());
+        else
+            $('#sidbar').children().children().css('width', '300px');
+
     })
 
 
-    //jumboimg
-    $('.stdimg').hover(function(){
 
-        $(this).css({opacity: 0.7});
-    });
-    $('.stdimg').mouseleave(function(){
-
-        $(this).css({opacity: 1});
-    });
-
-
-
-    $('.carousel video').on('click',function(){
-     console.log('aa');
-
-  });
 })
