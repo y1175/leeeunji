@@ -16,6 +16,7 @@
         display: inline-block;
     }
 
+
     #ccc {
 
         border: 1px solid silver;
@@ -37,14 +38,13 @@
     }
 
 
-    #map {
+      #map {
 
         width: 90%;
-        min-width: 300px;
-        min-height: 300px;
-        margin: 0px 35px;
+        min-width: 400px;
+        min-height: 400px;
+        margin: 20px auto;
         display: inline-block;
-
     }
 
     #ccc {
@@ -69,14 +69,15 @@
 
     }
 
-    #map {
+       #map {
 
-        width: 55%;
-        min-width: 300px;
-        min-height: 300px;
-        margin: 30px;
-
+        width: 90%;
+        min-width: 400px;
+        min-height: 400px;
+        margin: 20px auto;
+        display: inline-block;
     }
+
 
     #ccc {
 
