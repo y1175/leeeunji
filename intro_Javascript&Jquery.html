@@ -23,11 +23,11 @@
 </head>
 
 <body>
-    <div id="page-wrapper">
+ <div id="page-wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="main.html">
+                    <a href="#">
                         <h3 id="tt">점프 투 코딩</h3>
                     </a>
                     <div id="line"></div>
@@ -39,6 +39,7 @@
                         <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
                         <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                        <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
                 </li>
 
@@ -60,9 +61,12 @@
                 </li>
                 <li><a href="choocheonSite.html">사이트 추천</a></li>
                 <li><a href="q&a.html">질의응답</a></li>
-                <li><a href="contct.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
     </div>
 
     <header>
@@ -274,13 +278,26 @@
 
 
 
-    <script>
+  <script>
         $(document).ready(function() {
+            $('li:nth-child(3)').children('ul').toggle();
             $('li').on('click', function() {
                 let ch = $(this).children('ul');
                 $(ch).toggle();
             });
+
+            $('.sidebarBtn').click(function() {
+
+                if ($('#sidebar-wrapper').css('display') == 'none')
+                    $('#sidebar-wrapper').css('display', 'block');
+
+                else
+                    $('#sidebar-wrapper').css('display', 'none');
+            });
         });
     </script>
+
+
+
 
 </body></html>

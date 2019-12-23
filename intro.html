@@ -207,24 +207,19 @@
 
     <script>
         $(document).ready(function() {
+            $('li:nth-child(3)').children('ul').toggle();
             $('li').on('click', function() {
                 let ch = $(this).children('ul');
                 $(ch).toggle();
             });
-        });
-    </script>
 
-
-    <script>
-        $(document).ready(function() {
             $('.sidebarBtn').click(function() {
 
-                if
-                    ($('#sidebar-wrapper').css('display')=='none')
-                 $('#sidebar-wrapper').css('display','block');
+                if ($('#sidebar-wrapper').css('display') == 'none')
+                    $('#sidebar-wrapper').css('display', 'block');
 
                 else
-                $('#sidebar-wrapper').css('display','none');
+                    $('#sidebar-wrapper').css('display', 'none');
             });
         });
     </script>
