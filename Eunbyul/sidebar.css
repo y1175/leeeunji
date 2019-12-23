@@ -1,0 +1,147 @@
+/*@media (min-width: 320px) and (max-width: 480px) {
+
+    #page-wrapper{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #page-wrapper{
+        display: none;
+    }
+}*/
+
+
+
+
+#page-wrapper {
+padding-left: 250px;
+      height: 100%;
+    z-index: 9999;
+
+  }
+
+  #sidebar-wrapper {
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    margin-left: -250px;
+    background: #000;
+    overflow: auto;
+    z-index: 999;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  /* 사이드바 스타일 */
+
+  .sidebar-nav {
+ width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar-nav li {
+    text-indent: 1.5em;
+    line-height: 3em;
+  }
+
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'BMHANNAAir';
+  }
+
+  .sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+    #tt{
+        margin: 50px 0px;
+        font-size: 2.29em;
+        font-family: 'BMHANNA_11yrs';
+        position: relative;
+        left: -10px;
+    }
+
+   li>ul{
+        display: none;
+       list-style: circle;
+    }
+
+    #line {
+        width: 230px;
+        position: relative;
+        left: 10px;
+        top: -15px;
+        height: 1px;
+        background-color: white;
+    }
+
+.sidebar-nav>li>a{
+    font-size: 20px;
+}
+
+.sidebar-nav>li{
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.sidebarBtn
+{
+position: absolute;
+top:0px;
+left:270px;
+width: 50px;
+height: 50px;
+background-color: #f5f5f5;
+border: none;
+}
+
+.sidebarBtn span
+{
+    display: block;
+    width: 35px;
+    height: 3px;
+    left:6px;
+    background: #262626;
+    position: absolute;
+    top: 24px;
+    transform: 0.3s;
+}
+
+.sidebarBtn span:before
+{
+    content: '';
+    position: absolute;
+    top:-10px;
+    left: 0px;
+    width:100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+
+.sidebarBtn span:after
+{
+    content: '';
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width:100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+.sidebar-wrapper
+{
+    left:10px;
+}
+
+
