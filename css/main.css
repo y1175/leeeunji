@@ -97,21 +97,19 @@ nav {
 
 }
 
-.nav-link:hover {
-    color: orange !important;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-    color: black;
-    text-indent: 3.5em;
+.nav-link{
+    color: black !important;
+    text-indent: 4.5em;
     font-size: 1.2em;
     font-weight: bolder;
 
 }
 
-.nav-item a:hover {
-    color: orange;
+.nav-item a:hover{
+    color: orange !important;
 }
+
 
 .nav-item a,
 .nav-item a:visited {
