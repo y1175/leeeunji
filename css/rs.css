@@ -1,16 +1,10 @@
-@media screen and (max-width:1024px) {
-    div#plus {
-        display: none;
-    }
-}
-
 #floatMenu {
     position: absolute;
     z-index: 1;
     float: center;
     left: 87%;
     bottom: 300px;
-
+    transition: top 1s;
 }
 
 .menu a {

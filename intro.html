@@ -11,11 +11,12 @@
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main3.css">
+    <link rel="stylesheet" href="Eunbyul/intromain.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="Eunbyul/sidebar.css">
     <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/rs.css">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic+Coding|Noto+Sans+KR|Yeon+Sung&display=swap" rel="stylesheet">
 </head>
 
@@ -33,8 +34,8 @@
                 <li><a href="#">언어소개</a>
                     <ul>
                         <li><a href="intro.html">ㄴ INTRO</a></li>
-                        <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                        <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="intro_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT &#38;& JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
                         <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
@@ -43,8 +44,8 @@
                 <li><a href="#">언어강좌</a>
                     <ul>
                         <li><a href="study_intro.html">ㄴ INTRO</a></li>
-                        <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                        <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="study_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
                         <li><a href="study_Java.html">ㄴ JAVA</a></li>
                         <li><a href="study_Oracle.html">ㄴ Oracle</a></li>
                         <li><a href="study_Other.html">ㄴ 기타</a></li>
@@ -109,6 +110,47 @@
                 <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"><a href="main.html"> HOME</a></button>
 
                 <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_HTML&CSS.html">HTML &#38; CSS</a></button>
+
+
+                <br>
+                <ul id="floatMenu">
+
+                    <li class="menu">
+
+                        <a>
+                            <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
+                        </a>
+
+
+                        <ul class="hide">
+                            <li>
+                                <p class="recent">최근 본 글</p>
+                                <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
+                            </li>
+                            <li>
+                                <p>프로그래머스</p>
+                            </li>
+                            <li>
+
+                                <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
+                            </li>
+                            <li>
+                                <p>언어강좌INTRO</p>
+                            </li>
+                            <li>
+
+                                <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
+                            </li>
+                            <li>
+                                <p>ECLIPSE설치</p>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <!--최신글 스크롤 배너 끝-->
 
 
 
@@ -206,25 +248,66 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function() {
-            $('li:nth-child(3)').children('ul').toggle();
-            $('li').on('click', function() {
-                let ch = $(this).children('ul');
-                $(ch).toggle();
-            });
-
-            $('.sidebarBtn').click(function() {
-
-                if ($('#sidebar-wrapper').css('display') == 'none')
-                    $('#sidebar-wrapper').css('display', 'block');
-
-                else
-                    $('#sidebar-wrapper').css('display', 'none');
-            });
+        $('li:nth-child(3)').children('ul').toggle();
+        $('li').on('click', function() {
+            let ch = $(this).children('ul');
+            $(ch).toggle();
         });
+
+        $('.sidebarBtn').click(function() {
+
+            if ($('#sidebar-wrapper').css('display') == 'none')
+                $('#sidebar-wrapper').css('display', 'block');
+
+            else
+                $('#sidebar-wrapper').css('display', 'none');
+        });
+
+
+
+        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+        $(".menu>a").click(function() {
+            var submenu = $(this).next("ul");
+
+            // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
+            if (submenu.is(":visible")) {
+                submenu.slideUp();
+            } else {
+                submenu.slideDown();
+            }
+
+        });
+
+
+        /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+        // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+        var floatPosition = parseInt($("#floatMenu").css('top'));
+        // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+        $(window).scroll(function() {
+            // 현재 스크롤 위치를 가져온다.
+            var scrollTop = $(window).scrollTop();
+            var newPosition = scrollTop + floatPosition + "px";
+
+            $("#floatMenu").css('top', newPosition);
+
+
+        })
     </script>
 
-
+        <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5dfae15243be710e1d22bb34/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
 
 
 </body></html>
