@@ -8,10 +8,11 @@
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                     <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbarModalLabel" aria-hidden="true">
                         <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
                             <div class="modal-content">
-                                <div class="sidlist">
+                                <div class="sidlist" id="none">
                                     <ul class="sidebar-nav">
                                         <li><a href="main.html">
                                                 점프 투 코딩
@@ -146,9 +147,9 @@
         <div class="slider-wrapper theme-default" style="min-width:100%">
             <div id="slider" class="nivoSlider Height 100%" style="min-width: 100%">
                 <img src="img/maincode.jpg" data-thumb="img/maincode.jpg" alt="" class="h-auto" />
-                <a href="http://dev7studios.com">
+                <!--<a href="http://dev7studios.com">-->
                     <img src="img/maincode1.jpg" data-thumb="img/maincode1.jpg" alt="" title="점프투코딩에 오신걸 환영합니다" class="h-auto" />
-                </a>
+                <!--</a>-->
                 <img src="img/maincode2.jpg" data-thumb="img/maincode2.jpg" alt="" data-transition="slideInLeft" class="h-auto" />
                 <img src="img/maincomputer.jpg" data-thumb="img/maincomputer.jpg" alt="" title="#htmlcaption" class="h-auto" />
             </div>
@@ -210,7 +211,7 @@
                         <br>차근차근 따라해봅시다!
                     </p>
                     <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing.</p>
+                    <p>미래 직업이 없어진다면 어떻게 돈을 벌어야 할까? 오른쪽 사진을 클릭해보세요! </p>
                     <a class="btn btn-secondary btn-lg" href="intro.html" role="button" style="margin-top:20px">시작해보기 <em class="spinner-border spinner-border-sm" role="status"></em></a>
                 </div>
                 <div class="col-5">
@@ -258,14 +259,10 @@
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/michael_s_a_graziano_how_close_are_we_to_uploading_our_minds" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
                             </div>
                             <div class="col-4">
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/janelle_shane_the_danger_of_ai_is_weirder_than_you_think" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                         </div>
@@ -277,22 +274,15 @@
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/laura_boykin_how_we_re_using_dna_tech_to_help_farmers_fight_crop_diseases" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
-
                             </div>
                             <div class="col-4">
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/emmett_shear_what_streaming_means_for_the_future_of_entertainment" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
                             </div>
                             <div class="col-4">
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/glenn_cantave_how_augmented_reality_is_changing_activism" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                         </div>
@@ -304,23 +294,17 @@
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/ivan_poupyrev_everything_around_you_can_become_a_computer" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
-
                             </div>
                             <div class="col-4">
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/rosalind_picard_an_ai_smartwatch_that_detects_seizures" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div style="max-width:854px">
                                     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/ko/dina_zielinski_how_we_can_store_digital_data_in_dna" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" allowfullscreen></iframe></div>
                                 </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -334,7 +318,7 @@
             </a></div>
 
         <footer class="footer col-5" style="min-width:500px">
-            <dl class="row" style="min-width:500px">
+            <dl class="row">
                 <dt class="col-sm-6">Copyright &#64; 2019 Jump To Coding Inc. 모든 권리 보유. </dt>
                 <dt class="col-sm-6"><a href="#">개인정보 처리방침</a> | <a href="#">약관</a> | <a href="#">판매 및 환불</a> | <a href="#">법적 고지</a> | <a href="#">사이트 맵</a></dt>
                 <dd>사업자등록번호 : 123-45-678910 | 주소 : 서울시 서초구 강남대로 459 백암빌딩 | 점프투코딩 : 김진영, 김현진, 박진우, 안은별, 이은지, 정용인 | 대표전화 : 010-7133-2619</dd>
