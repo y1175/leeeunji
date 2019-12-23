@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <div id="page-wrapper">
+    <div id="page-wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -65,10 +65,60 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
-        <button class="sidebarBtn">
-            <span></span>
-        </button>
     </div>
+
+    <div class="col-sm">
+        <!-- Button trigger modal -->
+        <img class="btn" src="icons/list.svg" alt="" width="60" height="60" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
+        <!-- sidebar Modal -->
+        <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbar" aria-hidden="true">
+            <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
+                <div class="modal-content" style="height: 100%; background-color: black;">
+                    <div class="sidlist">
+                        <ul class="sidebar-nav" style="background-color: black; color: white; width: 100%; height: 100%; margin: 0px">
+                            <div>
+                                <h2 style="font-size: 4em; font-family: 'BMHANNA_11yrs';
+ margin: 20px 0px; text-align: center;">점프 투 코딩</h2>
+                            </div>
+                            <div class="line" style="width: 250px; height: 5px; background-color: white; position: relative; left: 25px; margin-bottom: 20px;"></div>
+                            <li><a href="main.html">홈</a></li>
+                            <li><a href="#">언어소개</a>
+                                <ul>
+                                    <li><a href="intro.html">ㄴ INTRO</a></li>
+                                    <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                    <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                                    <li><a href="intro_SQL.html">ㄴ SQL</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">언어강좌</a>
+                                <ul>
+                                    <li><a href="study_intro.html">ㄴ INTRO</a></li>
+                                    <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                    <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="study_java.html">ㄴ JAVA</a></li>
+                                    <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
+                                    <li><a href="study_other.html">ㄴ 기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">다운로드</a>
+                                <ul>
+                                    <li><a href="Download_JAVA.html">ㄴ 언어</a></li>
+                                    <li><a href="Download_ECLIPSE.html">ㄴ 개발 툴</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="choocheonSite.html">사이트 추천</a></li>
+                            <li><a href="q&a.html">질의응답</a></li>
+                            <li><a href="contct.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <header>
         <div class="container-fluid">
@@ -105,7 +155,7 @@
 
     <div class="container">
         <div class="posts-container mx-auto px-3 my-5">
-            <div class="post" >
+            <div class="post">
 
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
                     HTML
@@ -114,44 +164,44 @@
 
                 <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_Javascript&Jquery.html">JS &#38; JQ</a></button>
 
-                                   <ul id="floatMenu">
+                <ul id="floatMenu">
 
-                        <li class="menu">
+                    <li class="menu">
 
-                            <a>
-                                <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
-                            </a>
+                        <a>
+                            <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
+                        </a>
 
 
-                            <ul class="hide">
-                                <li>
-                                    <p class="recent">최근 본 글</p>
-                                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
-                                </li>
-                                <li>
-                                    <p>프로그래머스</p>
-                                </li>
-                                <li>
+                        <ul class="hide">
+                            <li>
+                                <p class="recent">최근 본 글</p>
+                                <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
+                            </li>
+                            <li>
+                                <p>프로그래머스</p>
+                            </li>
+                            <li>
 
-                                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
-                                </li>
-                                <li>
-                                    <p>언어강좌INTRO</p>
-                                </li>
-                                <li>
+                                <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
+                            </li>
+                            <li>
+                                <p>언어강좌INTRO</p>
+                            </li>
+                            <li>
 
-                                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
-                                </li>
-                                <li>
-                                    <p>ECLIPSE설치</p>
-                                </li>
+                                <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
+                            </li>
+                            <li>
+                                <p>ECLIPSE설치</p>
+                            </li>
 
-                            </ul>
+                        </ul>
 
-                        </li>
+                    </li>
 
-                    </ul>
-                    <!--최신글 스크롤 배너 끝-->
+                </ul>
+                <!--최신글 스크롤 배너 끝-->
 
 
                 <pre>
@@ -208,7 +258,7 @@ HTML은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라
 
         <div class="posts-container mx-auto px-3 my-5">
             <div class="post">
-                 <div class="line"></div>
+                <div class="line"></div>
                 <h2 class="post-title fw-500">
                     CSS
                 </h2>
@@ -323,7 +373,7 @@ W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script>
+    <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -349,7 +399,7 @@ W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <script>
+    <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -382,14 +432,19 @@ W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 
             $(ch).toggle();
         });
 
-        $('.sidebarBtn').click(function() {
 
-            if ($('#sidebar-wrapper').css('display') == 'none')
-                $('#sidebar-wrapper').css('display', 'block');
-
-            else
-                $('#sidebar-wrapper').css('display', 'none');
-        });
+        $('#sidbar').css({
+                'margin': '-1px auto',
+                'left': '98px'
+            }).children().children() /* sidlist */
+            .css({
+                'width': '300px',
+                'height': '968px'
+            }).children() /* sidebar-nav */
+            .css('padding', '0px').children() /* sidebar-brand */
+            .css({
+                'list-style': 'none'
+            });
 
 
 
@@ -422,7 +477,7 @@ W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 
 
         })
     </script>
-        <script type="text/javascript">
+    <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {

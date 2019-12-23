@@ -11,7 +11,7 @@
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/main3.css">
-     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/side.css">
     <link rel="stylesheet" href="css/intro.css">
@@ -73,48 +73,48 @@
         <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbar" aria-hidden="true">
             <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
                 <div class="modal-content" style="height: 100%; background-color: black;">
-                   <div class="sidlist">
-                    <ul class="sidebar-nav" style="background-color: black; color: white; width: 100%; height: 100%; margin: 0px">
-                        <div>
-                            <h2 style="font-size: 4em; font-family: 'BMHANNA_11yrs';
+                    <div class="sidlist">
+                        <ul class="sidebar-nav" style="background-color: black; color: white; width: 100%; height: 100%; margin: 0px">
+                            <div>
+                                <h2 style="font-size: 4em; font-family: 'BMHANNA_11yrs';
  margin: 20px 0px; text-align: center;">점프 투 코딩</h2>
-                        </div>
-                        <div class="line" style="width: 250px; height: 5px; background-color: white; position: relative; left: 25px; margin-bottom: 20px;"></div>
-                        <li><a href="main.html">홈</a></li>
-                        <li><a href="#">언어소개</a>
-                            <ul>
-                                <li><a href="intro.html">ㄴ INTRO</a></li>
-                                <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                                <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
-                                <li><a href="intro_Java.html">ㄴ JAVA</a></li>
-                                <li><a href="intro_SQL.html">ㄴ SQL</a></li>
-                            </ul>
-                        </li>
+                            </div>
+                            <div class="line" style="width: 250px; height: 5px; background-color: white; position: relative; left: 25px; margin-bottom: 20px;"></div>
+                            <li><a href="main.html">홈</a></li>
+                            <li><a href="#">언어소개</a>
+                                <ul>
+                                    <li><a href="intro.html">ㄴ INTRO</a></li>
+                                    <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                    <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                                    <li><a href="intro_SQL.html">ㄴ SQL</a></li>
+                                </ul>
+                            </li>
 
-                        <li><a href="#">언어강좌</a>
-                            <ul>
-                                <li><a href="study_intro.html">ㄴ INTRO</a></li>
-                                <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                                <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
-                                <li><a href="study_java.html">ㄴ JAVA</a></li>
-                                <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
-                                <li><a href="study_other.html">ㄴ 기타</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">다운로드</a>
-                            <ul>
-                                <li><a href="Download_JAVA.html">ㄴ 언어</a></li>
-                                <li><a href="Download_ECLIPSE.html">ㄴ 개발 툴</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="choocheonSite.html">사이트 추천</a></li>
-                        <li><a href="q&a.html">질의응답</a></li>
-                        <li><a href="contct.html">CONTACT</a></li>
-                    </ul>
+                            <li><a href="#">언어강좌</a>
+                                <ul>
+                                    <li><a href="study_intro.html">ㄴ INTRO</a></li>
+                                    <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                    <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="study_java.html">ㄴ JAVA</a></li>
+                                    <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
+                                    <li><a href="study_other.html">ㄴ 기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">다운로드</a>
+                                <ul>
+                                    <li><a href="Download_JAVA.html">ㄴ 언어</a></li>
+                                    <li><a href="Download_ECLIPSE.html">ㄴ 개발 툴</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="choocheonSite.html">사이트 추천</a></li>
+                            <li><a href="q&a.html">질의응답</a></li>
+                            <li><a href="contct.html">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <header>
@@ -304,7 +304,7 @@
             $(ch).toggle();
         });
 
-        $('.sidebarBtn').click(function() {
+        /*$('.sidebarBtn').click(function() {
 
             if ($('#sidebar-wrapper').css('display') == 'none')
                 $('#sidebar-wrapper').css('display', 'block');
@@ -313,6 +313,20 @@
                 $('#sidebar-wrapper').css('display', 'none');
         });
 
+
+         $('#sidbar').css({
+                'margin': '-1px auto',
+                'left': '98px'
+            }).children().children() /* sidlist */
+        .css({
+                'width': '300px',
+                'height': '968px'
+            }).children() /* sidebar-nav */
+            .css('padding', '0px').children() /* sidebar-brand */
+            .css({
+                'list-style': 'none'
+            });
+        */
 
 
         // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
@@ -345,7 +359,7 @@
         })
     </script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
