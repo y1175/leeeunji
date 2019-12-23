@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width:480px) {
+media (min-width:320px) and (max-width:480px) {
 
     .text-center {
         font-size: 5.5em;
@@ -16,7 +16,7 @@
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
-        font-size: 20px;
+     font-size: 20px;
     }
 
     nav {
@@ -30,15 +30,17 @@
 @media (min-width:481px) and (max-width:768px) {
 
     .text-center {
-        font-size: 6em;
+        font-size: 8em;
         font-weight: bolder;
     }
 
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
+
         font-size: 20px;
         padding: 0px 10px;
+
     }
 
     nav {
@@ -62,15 +64,17 @@
 @media (min-width: 769px) {
 
     .text-center {
-        font-size: 6.8em;
+/*        font-size: 8em;*/
         font-weight: bolder;
     }
 
     .navbar-dark .navbar-nav .nav-link {
         color: black;
         font-family: 'BMHANNA_11yrs';
-        font-size: 22px;
+/*
+        font-size: 25px;
         padding: 0px 1rem;
+*/
     }
 
     nav {
@@ -196,12 +200,12 @@ dd {
 }
 
 
-/*
+
 h2 {
     font-size: 2em !important;
     font-weight: bolder !important;
 }
-*/
+
 
 a.btn {
     color: white !important;

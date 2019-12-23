@@ -110,3 +110,90 @@ ul > li > p {
 li > ul > li > p {
     font-size: 20px;
 }
+
+h3 {
+    text-align: center;
+    font-family: 'BMHANNA_11yrs';
+    font-size: 4em;
+}
+
+
+
+/* 사이드바 스타일 */
+.modal-content{
+    position: relative;
+    left: 0px;
+}
+.nav-title{
+    font-size:1.6em;
+    font-family: 'BMHANNA_11yrs';
+    color: black;
+}
+.sidebar-nav li {
+    font-size: 1.3m;
+    text-indent: 2em;
+    line-height: 3em;
+    margin-left: -1em;
+    color: black;
+}
+
+.sidebar-nav li li {
+    text-indent: 1em;
+    list-style: none;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.line {
+    width: 250px;
+    position: relative;
+    left: 10px;
+    height: 3px;
+    background-color: black;
+    margin-top:-15px;
+    margin-bottom:5px;
+}
+
+
+.sidebar-nav li a:hover {
+    color: orange;
+    background-color: lightgray;
+    text-indent: 3.2em;
+    font-size: 1.5m;
+    border: border;
+    margin-left: -20px;
+
+}
+
+.sidebar-nav > li > a:hover {
+    color: gray;
+    background-color: silver;
+        text-indent: 2em;
+    margin-left:-15px;
+
+}
+
+.sidebar-nav > li > a {
+    margin: 0px auto;
+    font-size: 1.6em;
+}
+
+.sidebar-nav > li > ul {
+    display: none;
+}
+.sidebar-nav div{
+    text-align: center;
+}
+.sidebar-nav div a{
+    font-size: 3em;
+    color: black;
+}
+
+.sidebar-nav>li{
+    list-style: none;
+}
