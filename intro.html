@@ -21,6 +21,7 @@
 
 
 <body>
+    <!--사이드메뉴-->
     <div id="page-wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -34,8 +35,8 @@
                 <li><a href="#">언어소개</a>
                     <ul>
                         <li><a href="intro.html">ㄴ INTRO</a></li>
-                        <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                        <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="intro_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
                         <li><a href="intro_SQL.html">ㄴ SQL</a></li>
                     </ul>
@@ -44,8 +45,8 @@
                 <li><a href="#">언어강좌</a>
                     <ul id="study_lang">
                         <li><a href="study_intro.html">ㄴ INTRO</a></li>
-                        <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                        <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="study_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                        <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
                         <li><a href="study_java.html">ㄴ JAVA</a></li>
                         <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
                         <li><a href="study_other.html">ㄴ 기타</a></li>
@@ -66,6 +67,8 @@
 
 
 
+
+    <!--모바일 사이드바-->
     <div class="col-sm">
         <!-- Button trigger modal -->
         <img class="btn" src="icons/list.svg" alt="" width="60" height="60" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
@@ -84,8 +87,8 @@
                             <li><a href="#">언어소개</a>
                                 <ul>
                                     <li><a href="intro.html">ㄴ INTRO</a></li>
-                                    <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                                    <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="intro_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                                    <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
                                     <li><a href="intro_Java.html">ㄴ JAVA</a></li>
                                     <li><a href="intro_SQL.html">ㄴ SQL</a></li>
                                 </ul>
@@ -94,8 +97,8 @@
                             <li><a href="#">언어강좌</a>
                                 <ul>
                                     <li><a href="study_intro.html">ㄴ INTRO</a></li>
-                                    <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
-                                    <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                    <li><a href="study_HTML&CSS.html">ㄴ HTML &#38; CSS</a></li>
+                                    <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT &#38; JQUERY</a></li>
                                     <li><a href="study_java.html">ㄴ JAVA</a></li>
                                     <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
                                     <li><a href="study_other.html">ㄴ 기타</a></li>
@@ -117,13 +120,21 @@
         </div>
     </div>
 
+
+
+
+
     <header>
+       <!--홈페이지 타이틀-->
         <div class="container-fluid">
             <div class="row" style="margin-bottom: 20px">
                 <br><br>
             </div>
             <h1 class="text-center" style="margin-bottom: 20px">점프 투 코딩</h1>
         </div>
+
+
+        <!--네비바-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="background-color: orange"></span>
@@ -150,23 +161,25 @@
         </nav>
     </header>
 
+
+
+
     <div class="container">
         <div class="posts-container mx-auto px-3 my-5 ">
             <div class="post">
 
+                <!--포스트 제목-->
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
                     INTRO
                 </h2>
+
+                <!--페이지 전환 버튼-->
                 <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"><a href="main.html"> HOME</a></button>
-
                 <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_HTML&CSS.html">HTML &#38; CSS</a></button>
-
-
                 <br>
+                <!--최근 본 글 사이드바-->
                 <ul id="floatMenu">
-
                     <li class="menu">
-
                         <a>
                             <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
                         </a>
@@ -194,16 +207,13 @@
                             <li>
                                 <p>ECLIPSE설치</p>
                             </li>
-
                         </ul>
-
                     </li>
-
                 </ul>
                 <!--최신글 스크롤 배너 끝-->
 
 
-
+                <!--본문글 시작-->
                 <pre>
                 <img src="img/hello.jpg" width="100%"  alt="" style="margin:20px 0px 20px 0px; ">
                 <b>'기계'와 '사람'의 대화를 가능하게 하다.
@@ -227,11 +237,11 @@
 상위권에 랭크된 'JAVA', JAVASCRIPT'. 'HTML' 에 대한 소개를 시작하도록 하겠다.
 
 
-            <!-- Button trigger modal -->
+            <!-- 로드맵 모달 박스 -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-placement="top" title="click me!" style="background-color: orange; border: none">생활코딩 로드맵 연결
 </button>
 
-<!-- Modal -->
+<!-- 로드맵 모달창 -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -250,10 +260,10 @@
 
 </pre>
 
-            </div>
+</div>
 
-        </div>
-
+</div>
+        <!--댓글창-->
         <div id="disqus_thread"></div>
     </div>
 
@@ -267,6 +277,14 @@
             </dl>
         </footer>
     </div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -284,39 +302,9 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
-    </script>
 
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-
-
-
-        $('li:nth-child(3)').children('ul').toggle();
-        $('li').on('click', function() {
-            let ch = $(this).children('ul');
-            $(ch).toggle();
-        });
-
-        /*$('.sidebarBtn').click(function() {
-
-            if ($('#sidebar-wrapper').css('display') == 'none')
-                $('#sidebar-wrapper').css('display', 'block');
-
-            else
-                $('#sidebar-wrapper').css('display', 'none');
-        });*/
-
-
-        $('#sidbar').css({
+//사이드바 css
+     $('#sidbar').css({
                 'margin': '-1px auto',
                 'left': '98px'
             }).children().children() /* sidlist */
@@ -329,6 +317,15 @@
                 'list-style': 'none'
             });
 
+//사이드바 목록 고정
+        $('li:nth-child(3)').children('ul').toggle();
+        $('li').on('click', function() {
+            let ch = $(this).children('ul');
+            $(ch).toggle();
+        });
+
+
+<!--최근목록-->
 
         // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
         $(".menu>a").click(function() {
@@ -340,11 +337,9 @@
             } else {
                 submenu.slideDown();
             }
-
         });
 
-
-        /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+        // 스크롤 올리고 내릴때 배너가 따라다니는 기능
         // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
         var floatPosition = parseInt($("#floatMenu").css('top'));
         // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
@@ -355,12 +350,10 @@
             var newPosition = scrollTop + floatPosition + "px";
 
             $("#floatMenu").css('top', newPosition);
+        });
+</script>
 
-
-        })
-    </script>
-
-    <script type="text/javascript">
+  <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
@@ -375,4 +368,6 @@
     </script>
 
 
-</body></html>
+</body>
+
+</html>
