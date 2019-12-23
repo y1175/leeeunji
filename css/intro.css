@@ -1,4 +1,22 @@
 
+@media (min-width: 769px) {
+
+        .col-sm{
+
+            display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+       .container {
+
+        border-right: 1px solid silver;
+        border-left: 1px solid silver;
+    }
+
+}
 
 
 
