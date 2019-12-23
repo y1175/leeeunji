@@ -29,6 +29,7 @@ padding-left: 250px;
     margin-left: -250px;
     background: #000;
     overflow: auto;
+    z-index: 999;
   }
 
   #page-content-wrapper {

@@ -10,7 +10,7 @@
     float: center;
     left: 87%;
     bottom: 300px;
-
+    transition: top 1s;
 }
 
 .menu a {
