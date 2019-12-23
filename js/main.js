@@ -97,11 +97,11 @@ $(document).ready(function () {
         $(this).css({opacity: 1});
     });
 
-    $('a').focusin(function(){
+    $('.Embeddable').focusin(function(){
         $(this).css('border','2px solid orange');
     })
 
-    $('a').focusout(function(){
+    $('.Embeddable').focusout(function(){
         $(this).css('border','0px solid red');
     })
 
