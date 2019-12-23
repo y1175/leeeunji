@@ -54,16 +54,20 @@ h1{
 
 
 .navbar{
-
+    font-family: 'BMHANNA_11yrs';
     background-color:white;
-    font-size: 25px !important;
-    font-weight: bold;
+    font-size: 20px !important;
     border-bottom: 5px solid orange;
     margin-bottom: 20px;
+    border-radius: 10px;
+    width:80%;
 }
 .navbar ul li a{
     color:black;
+    text-indent: 1.8em;
+    font-weight: bolder;
 }
+
 .navbar ul li a:hover{
     color:orange !important;
 }
