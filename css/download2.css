@@ -1,0 +1,234 @@
+@media (min-width:320px) and (max-width:480px) {
+
+    .text-center {
+        font-size: 5.5em;
+        font-weight: bolder;
+    }
+
+    .post-title {
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        font-size: 50px;
+    }
+
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+        font-family: 'BMHANNA_11yrs';
+        font-size: 20px;
+        width: 70px;
+    }
+
+    nav {
+        display: block;
+        margin: 0px auto;
+    }
+
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+    .text-center {
+        font-size: 6em;
+        font-weight: bolder;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+        font-family: 'BMHANNA_11yrs';
+        font-size: 18px;
+        padding: 0px 2px;
+        width: 80px;
+    }
+
+    nav {
+        width: 105%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .post-title {
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        font-size: 3em;
+    }
+
+
+}
+
+
+
+@media (min-width: 769px) {
+
+    .text-center {
+        font-size: 6.8em;
+        font-weight: bolder;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+        font-family: 'BMHANNA_11yrs';
+        font-size: 18px;
+        padding: 0px 2px;
+        width: 100px;
+    }
+
+    nav {
+        width: 60%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .post-title {
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        font-size: 4em;
+    }
+
+}
+
+
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@font-face {
+
+    font-family: 'BMHANNA_11yrs';
+
+    src: url('../font/BMHANNA_11yrs.woff') format('woff');
+}
+
+@font-face {
+
+    font-family: 'BMHANNAAir';
+
+    src: url('../font/BMHANNAAir.woff') format('woff');
+}
+
+body {
+    background-color: white !important;
+
+}
+
+h1 {
+    font-family: 'BMHANNA_11yrs';
+}
+
+.text-center > a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.text-center > a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.text-center > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+dl {
+    margin: 0px !important;
+}
+
+.navbar {
+    background-color: white !important;
+    font-size: 15px !important;
+    border-bottom: 5px solid orange;
+    margin-bottom: 20px;
+}
+
+
+dd,
+dt,
+dl {
+    margin: 2px 0px !important;
+    padding: 0px !important;
+    font-family: 'BMHANNAAir';
+}
+
+.col-sm-6 > a {
+    color: silver;!important;
+    font-weight: 600;
+    font-family: 'BMHANNAAir';
+}
+
+.col-sm-6>a:hover{
+    text-decoration: none;
+    color: silver;
+}
+
+.col-sm-6>a:link{
+    text-decoration: none;
+    color: silver;
+}
+
+dt>a:visited{
+    text-decoration: none;
+    color: silver;
+}
+
+dd {
+    font-size: 0.8em !important;
+}
+
+.footer {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-top: 1px solid silver;
+    color: gray !important;
+    font-size: 1em;
+}
+
+
+.slider-wrapper,
+.theme-default {
+    margin-top: 0px !important;
+}
+
+
+/*
+h2 {
+    font-size: 2em !important;
+    font-weight: bolder !important;
+}
+*/
+
+a.btn {
+    color: white !important;
+}
+
+
+.slider-wrapper,
+.nivo-main-image,
+#slider {
+    height: 350px !important;
+    border-radius: 3px;
+}
+
+.modal-content {
+    left: -100px;
+}
+
+
+
+
+iframe {
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    color: orange !important;
+}
