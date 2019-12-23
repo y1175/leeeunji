@@ -97,13 +97,7 @@ $(document).ready(function () {
         $(this).css({opacity: 1});
     });
 
-    $('.Embeddable').focusin(function(){
-        $(this).css('border','2px solid orange');
-    })
 
-    $('.Embeddable').focusout(function(){
-        $(this).css('border','0px solid red');
-    })
 
     $('.carousel video').on('click',function(){
      console.log('aa');
