@@ -77,31 +77,44 @@ dd {
     border-top: 1px solid silver;
     color: gray !important;
     font-size: 1em;
+
 }
 
 /* mian navbar */
 .navbar {
-    background-color: black !important;
+    background-color: white !important;
     font-size: 15px !important;
     border-bottom: 5px solid orange;
     border-radius: 10px;
 
+
 }
 
 nav {
-    width: 70%;
+    width: 100%;
     display: block;
     margin: 0px auto;
 
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: white;
+
+.nav-link{
+    color: black !important;
+    text-indent: 4.1em;
+    font-size: 1.2em;
+    font-weight: bolder;
+
 }
+
+.nav-item a:hover{
+    color: orange !important;
+}
+
 
 .nav-item a,
 .nav-item a:visited {
     color: black;
+    text-align: center;
 }
 
 /* main slider */

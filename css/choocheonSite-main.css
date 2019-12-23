@@ -55,11 +55,14 @@ h1{
 
 .navbar{
 
-    background-color:white !important;
+    background-color:white;
     font-size: 25px !important;
     font-weight: bold;
     border-bottom: 5px solid orange;
     margin-bottom: 20px;
+}
+.navbar ul li a{
+    color:black;
 }
 .navbar ul li a:hover{
     color:orange !important;
