@@ -23,11 +23,11 @@
 </head>
 
 <body>
-    <div id="page-wrapper">
+ <div id="page-wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="main.html">
+                    <a href="#">
                         <h3 id="tt">점프 투 코딩</h3>
                     </a>
                     <div id="line"></div>
@@ -39,6 +39,7 @@
                         <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
                         <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                        <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
                 </li>
 
@@ -60,9 +61,12 @@
                 </li>
                 <li><a href="choocheonSite.html">사이트 추천</a></li>
                 <li><a href="q&a.html">질의응답</a></li>
-                <li><a href="contct.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
     </div>
 
     <header>
@@ -97,19 +101,23 @@
 
     <div class="container">
         <div class="posts-container mx-auto px-3 my-5">
-            <div class="post">
+            <div class="post" "position-relative">
 
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
                     JAVASCRIPT
                 </h2>
-                <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"><a href="intro_HTML&CSS.html"> HTML &#38; CSS </a></button>
+                <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';" ><a href="intro_HTML&CSS.html"> HTML &#38; CSS </a></button>
 
                 <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_Java.html">JAVA</a></button>
 
 
-                <pre>자바스크립트(JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다.
+                <pre>
+
+                자바스크립트(JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다.
                 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근이 가능하다.
-                 또한 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다.</pre>
+                 또한 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다.
+
+                 </pre>
 
                 <div class="col-12 ">
                     <div class="accordion" id="accordionExample">
@@ -270,13 +278,26 @@
 
 
 
-    <script>
+  <script>
         $(document).ready(function() {
+            $('li:nth-child(3)').children('ul').toggle();
             $('li').on('click', function() {
                 let ch = $(this).children('ul');
                 $(ch).toggle();
             });
+
+            $('.sidebarBtn').click(function() {
+
+                if ($('#sidebar-wrapper').css('display') == 'none')
+                    $('#sidebar-wrapper').css('display', 'block');
+
+                else
+                    $('#sidebar-wrapper').css('display', 'none');
+            });
         });
     </script>
+
+
+
 
 </body></html>

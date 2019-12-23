@@ -58,6 +58,10 @@ pre {
     white-space:pre-line;
 }
 
+.nav-item{
+ font-size-adjust: auto;
+}
+
 
 .nav-item a:hover{
     color: orange !important ;
@@ -75,5 +79,11 @@ pre {
 
 .post{
     margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width:1200px){
+#sidebar-wrapper { display: none; }
 }
 

@@ -5,10 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-
-    <title>점프 투 코딩</title>
+    <title>언어소개 - INTRO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
@@ -16,18 +14,9 @@
     <link rel="stylesheet" href="css/main3.css">
     <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="Eunbyul/sidebar.css">
     <link rel="stylesheet" href="css/intro.css">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic+Coding|Noto+Sans+KR|Yeon+Sung&display=swap" rel="stylesheet">
-
-    <style>
-        #plus>img {
-            border: 0px;
-
-        }
-
-    </style>
-
 </head>
 
 <body>
@@ -47,6 +36,7 @@
                         <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
                         <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                        <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
                 </li>
 
@@ -68,13 +58,16 @@
                 </li>
                 <li><a href="choocheonSite.html">사이트 추천</a></li>
                 <li><a href="q&a.html">질의응답</a></li>
-                <li><a href="contct.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
     </div>
 
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-center">
             <div class="row" style="margin-bottom: 20px">
                 <br><br>
             </div>
@@ -98,13 +91,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="intro_Java.html">JAVA</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="intro_SQL.html">SQL</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <div class="container">
-        <div class="posts-container mx-auto px-3 my-5">
+        <div class="posts-container mx-auto px-3 my-5 ">
             <div class="post">
 
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
@@ -114,9 +110,15 @@
 
                 <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_HTML&CSS.html">HTML &#38; CSS</a></button>
 
-                <div class="movie"><iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe></div>
-                <br>
-                <p style="text-align: center"><b>'기계'와 '사람'의 대화를 가능하게 하다. '프로그래밍 언어'</b></p>
+
+
+                <pre>
+                <img src="img/hello.jpg" width="50%" style="min-width:500px"  alt="">
+                <b>'기계'와 '사람'의 대화를 가능하게 하다.
+                 '프로그래밍 언어'</b>
+
+                </pre>
+
                 <pre>
 프로그래밍 언어는 인간이 기계를 가르치고 통제할 수 있게 해준다.
 이 과정을 더 효과적이고 단순하게 만들기 위해 수 많은 컴퓨터 언어들이 존재한다.
@@ -131,10 +133,39 @@
 
 조금 더 쉽고 간단한 언어의 탄생을 기대하며
 상위권에 랭크된 'JAVA', JAVASCRIPT'. 'HTML' 에 대한 소개를 시작하도록 하겠다.
-                </pre>
 
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: orange; border: none">생활코딩 로드맵 연결
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">생활코딩 로드맵</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <iframe frameborder="0" height="600" scrolling="no" src="https://seomal.org?i=WEB1" width="100%"></iframe>
+      </div>
+
+    </div>
+  </div>
+</div>
+</pre>
             </div>
+
+
+
+
+
+
         </div>
+
         <div id="disqus_thread"></div>
     </div>
 
@@ -165,7 +196,6 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
-
     </script>
 
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -177,89 +207,24 @@
 
     <script>
         $(document).ready(function() {
+            $('li:nth-child(3)').children('ul').toggle();
             $('li').on('click', function() {
                 let ch = $(this).children('ul');
                 $(ch).toggle();
             });
-        });
 
-    </script>
+            $('.sidebarBtn').click(function() {
 
-    <script>
-        $(document).ready(function() {
-            // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-            $(".menu>a").click(function() {
-                var submenu = $(this).next("ul");
+                if ($('#sidebar-wrapper').css('display') == 'none')
+                    $('#sidebar-wrapper').css('display', 'block');
 
-                // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
-                if (submenu.is(":visible")) {
-                    submenu.slideUp();
-                } else {
-                    submenu.slideDown();
-                }
-
+                else
+                    $('#sidebar-wrapper').css('display', 'none');
             });
-
-
-            /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
-            // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-            var floatPosition = parseInt($("#floatMenu").css('top'));
-            // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
-
-            $(window).scroll(function() {
-                // 현재 스크롤 위치를 가져온다.
-                var scrollTop = $(window).scrollTop();
-                var newPosition = scrollTop + floatPosition + "px";
-
-                $("#floatMenu").stop().animate({
-                    "top": newPosition
-                }, 300);
-
-            }).scroll();
         });
-
     </script>
 
-    <ul id="floatMenu">
-
-        <li class="menu">
-
-            <a>
-                <div id="plus"><img src="icons/document-text.svg" alt="document"></div>
-            </a>
-
-
-            <ul class="hide">
-                <li>
-                    <p class="recent">최근 본 글</p>
-                    <a herf="#"><img src="img/img.choocheonSite/programmers.jpg" alt="programmers"></a>
-                </li>
-                <li>
-                    <p>프로그래머스</p>
-                </li>
-                <li>
-
-                    <a herf="#"><img src="img/studyintroimage.png" alt="study_intro"></a>
-                </li>
-                <li>
-                    <p>언어강좌INTRO</p>
-                </li>
-                <li>
-
-                    <a herf="#"><img src="img/eclipse.png" alt="install_eclipse"></a>
-                </li>
-                <li>
-                    <p>ECLIPSE설치</p>
-                </li>
-
-            </ul>
-
-        </li>
-
-    </ul>
 
 
 
-</body>
-
-</html>
+</body></html>

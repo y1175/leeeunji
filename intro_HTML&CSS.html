@@ -12,7 +12,7 @@
 
     <!-- Bootstrap CSS -->
 
-    <title>점프 투 코딩</title>
+    <title>언어소개 - HTML &#38; CSS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
@@ -43,6 +43,7 @@
                         <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
                         <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
                         <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                        <li><a href="intro_Java.html">ㄴ SQL</a></li>
                     </ul>
                 </li>
 
@@ -64,9 +65,12 @@
                 </li>
                 <li><a href="choocheonSite.html">사이트 추천</a></li>
                 <li><a href="q&a.html">질의응답</a></li>
-                <li><a href="contct.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
     </div>
 
     <header>
@@ -101,14 +105,14 @@
 
     <div class="container">
         <div class="posts-container mx-auto px-3 my-5">
-            <div class="post">
+            <div class="post" >
 
                 <h2 class="post-title fw-500" style="text-align: center; display: block; margin: 0px auto;">
                     HTML
                 </h2>
                 <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"><a href="intro.html"> INTRO</a></button>
 
-                <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_Javascript&Jquery.html">JAVASCRIPT &#38; JQUERY</a></button>
+                <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="intro_Javascript&Jquery.html">JS &#38; JQ</a></button>
 
                 <pre>
 
@@ -279,13 +283,26 @@ W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script>
+ <script>
         $(document).ready(function() {
+            $('li:nth-child(3)').children('ul').toggle();
             $('li').on('click', function() {
                 let ch = $(this).children('ul');
                 $(ch).toggle();
             });
+
+            $('.sidebarBtn').click(function() {
+
+                if ($('#sidebar-wrapper').css('display') == 'none')
+                    $('#sidebar-wrapper').css('display', 'block');
+
+                else
+                    $('#sidebar-wrapper').css('display', 'none');
+            });
         });
     </script>
+
+
+
 
 </body></html>

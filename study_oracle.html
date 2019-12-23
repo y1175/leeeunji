@@ -18,17 +18,7 @@
     <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/side.css">
     <link rel="stylesheet" href="css/study_html,css.css">
-
-    <style>
-        .container {
-
-            border-right: 1px solid silver;
-            border-left: 1px solid silver;
-            width: 60%;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/rs.css">
 
 
 </head>
@@ -38,44 +28,96 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="main.html">
                         <h3 id="tt">점프 투 코딩</h3>
                     </a>
                     <div id="line"></div>
                 </li>
-                <li><a href="#">홈</a></li>
+                <li><a href="main.html">홈</a></li>
                 <li><a href="#">언어소개</a>
                     <ul>
-                        <li><a href="#">ㄴ INTRO</a></li>
-                        <li><a href="#">ㄴ HTML & CSS</a></li>
-                        <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
-                        <li><a href="#">ㄴ JAVA</a></li>
+                        <li><a href="intro.html">ㄴ INTRO</a></li>
+                        <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                        <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="intro_Java.html">ㄴ JAVA</a></li>
                         <li><a href="#">ㄴ ORACLE</a></li>
                     </ul>
                 </li>
 
                 <li><a href="#">언어강좌</a>
                     <ul id="study_lang">
-                        <li><a href="#">ㄴ INTRO</a></li>
-                        <li><a href="#">ㄴ HTML & CSS</a></li>
-                        <li><a href="#">ㄴ JAVASCRIPT & JQUERY</a></li>
-                        <li><a href="#">ㄴ JAVA</a></li>
-                        <li><a href="#">ㄴ ORACLE</a></li>
-                        <li><a href="#">ㄴ 기타</a></li>
+                        <li><a href="study_intro.html">ㄴ INTRO</a></li>
+                        <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                        <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                        <li><a href="study_java.html">ㄴ JAVA</a></li>
+                        <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
+                        <li><a href="study_other.html">ㄴ 기타</a></li>
                     </ul>
                 </li>
                 <li><a href="#">다운로드</a>
                     <ul>
-                       <li><a href="#">ㄴ 언어</a></li>
-                        <li><a href="#">ㄴ 개발 툴</a></li>
+                        <li><a href="Download_JAVA.html">ㄴ 언어</a></li>
+                        <li><a href="Download_BRACKETS.html">ㄴ 개발 툴</a></li>
                     </ul>
                 </li>
-                <li><a href="#">사이트 추천</a></li>
-                <li><a href="#">질의응답</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="choocheonSite.html">사이트 추천</a></li>
+                <li><a href="q&a.html">질의응답</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
     </div>
+
+
+    <div class="col-sm">
+        <!-- Button trigger modal -->
+        <img class="btn" src="icons/list.svg" alt="" width="60" height="60" title="Bootstrap" data-toggle="modal" data-target="#sidebar">
+        <!-- sidebar Modal -->
+        <div class="modal fade" id="sidebar" tabindex="-1" role="dialog" aria-labelledby="sidbar" aria-hidden="true">
+            <div id="sidbar" class="modal-dialog" role="document" style="position:absolute">
+                <div class="modal-content" style="height: 100%; background-color: black;">
+                   <div class="sidlist">
+                    <ul class="sidebar-nav" style="background-color: black; color: white; width: 100%; height: 100%; margin: 0px">
+                        <div>
+                            <h2 style="font-size: 4em; font-family: 'BMHANNA_11yrs';
+ margin: 20px 0px; text-align: center;">점프 투 코딩</h2>
+                        </div>
+                        <div class="line" style="width: 250px; height: 5px; background-color: white; position: relative; left: 25px; margin-bottom: 20px;"></div>
+                        <li><a href="main.html">홈</a></li>
+                        <li><a href="#">언어소개</a>
+                            <ul>
+                                <li><a href="intro.html">ㄴ INTRO</a></li>
+                                <li><a href="intro_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                <li><a href="intro_Javascript&Jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                <li><a href="intro_Java.html">ㄴ JAVA</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">언어강좌</a>
+                            <ul>
+                                <li><a href="study_intro.html">ㄴ INTRO</a></li>
+                                <li><a href="study_HTML&CSS.html">ㄴ HTML & CSS</a></li>
+                                <li><a href="study_Javascript&jquery.html">ㄴ JAVASCRIPT & JQUERY</a></li>
+                                <li><a href="study_java.html">ㄴ JAVA</a></li>
+                                <li><a href="study_oracle.html">ㄴ ORACLE</a></li>
+                                <li><a href="study_other.html">ㄴ 기타</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">다운로드</a>
+                            <ul>
+                                <li><a href="Download_JAVA.html">ㄴ 언어</a></li>
+                                <li><a href="Download_ECLIPSE.html">ㄴ 개발 툴</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="choocheonSite.html">사이트 추천</a></li>
+                        <li><a href="q&a.html">질의응답</a></li>
+                        <li><a href="contct.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     <header>
         <div class="container-fluid">
@@ -83,35 +125,38 @@
                 <br><br>
 
             </div>
-            <h1 class="text-center" style="font-size: 6em;">점프 투 코딩</h1>
+            <h1 class="text-center"><a href="main.html">점프 투 코딩</a></h1>
         </div>
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 20px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+
                  <span class="navbar-toggler-icon" style="background-color: orange"></span>
-            </button>
+                           </button>
+
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto" style="margin: 0px auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">INTRO</a>
+                        <a class="nav-link" href="study_intro.html">INTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HTML & CSS</a>
+                        <a class="nav-link" href="study_HTML&CSS.html">HTML & CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JAVASCRIPT & JQUERY</a>
+                        <a class="nav-link" href="study_Javascript&jquery.html">JAVASCRIPT & JQUERY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JAVA</a>
+                        <a class="nav-link" href="study_java.html">JAVA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ORACLE</a>
+                        <a class="nav-link" href="study_oracle.html">ORACLE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">기타</a>
+                        <a class="nav-link" href="study_other.html">기타</a>
                     </li>
                 </ul>
-            </div>
+                </div>
+
         </nav>
     </header>
 
@@ -125,11 +170,11 @@
                         ORACLE
                     </h1>
 
-                                        <h2 style="text-align: center; display: block; margin: 0px auto;  font-family: 'BMHANNA_11yrs';">- 생활코딩 -</h2>
+                    <h2 style="text-align: center; display: block; margin: 0px auto;  font-family: 'BMHANNA_11yrs';">- 생활코딩 -</h2>
 
-                    <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';">JAVA</button>
+                    <button type="button" class="btn btn-outline-primary" style="font-family: 'BMHANNA_11yrs';"><a href="study_java.html">JAVA</a></button>
 
-                    <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;">OTHER</button>
+                    <button type="button" class="btn btn-outline-success" style="font-family: 'BMHANNA_11yrs'; float: right;"><a href="study_other.html">OTHER</a></button>
 
 
 
@@ -139,8 +184,7 @@
                         <div style="position:relative;height:0;padding-bottom:56.25%">
 
 
-                        <iframe width="854" height="480"                             style="position:absolute;left:0;top:0;width:100%;height:100%"
- src="https://www.youtube.com/embed/dqcOa-fVWWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" src="https://www.youtube.com/embed/dqcOa-fVWWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
 
@@ -149,12 +193,12 @@
 
                     <br>
                     <p>
-                       오라클에 대해서 정확히 알기 위해선 데이터베이스에 대해 정확히 알아야 한다. 데이터베이스란 여러 사람이 공유하여 사용할 목적으로 체계화해 통합, 관리하는 데이터의 집합이라고 할 수 있다. 데이터베이스 언어와 관련된 언어, 프로그램은 다양하게 있다. (점프 투 코딩은 오라클을 다루겠다.)
+                        오라클에 대해서 정확히 알기 위해선 데이터베이스에 대해 정확히 알아야 한다. 데이터베이스란 여러 사람이 공유하여 사용할 목적으로 체계화해 통합, 관리하는 데이터의 집합이라고 할 수 있다. 데이터베이스 언어와 관련된 언어, 프로그램은 다양하게 있다. (점프 투 코딩은 오라클을 다루겠다.)
 
                     </p>
                     <br>
                     <p>
-                       오라클은 데이터베이스는 미국 오라클사에서 판매하는 관계형 데이터베이스 관리 시스템으로, 은행 등 대다수의 대기업체에서 많이 사용한다.
+                        오라클은 데이터베이스는 미국 오라클사에서 판매하는 관계형 데이터베이스 관리 시스템으로, 은행 등 대다수의 대기업체에서 많이 사용한다.
                     </p>
                     <br>
                     <p>오라클 관련 인터넷 강의는 생활코딩을 추천한다. ‘또 생활코딩이라고?’라고 생각할 수 있다. 생활코딩은 오라클 소개부터 서버, 스키마, 테이블 만드는 법, 테이블에 데이터를 입력하고 출력하는 법, JOIN, 데이터베이스 클라이언트와 서버의 개념을 배울 수 있다.
@@ -176,7 +220,7 @@
                     <br>
                     <p style="text-align: center; font-size: 25px">
                         생활코딩은 작은 배움으로 많은 쓰임을 추구한다.
-                        <br>데이터베이스에 대해 배운적이 없고, 데이터베이스를 맛보고 싶다면  <br>생활코딩의 데이터베이스 수업을 들어보는 것은 어떨까?
+                        <br>데이터베이스에 대해 배운적이 없고, 데이터베이스를 맛보고 싶다면 <br>생활코딩의 데이터베이스 수업을 들어보는 것은 어떨까?
                     </p>
                     <br>
                     <ul class="im">
@@ -206,7 +250,6 @@
 
 
 
-
                     <!--Start of Tawk.to Script-->
                     <script type="text/javascript">
                         var Tawk_API = Tawk_API || {},
@@ -220,7 +263,6 @@
                             s1.setAttribute('crossorigin', '*');
                             s0.parentNode.insertBefore(s1, s0);
                         })();
-
                     </script>
                     <!--End of Tawk.to Script-->
 
@@ -242,7 +284,6 @@
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
-
                     </script>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
@@ -270,9 +311,51 @@
             $(ch).toggle();
         });
 
-    </script>
 
-</body>
+        $('#sidbar').css({
+                'margin': '-1px auto',
+                'left': '98px'
+            }).children().children() /* sidlist */
+            .css({
+                'width': '300px',
+                'height': '968px'
+            }).children() /* sidebar-nav */
+            .css('padding', '0px').children() /* sidebar-brand */
+            .css({
+                'list-style': 'none'
+            });
+
+
+        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+        $(".menu>a").click(function() {
+            var submenu = $(this).next("ul");
+
+            // submenu 가 화면상에 보일때는 위로 접고 아니면 아래로 펼치기
+            if (submenu.is(":visible")) {
+                submenu.slideUp();
+            } else {
+                submenu.slideDown();
+            }
+
+        });
+
+
+        /*  스크롤 올리고 내릴때 배너가 따라다니는 기능*/
+        // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+        var floatPosition = parseInt($("#floatMenu").css('top'));
+        // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+        $(window).scroll(function() {
+            // 현재 스크롤 위치를 가져온다.
+            var scrollTop = $(window).scrollTop();
+            var newPosition = scrollTop + floatPosition + "px";
+
+            $("#floatMenu").stop().animate({
+                "top": newPosition
+            }, 300);
+
+        }).scroll();
+    </script>
     <div class="row justify-content-center">
         <footer class="footer col-5" style="min-width:60%">
             <dl class="row" style="min-width:60%">
@@ -284,4 +367,4 @@
         </footer>
 
     </div>
-</html>
+</body></html>

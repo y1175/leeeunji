@@ -44,7 +44,7 @@ body{
 
 h1{
     font-family: 'BMHANNA_11yrs';
-    font-size: 6em !important; font-weight: bolder !important;
+    font-size: 5em !important; font-weight: bolder !important;
 }
 
 
@@ -72,9 +72,6 @@ nav {
     color: black;
 }
 
-.footer{
-    margin-top: 0px;
-}
 
 .slider-wrapper, .theme-default{
     margin-top: 0px !important;
@@ -95,6 +92,10 @@ div.position-right{
     margin-bottom: 10px;
 }
 
+.page-bottom{
+    width:100%;
+    height:50px;
+}
 
 
 div.tagselected{
@@ -172,10 +173,15 @@ h3 {
 .modal-content{
     left :-100px;
 }
+.nav-title{
+    font-size:1.6em;
+    font-family: 'BMHANNA_11yrs';
+}
 .sidebar-nav li {
     font-size: 1.3m;
     text-indent: 2em;
     line-height: 3em;
+    margin-left: -1em;
 }
 
 .sidebar-nav li li {
@@ -196,6 +202,8 @@ h3 {
     left: 10px;
     height: 3px;
     background-color: black;
+    margin-top:-15px;
+    margin-bottom:5px;
 }
 
 
@@ -205,6 +213,7 @@ h3 {
     text-indent: 3.2em;
     font-size: 1.5m;
     border: border;
+    margin-left: -20px;
 
 }
 
@@ -212,6 +221,7 @@ h3 {
     color: gray;
     background-color: silver;
         text-indent: 2em;
+    margin-left:-15px;
 
 }
 
